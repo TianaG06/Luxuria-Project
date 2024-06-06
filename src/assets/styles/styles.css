@@ -1,1 +1,14 @@
-body {background-color: aqua;}
+@import url("./main-Root.css"); 
+@import url("./normalize.css");
+
+
+
+body { 
+    display: flex;
+    width: 100%;
+    margin: 100px auto;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    background-color: aqua;
+}
