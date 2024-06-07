@@ -1,14 +1,38 @@
-@import url("./main-Root.css"); 
-@import url("./normalize.css");
+:root {
+    --Color-primario: #0D554AFF ;
+    --color-secundario:  #F5D38EFF;
 
+    --color-de-fuente-neutral-500: #9095A0FF;
+    --color-de-fuente-neutral-650: #424955FF;
+    --color-de-fuente-neutral-500: #9095A0FF;
+    --color-de-fuente-neutral-900: #171A1FFF;
+  
+    --color-blanco: #fff;
+    --color-blanco-95: hsl(0, 0%, 95%)
+    --color-gris-80: #cccccc;
+    --color-gris-65: #a6a6a6;
 
+    --color-fondo-primario : var(--color-blanco) ;
+    --color-background-secundary: #f9f9fa;
+    --color-fondo-especial: var(--color-primario);
+
+    --estilo-de-fuente-Titulos:  "Cormorant Garamond", serif ; 
+    --estilo-de-fuente-Principal: "Manrope", serif;
+    
+    --peso-de-fuente-titulo-pequeño: 700;
+    --peso-de-fuente-principal: 600;
+    --peso-de-fuente-secundario: 400;
+    
+}
+
+* {
+    font-family: var(--estilo-de-fuente-Principal);
+}
+
+h1, h2, h3 {
+    font-family: var(--estilo-de-fuente-Titulos);
+}
 
 body { 
-    display: flex;
-    width: 100%;
-    margin: 100px auto;
-    align-items: center;
-    justify-content: center;
-    align-content: center;
-    background-color: aqua;
+   background-color: var(--color-fondo-primario);
 }
