@@ -23,21 +23,22 @@
   </head>
   <body>
     <header class="globalheader">
-      <a class="globalheader__logo" href=""><span class="globalheader__logo--text">Darling</span></a>
-      <nav>
-        <ul>
-          <li><a href=""><span>Home</span></a></li>
-          <li><a href=""><span>Shop</span></a></li>
-          <li><a href=""><span>Collections</span></a></li>
-          <li><a href=""><span>About</span></a></li>
-          <li><a href=""><span>Contact</span></a></li>
+      <a class="globalheader__logo" href=""><span class="globalheader__logo__text">Darling</span></a>
+      <nav class="globalnav">
+        <ul class="globalnav__list">
+          <li class="globalnav__item"><a href="#" class="globalnav__link"><span class="globalnav__link__text">Home</span></a></li>
+          <li class="globalnav__item"><a href="#" class="globalnav__link"><span class="globalnav__link__text">Shop</span></a></li>
+          <li class="globalnav__item"><a href="#" class="globalnav__link"><span class="globalnav__link__text">Collections</span></a></li>
+          <li class="globalnav__item"><a href="#" class="globalnav__link"><span class="globalnav__link__text">About</span></a></li>
+          <li class="globalnav__item"><a href="#" class="globalnav__link"><span class="globalnav__link__text">Contact</span></a></li>
         </ul>
       </nav>
-      <div>
-        <a href="#">
+      <div class="globalheader__icons">
+        <a href="#" class="header__icon">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="20"
+            class="icon icon-account"
             height="20"
             viewBox="0 0 20 20"
             fill="black"
@@ -57,36 +58,38 @@
           </svg>
           <span>Iniciar Sesión</span>
         </a>
+        <a href="#" class="header__icon">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="20"
+            class="icon icon-carrito"
+            height="20"
+            viewBox="0 0 20 20"
+            fill="black"
+          >
+            <path
+              d="M2.5 2.5L5.5 2.5L5.5 10C5.5 10.828 6.172 11.5 7 11.5L14.419 11.5C15.065 11.5 15.638 11.087 15.842 10.474L17.5 5.5L5.5 5.5"
+              stroke="white"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M6 17.5C6.82843 17.5 7.5 16.8284 7.5 16C7.5 15.1716 6.82843 14.5 6 14.5C5.17157 14.5 4.5 15.1716 4.5 16C4.5 16.8284 5.17157 17.5 6 17.5Z"
+              stroke="white"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M15 17.5C15.8284 17.5 16.5 16.8284 16.5 16C16.5 15.1716 15.8284 14.5 15 14.5C14.1716 14.5 13.5 15.1716 13.5 16C13.5 16.8284 14.1716 17.5 15 17.5Z"
+              stroke="white"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+          <span class="estado--oculto">Carrito</span>
+        </a>
       </div>
-      <a href="#">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="20"
-          height="20"
-          viewBox="0 0 20 20"
-          fill="black"
-        >
-          <path
-            d="M2.5 2.5L5.5 2.5L5.5 10C5.5 10.828 6.172 11.5 7 11.5L14.419 11.5C15.065 11.5 15.638 11.087 15.842 10.474L17.5 5.5L5.5 5.5"
-            stroke="white"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          />
-          <path
-            d="M6 17.5C6.82843 17.5 7.5 16.8284 7.5 16C7.5 15.1716 6.82843 14.5 6 14.5C5.17157 14.5 4.5 15.1716 4.5 16C4.5 16.8284 5.17157 17.5 6 17.5Z"
-            stroke="white"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          />
-          <path
-            d="M15 17.5C15.8284 17.5 16.5 16.8284 16.5 16C16.5 15.1716 15.8284 14.5 15 14.5C14.1716 14.5 13.5 15.1716 13.5 16C13.5 16.8284 14.1716 17.5 15 17.5Z"
-            stroke="white"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          />
-        </svg>
-        <span class="linkicontext--oculto">Carrito</span>
-      </a>
+      
     </header>
     <!-- Build for: Holguer Pinzon -->
     <main class="main-wrap">
