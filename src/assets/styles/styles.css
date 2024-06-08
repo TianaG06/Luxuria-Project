@@ -2,6 +2,7 @@
     --Color-primario: #0D554AFF ;
     --color-secundario:  #F5D38EFF;
 
+
     --color-de-fuente-neutral-500: #9095A0FF;
     --color-de-fuente-neutral-650: #424955FF;
     --color-de-fuente-neutral-500: #9095A0FF;
@@ -23,35 +24,50 @@
     --peso-de-fuente-principal: 600;
     --peso-de-fuente-secundario: 400;
 
-    --tamaño-de-fuente-Titulos-H1: 72px;
-    --tamaño-de-fuente-Titulos-H2: 72px;
-    --tamaño-de-fuente-Titulos-H3: 72px;
-    --tamaño-de-fuente-Titulos-H3: 72px;
-    --tamaño-de-fuente-Titulos-H3: 72px;
     
-    --tamaño-de-fuente-botones: 72px;
+    --tamaño-de-fuente-Titulos-H1: 7.2rem;
+    --tamaño-de-fuente-Titulos-H2-principal: 4rem;
+    --tamaño-de-fuente-Titulos-H3: 2.4rem;
+    --tamaño-de-fuente-principal: 1.6rem;
+    --tamaño-de-fuente-small: 1.4rem;
+    --tamaño-de-fuente-Titulos-H3: 72px;
+    --tamaño-de-fuente-logo-darling: 3rem;
+    
+
+
+    --tamaño-de-fuente-botones: 1.8rem;
+    --radio-de-boton-principal: 2.6rem;
+    --borde-boton-principal-white: 1px var(--color-blanco) solid;
+    --borde-boton-principal-verde: 1px var(--Color-primario) solid;
 
     
 }
 
 * {
     font-family: var(--estilo-de-fuente-Principal);
+
 }
 
 /* Se establece 62.5% para hacer uso de rem en este proyecto 1 rem = 10px  */
 
 html {
     font-size: 62.5%;
+    
 }
+
+body { 
+    background-color: var(--color-fondo-primario);
+    font-size: var(--tamaño-de-fuente-principal);
+ }
+ 
 
 
 h1, h2, h3 {
     font-family: var(--estilo-de-fuente-Titulos);
 }
 
-body { 
-   background-color: var(--color-fondo-primario);
-}
+
+
 
 
 
