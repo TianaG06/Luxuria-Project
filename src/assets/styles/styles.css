@@ -22,12 +22,28 @@
     --peso-de-fuente-titulo-pequeño: 700;
     --peso-de-fuente-principal: 600;
     --peso-de-fuente-secundario: 400;
+
+    --tamaño-de-fuente-Titulos-H1: 72px;
+    --tamaño-de-fuente-Titulos-H2: 72px;
+    --tamaño-de-fuente-Titulos-H3: 72px;
+    --tamaño-de-fuente-Titulos-H3: 72px;
+    --tamaño-de-fuente-Titulos-H3: 72px;
+    
+    --tamaño-de-fuente-botones: 72px;
+
     
 }
 
 * {
     font-family: var(--estilo-de-fuente-Principal);
 }
+
+/* Se establece 62.5% para hacer uso de rem en este proyecto 1 rem = 10px  */
+
+html {
+    font-size: 62.5%;
+}
+
 
 h1, h2, h3 {
     font-family: var(--estilo-de-fuente-Titulos);
