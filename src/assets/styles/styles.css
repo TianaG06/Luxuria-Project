@@ -2,6 +2,7 @@
     --Color-primario: #0D554AFF ;
     --color-secundario:  #F5D38EFF;
 
+
     --color-de-fuente-neutral-500: #9095A0FF;
     --color-de-fuente-neutral-650: #424955FF;
     --color-de-fuente-neutral-500: #9095A0FF;
@@ -19,41 +20,130 @@
     --estilo-de-fuente-Titulos:  "Cormorant Garamond", serif ; 
     --estilo-de-fuente-Principal: "Manrope", serif;
     
-    --peso-de-fuente-titulo-pequeño: 700;
-    --peso-de-fuente-principal: 600;
-    --peso-de-fuente-secundario: 400;
+    --peso-de-fuente-titulo-pequeño-700: 700;
+    --peso-de-fuente-principal-600: 600;
+    --peso-de-fuente-secundario-400: 400;
 
-    --tamaño-de-fuente-Titulos-H1: 72px;
-    --tamaño-de-fuente-Titulos-H2: 72px;
-    --tamaño-de-fuente-Titulos-H3: 72px;
-    --tamaño-de-fuente-Titulos-H3: 72px;
-    --tamaño-de-fuente-Titulos-H3: 72px;
     
-    --tamaño-de-fuente-botones: 72px;
+    --tamaño-de-fuente-Titulos-H1: 7.2rem;
+    --tamaño-de-fuente-Titulos-H2-principal: 4rem;
+    --tamaño-de-fuente-Titulos-H3: 2.4rem;
+    --tamaño-de-fuente-principal: 1.6rem;
+    --tamaño-de-fuente-small: 1.4rem;
+    --tamaño-de-fuente-logo-darling: 3rem;
+    
+
+
+    --tamaño-de-fuente-botones: 1.8rem;
+    --radio-de-boton-principal: 2.6rem;
+    --borde-boton-principal-white: 1px var(--color-blanco) solid;
+    --borde-boton-principal-verde: 1px var(--Color-primario) solid;
+
+
+    --ancho-icon-nav: 20px;
+    --alto-icon-nav: 20px;
+    --ancho-icon-seccion: 62px;
+    --alto-icon-seccion: 62px;
 
     
 }
 
-* {
-    font-family: var(--estilo-de-fuente-Principal);
-}
 
 /* Se establece 62.5% para hacer uso de rem en este proyecto 1 rem = 10px  */
 
 html {
     font-size: 62.5%;
+    font-family: var(--estilo-de-fuente-Principal);
 }
+
+body { 
+    background-color: var(--color-fondo-primario);
+    font-size: var(--tamaño-de-fuente-principal);
+ }
+ 
 
 
 h1, h2, h3 {
     font-family: var(--estilo-de-fuente-Titulos);
 }
 
-body { 
-   background-color: var(--color-fondo-primario);
+
+
+.estado--oculto {
+    display: none;
+    visibility: hidden;
+}
+
+.globalheader {
+    position: fixed;
+    display: block;
+    width: 100%;
+    z-index: 9999;
+
+}
+
+.globalheader__wrap {
+    display: grid;
+    overflow: hidden;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 62px;
+    align-items: center;
+    padding: 0 100px;
+    justify-items: center;
+    justify-content: space-evenly;
+    background-color: var(--Color-primario);
+
+}
+
+.globalheader__wrap a {
+    text-decoration: none;
+    
 }
 
 
+.globalheader__logo {
+    font-family: var(--estilo-de-fuente-Titulos);
+    font-size: var(--tamaño-de-fuente-logo-darling);
+    color: var(--color-secundario);
+}
+
+.globalnav {
+    padding: 0 20px;
+}
+
+.globalnav__list{
+     list-style: none;
+     display: flex;
+     gap: 50px;
+}
+
+
+.globalnav__item {
+    padding: 10px;
+}
+
+.globalnav__item a{
+    margin: 10px 0 10px 0px;
+    border-bottom:unset;
+    transition: 80ms ease-in-out;
+}
+
+
+.globalnav__item {
+    border-bottom: 2px var(--color-secundario) solid ;
+}
+
+.globalnav__link__text {
+    font-family: var(--estilo-de-fuente-Principal);
+    font-size: var(--tamaño-de-fuente-small);
+    font-weight: var(--peso-de-fuente-secundario-400);
+    color: var(--color-blanco);
+}
+
+
+.main-wrap {
+    top: 62px;
+}
 
 
 /* Icon section Tatiana 1*/
@@ -63,7 +153,7 @@ body {
     justify-content: space-around;
     align-items: center;
     padding: 20px;
-    background-color: var(--color-fondo-primario); 
+    background-color: #fff; 
 }
 
 .icon-box {
@@ -87,9 +177,12 @@ body {
 }
 
 .icon-box p {
-    font-size: 62.5%;
+    font-size: 16px;
     color: #9095A0;
 }
+
+
+
 
 /*Featured products section tatiana 1*/
 
@@ -98,7 +191,7 @@ body {
     justify-content: space-between;
     align-items: flex-start;
     padding: 40px 20px;
-    background-color: var(--color-fondo-primario);
+    background-color: #fff;
     width: 100%;
     height: 100%;
 }
@@ -136,16 +229,17 @@ body {
     margin-left: 132px;
 }
 
+
 .product-item {
     width: 276px;
     height: 410px;
-    background-color: var(--color-fondo-primario);
+    background-color:#fff;
     border-radius: 8px;
     overflow: hidden;
     text-align: left;
     position: relative;
     margin-top: 48px;
-    margin-left: 444px;
+    margin-left: 48px; 
 }
 
 .product-item img {
@@ -176,6 +270,7 @@ body {
     cursor: pointer;
     border-radius: 26px;
 }
+
 
 /*Our-Selection-of-Jewelry-Daniela*/
 .contenedor-cards-our{
