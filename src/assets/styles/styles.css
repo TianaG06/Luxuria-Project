@@ -38,6 +38,7 @@
     --radio-de-boton-principal: 2.6rem;
     --borde-boton-principal-white: 1px var(--color-blanco) solid;
     --borde-boton-principal-verde: 1px var(--Color-primario) solid;
+    --fondo-de-boton-transparente: rgba(255, 255, 255, 0);  
 
 
     --ancho-icon-nav: 20px;
@@ -146,6 +147,17 @@ h1, h2, h3 {
 }
 
 
+/* Seccion del header by Holguer pinzon*/
+
+.main-headersection {
+
+}
+
+
+
+
+
+
 /* Icon section Tatiana 1*/
 
 .icon-section {
@@ -216,12 +228,10 @@ h1, h2, h3 {
     line-height: 26px
 }
 
-.shop-now {
+.button-shop-now {
     padding: 10px 20px;
     font-size: 18px;
-    background-color: var(--color-fondo-primario);
-    color: #0D554A;
-    border: 1px solid #0D554A;
+    background-color: var(--fondo-de-boton-transparente);
     border-radius: 26px;
     cursor: pointer;
     width: 200px;
@@ -229,6 +239,16 @@ h1, h2, h3 {
     margin-left: 132px;
 }
 
+.button-default{
+    color: #0D554A;
+    border: var(--borde-boton-principal-verde);
+}
+
+.button-white {
+    color: var(--color-blanco);
+    border: var(--borde-boton-principal-white);
+
+}
 
 .product-item {
     width: 276px;
@@ -263,17 +283,6 @@ h1, h2, h3 {
     font-size: 16px;
     color: #171A1F;
     margin-bottom: 10px;
-}
-
-.shop-now {
-    width: 200px;
-    height: 52px;
-    font-size: 18px;
-    margin-top: 280px;
-    margin-left: 132px;
-    border: 1px #0D554A solid;
-    cursor: pointer;
-    border-radius: 26px;
 }
 
 
