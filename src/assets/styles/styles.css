@@ -63,7 +63,7 @@ body {
     justify-content: space-around;
     align-items: center;
     padding: 20px;
-    background-color: #FFFFFF; 
+    background-color: var(--color-fondo-primario); 
 }
 
 .icon-box {
@@ -87,45 +87,70 @@ body {
 }
 
 .icon-box p {
-    font-size: 14px;
+    font-size: 62.5%;
     color: #9095A0;
 }
 
 /*Featured products section tatiana 1*/
 
 .featured-products {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
     padding: 40px 20px;
-    background-color: #FFFFFF;
-    margin: 20px 0;
-    font-size: 18px;
+    background-color: var(--color-fondo-primario);
+    width: 100%;
+    height: 100%;
 }
 
-.featured-products .products-grid {
-    display: flex;
-    justify-content: right;
-    flex-wrap: wrap;
-    margin-top: 20px;
+.featured-products h2 {
+    width: 264px;
+    height: 112px;
+    margin-left: 132px;
+    font-size: 40px;
+    line-height: 56px;
+    margin-bottom: 10px;
+    color: #0D554A;
+}
+
+
+.featured-text p {
+    width: 264px;
+    font-size: 16px;
+    color: #171A1F;
+    margin-bottom: 20px;
+    margin-left: 132px;
+    line-height: 26px
+}
+
+.shop-now {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: var(--color-fondo-primario);
+    color: #0D554A;
+    border: 1px solid #0D554A;
+    border-radius: 26px;
+    cursor: pointer;
+    width: 200px;
+    height: 52px;
+    margin-left: 132px;
 }
 
 .product-item {
-    text-align: center;
-    max-width: 150px;
-    margin: 10px;
+    width: 276px;
+    height: 410px;
+    background-color: var(--color-fondo-primario);
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: left;
+    position: relative;
+    margin-top: 48px;
+    margin-left: 444px;
 }
 
 .product-item img {
     width: 100%;
     height: auto;
-    margin-bottom: 10px;
-    border-radius: 5px;
-}
-
-.featured-products h2 {
-    font-size: 40px;
-    font-weight: 600;
-    margin-bottom: 5px;
-    line-height: 56px;
-    color: #0D554A;
 }
 
 .featured-products p{
@@ -136,13 +161,17 @@ body {
 
 .product-item h4 {
     font-size: 16px;
-    margin-bottom: 5px;
+    margin: 10px 0;
+    color: #171A1F;
 }
 
 .product-item p {
-    font-size: 14px;
+    font-size: 16px;
+    color: #171A1F;
+    margin-bottom: 10px;
 }
 
+<<<<<<< HEAD
 .shop-now {
     width: 200px;
     height: 52px;
@@ -204,3 +233,5 @@ body {
     font-weight: var();
     color: var();
 }
+=======
+>>>>>>> a9bad89a1c2b588140212ce4e5a6147abf9e90f8
