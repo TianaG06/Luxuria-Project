@@ -154,6 +154,11 @@ body {
     height: auto;
 }
 
+.featured-products p{
+    font-size: 14px;
+    color: #9095A0;
+}
+
 
 .product-item h4 {
     font-size: 16px;
@@ -167,3 +172,67 @@ body {
     margin-bottom: 10px;
 }
 
+<<<<<<< HEAD
+.shop-now {
+    width: 200px;
+    height: 52px;
+    font-size: 18px;
+    margin-top: 280px;
+    margin-left: 132px;
+    border: 1px #0D554A solid;
+    cursor: pointer;
+    border-radius: 26px;
+}
+
+/*Our-Selection-of-Jewelry-Daniela*/
+.contenedor-cards-our{
+    width: 1440px;
+    height: 554px;
+    top: 2713px;
+    display: flex;
+    align-items: center;
+    background-color: #FAFAFB;
+}
+
+.fondo-card-our{
+    display: flex;
+    width: 300px;
+    height: 400px;
+    padding: 30px;
+    border-radius: 20%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    
+}
+
+.contenedor-imagenes-our{
+    width: 276px;
+    height: 320px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;  
+}
+
+.contenedor-imagenes-our img{
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+}
+
+.descrip-img{
+    font-size: var();
+    font-family: var();
+    color: var();
+    font-weight: var();
+}
+
+.text-precio-img{
+    font-size: var();
+    font-weight: var();
+    color: var();
+}
+=======
+>>>>>>> a9bad89a1c2b588140212ce4e5a6147abf9e90f8
