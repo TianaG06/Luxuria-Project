@@ -140,4 +140,180 @@ h1, h2, h3 {
 
 
 
-/* aqui empieza el codigo de daniela seccion 1*/
+/* Icon section Tatiana 1*/
+
+.icon-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    background-color: var(--color-fondo-primario); 
+}
+
+.icon-box {
+    text-align: center;
+    line-height: 20px;
+    max-width: 200px;
+    padding: 10px;
+}
+
+
+.icon-box img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.icon-box h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #171A1FFF
+}
+
+.icon-box p {
+    font-size: 62.5%;
+    color: #9095A0;
+}
+
+/*Featured products section tatiana 1*/
+
+.featured-products {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 40px 20px;
+    background-color: var(--color-fondo-primario);
+    width: 100%;
+    height: 100%;
+}
+
+.featured-products h2 {
+    width: 264px;
+    height: 112px;
+    margin-left: 132px;
+    font-size: 40px;
+    line-height: 56px;
+    margin-bottom: 10px;
+    color: #0D554A;
+}
+
+
+.featured-text p {
+    width: 264px;
+    font-size: 16px;
+    color: #171A1F;
+    margin-bottom: 20px;
+    margin-left: 132px;
+    line-height: 26px
+}
+
+.shop-now {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: var(--color-fondo-primario);
+    color: #0D554A;
+    border: 1px solid #0D554A;
+    border-radius: 26px;
+    cursor: pointer;
+    width: 200px;
+    height: 52px;
+    margin-left: 132px;
+}
+
+.product-item {
+    width: 276px;
+    height: 410px;
+    background-color: var(--color-fondo-primario);
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: left;
+    position: relative;
+    margin-top: 48px;
+    margin-left: 444px;
+}
+
+.product-item img {
+    width: 100%;
+    height: auto;
+}
+
+.featured-products p{
+    font-size: 14px;
+    color: #9095A0;
+}
+
+
+.product-item h4 {
+    font-size: 16px;
+    margin: 10px 0;
+    color: #171A1F;
+}
+
+.product-item p {
+    font-size: 16px;
+    color: #171A1F;
+    margin-bottom: 10px;
+}
+
+.shop-now {
+    width: 200px;
+    height: 52px;
+    font-size: 18px;
+    margin-top: 280px;
+    margin-left: 132px;
+    border: 1px #0D554A solid;
+    cursor: pointer;
+    border-radius: 26px;
+}
+
+
+/*Our-Selection-of-Jewelry-Daniela*/
+.contenedor-cards-our{
+    width: 1440px;
+    height: 554px;
+    top: 2713px;
+    display: flex;
+    align-items: center;
+    background-color: #FAFAFB;
+}
+
+.fondo-card-our{
+    display: flex;
+    width: 300px;
+    height: 400px;
+    padding: 30px;
+    border-radius: 20%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    
+}
+
+.contenedor-imagenes-our{
+    width: 276px;
+    height: 320px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;  
+}
+
+.contenedor-imagenes-our img{
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+}
+
+.descrip-img{
+    font-size: var();
+    font-family: var();
+    color: var();
+    font-weight: var();
+}
+
+.text-precio-img{
+    font-size: var();
+    font-weight: var();
+    color: var();
+}
