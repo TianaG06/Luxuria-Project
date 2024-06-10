@@ -323,7 +323,7 @@ h1, h2, h3 {
 
 .descrip-img{
     font-size: var();
-    font-family: var();
+    font-family: var(--estilo-de-fuente-Principal);
     color: var();
     font-weight: var();
 }
