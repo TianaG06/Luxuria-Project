@@ -142,6 +142,8 @@ h1, h2, h3 {
 
 
 .main-wrap {
+    display: grid;
+    grid-column-start: repeat(1fr , max-content);
     top: 62px;
 }
 
