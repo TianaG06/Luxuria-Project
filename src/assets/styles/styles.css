@@ -27,11 +27,13 @@
     
     --tamaño-de-fuente-Titulos-H1: 7.2rem;
     --tamaño-de-fuente-Titulos-H2-principal: 4rem;
-    --tamaño-de-fuente-Titulos-H3: 2.4rem;
+    --tamaño-de-fuente-Titulos-H3: 1.8rem;
+    --tamaño-de-fuente-Titulos-H4: 2.4rem;
     --tamaño-de-fuente-principal: 1.6rem;
     --tamaño-de-fuente-small: 1.4rem;
-    --tamaño-de-fuente-logo-darling: 3rem;
+    --tamaño-de-fuente-ultra-small: 1.2rem;
     
+    --tamaño-de-fuente-logo-darling: 3rem;
 
 
     --tamaño-de-fuente-botones: 1.8rem;
@@ -240,7 +242,7 @@ h1, h2, h3 {
 }
 
 .button-default{
-    color: var(--Color-primario);
+    color: var(--Color-primario); 
     border: var(--borde-boton-principal-verde);
 }
 
