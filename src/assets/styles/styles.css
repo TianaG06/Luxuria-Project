@@ -27,17 +27,20 @@
     
     --tamaño-de-fuente-Titulos-H1: 7.2rem;
     --tamaño-de-fuente-Titulos-H2-principal: 4rem;
-    --tamaño-de-fuente-Titulos-H3: 2.4rem;
+    --tamaño-de-fuente-Titulos-H3: 1.8rem;
+    --tamaño-de-fuente-Titulos-H4: 2.4rem;
     --tamaño-de-fuente-principal: 1.6rem;
     --tamaño-de-fuente-small: 1.4rem;
-    --tamaño-de-fuente-logo-darling: 3rem;
+    --tamaño-de-fuente-ultra-small: 1.2rem;
     
+    --tamaño-de-fuente-logo-darling: 3rem;
 
 
     --tamaño-de-fuente-botones: 1.8rem;
     --radio-de-boton-principal: 2.6rem;
     --borde-boton-principal-white: 1px var(--color-blanco) solid;
     --borde-boton-principal-verde: 1px var(--Color-primario) solid;
+    --fondo-de-boton-transparente: rgba(255, 255, 255, 0);  
 
 
     --ancho-icon-nav: 20px;
@@ -227,19 +230,26 @@ h1, h2, h3 {
     line-height: 26px
 }
 
-.shop-now {
+.button-shop-now {
     padding: 10px 20px;
     font-size: 18px;
-    background-color: var(--color-fondo-primario);
-    color: #0D554A;
-    border: 1px solid #0D554A;
+    background-color: var(--fondo-de-boton-transparente);
     border-radius: 26px;
     cursor: pointer;
     width: 200px;
     height: 52px;
-    margin-left: 132px;
 }
 
+.button-default{
+    color: var(--Color-primario); 
+    border: var(--borde-boton-principal-verde);
+}
+
+.button-white {
+    color: var(--color-blanco);
+    border: var(--borde-boton-principal-white);
+
+}
 
 .product-item {
     width: 276px;
@@ -271,23 +281,27 @@ h1, h2, h3 {
     margin-bottom: 10px;
 }
 
-.shop-now {
-    width: 200px;
-    height: 52px;
-    font-size: 18px;
-    margin-top: 280px;
-    margin-left: 132px;
-    border: 1px #0D554A solid;
-    cursor: pointer;
-    border-radius: 26px;
-}
-
 
 /*Our-Selection-of-Jewelry-Daniela*/
+
+.texto-our{
+    width: 264px;
+}
+
+.texto-our h2{
+    font-size: var(--tamaño-de-fuente-Titulos-H2-principal);
+    color: var(--Color-primario);
+}
+
+.texto-our p{
+    font-size: var(--tamaño-de-fuente-principal);
+    color: var(--color-de-fuente-neutral-650);
+}
+
 .contenedor-cards-our{
-    width: 1440px;
+    padding: 10px 20px;
+    width: 100%;
     height: 554px;
-    top: 2713px;
     display: flex;
     align-items: center;
     background-color: #FAFAFB;
@@ -322,14 +336,13 @@ h1, h2, h3 {
 }
 
 .descrip-img{
-    font-size: var();
-    font-family: var(--estilo-de-fuente-Principal);
-    color: var();
-    font-weight: var();
+    font-size: var(--tamaño-de-fuente-Titulos-H4);
+    font-family: var(--estilo-de-fuente-Titulos);
+    color: var(--color-de-fuente-neutral-900);
+    font-weight: var(--peso-de-fuente-titulo-pequeño-700);
 }
 
 .text-precio-img{
-    font-size: var();
-    font-weight: var();
-    color: var();
+    font-size: var(--tamaño-de-fuente-principal);
+    color: var(--color-de-fuente-neutral-900);
 }
