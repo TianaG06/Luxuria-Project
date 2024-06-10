@@ -240,7 +240,7 @@ h1, h2, h3 {
 }
 
 .button-default{
-    color: #0D554A;
+    color: var(--Color-primario);
     border: var(--borde-boton-principal-verde);
 }
 
