@@ -20,9 +20,9 @@
     --estilo-de-fuente-Titulos:  "Cormorant Garamond", serif ; 
     --estilo-de-fuente-Principal: "Manrope", serif;
     
-    --peso-de-fuente-titulo-pequeño: 700;
-    --peso-de-fuente-principal: 600;
-    --peso-de-fuente-secundario: 400;
+    --peso-de-fuente-titulo-pequeño-700: 700;
+    --peso-de-fuente-principal-600: 600;
+    --peso-de-fuente-secundario-400: 400;
 
     
     --tamaño-de-fuente-Titulos-H1: 7.2rem;
@@ -30,7 +30,6 @@
     --tamaño-de-fuente-Titulos-H3: 2.4rem;
     --tamaño-de-fuente-principal: 1.6rem;
     --tamaño-de-fuente-small: 1.4rem;
-    --tamaño-de-fuente-Titulos-H3: 72px;
     --tamaño-de-fuente-logo-darling: 3rem;
     
 
@@ -40,19 +39,21 @@
     --borde-boton-principal-white: 1px var(--color-blanco) solid;
     --borde-boton-principal-verde: 1px var(--Color-primario) solid;
 
+
+    --ancho-icon-nav: 20px;
+    --alto-icon-nav: 20px;
+    --ancho-icon-seccion: 62px;
+    --alto-icon-seccion: 62px;
+
     
 }
 
-* {
-    font-family: var(--estilo-de-fuente-Principal);
-
-}
 
 /* Se establece 62.5% para hacer uso de rem en este proyecto 1 rem = 10px  */
 
 html {
     font-size: 62.5%;
-    
+    font-family: var(--estilo-de-fuente-Principal);
 }
 
 body { 
@@ -68,7 +69,74 @@ h1, h2, h3 {
 
 
 
+.estado--oculto {
+    display: none;
+    visibility: hidden;
+}
 
+.globalheader {
+    position: absolute;
+    display: block;
+    width: 100%;
+
+}
+
+.globalheader__wrap {
+    display: grid;
+    overflow: hidden;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 62px;
+    align-items: center;
+    padding: 0 100px;
+    justify-items: center;
+    justify-content: space-evenly;
+    background-color: var(--Color-primario);
+
+}
+
+.globalheader__wrap a {
+    text-decoration: none;
+}
+
+
+.globalheader__logo {
+    font-family: var(--estilo-de-fuente-Titulos);
+    font-size: var(--tamaño-de-fuente-logo-darling);
+    color: var(--color-secundario);
+}
+
+.globalnav {
+    padding: 0 20px;
+}
+
+.globalnav__list{
+     list-style: none;
+     display: flex;
+     gap: 50px;
+}
+
+
+.globalnav__item {
+    padding: 10px;
+}
+
+.globalnav__item a{
+    margin: 10px 0 10px 0px;
+    border-bottom:unset;
+    transition: 80ms ease-in-out;
+}
+
+
+.globalnav__item {
+    border-bottom: 2px var(--color-secundario) solid ;
+}
+
+.globalnav__link__text {
+    font-family: var(--estilo-de-fuente-Principal);
+    font-size: var(--tamaño-de-fuente-small);
+    font-weight: var(--peso-de-fuente-secundario-400);
+    color: var(--color-blanco);
+}
 
 
 
