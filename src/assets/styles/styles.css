@@ -114,6 +114,10 @@ h1, h2, h3 {
     padding: 0 20px;
 }
 
+.globalnav:hover {
+    border-bottom: 2px var(--color-secundario) solid ;
+}
+
 .globalnav__list{
      list-style: none;
      display: flex;
@@ -133,7 +137,7 @@ h1, h2, h3 {
 
 
 .globalnav__item {
-    border-bottom: 2px var(--color-secundario) solid ;
+    
 }
 
 .globalnav__link__text {
@@ -144,20 +148,73 @@ h1, h2, h3 {
 }
 
 
-.main-wrap {
+.main__wrap {
     top: 62px;
+    overflow: hidden;
 }
 
 
 /* Seccion del header by Holguer pinzon*/
 
-.main-headersection {
+.main__headersection {
+    width: 100vw    ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    height: 821px;
+    background-color: var(--Color-primario);
+    background-image: url(../img/textures/texture.svg) ;
 
 }
 
 
+.headersection__headline-wrap {
+    width: 537px;
+    margin-right: 72px;
+    margin-bottom: 24px;
+}
+
+.headersection__title {
+ font-size: var(--tamaño-de-fuente-Titulos-H1);
+ color: var(--color-secundario);
+ font-weight: var(--peso-de-fuente-secundario-400);
+}
+
+.headersection__art-wrap {
+    display: inherit;
+    justify-content: center;
+    align-items: center;
+}
+
+.headersection__imageContainer{
+    width: 407px;
+}
 
 
+.headersection__video-wrap {
+    background-color: #9095A0;
+    width: 241px;
+    height: 321px;
+    overflow: hidden;
+    display: flex;
+    border-radius: 150px 150px 0 0; 
+    resize: none;
+    justify-content: center;
+    align-items: center;
+    left: -100px;
+    max-width: 241px;
+    pointer-events: none;
+    box-sizing: border-box;
+}
+
+.headersection__video-wrap video {
+    top: 0;
+    left: 0;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: auto;
+}
 
 
 /* Icon section Tatiana 1*/
@@ -238,7 +295,6 @@ h1, h2, h3 {
     cursor: pointer;
     width: 200px;
     height: 52px;
-    margin-left: 132px;
 }
 
 .button-default{
