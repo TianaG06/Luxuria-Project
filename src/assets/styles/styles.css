@@ -1,0 +1,432 @@
+:root {
+    --Color-primario: #0D554AFF ;
+    --color-secundario:  #F5D38EFF;
+
+
+    --color-de-fuente-neutral-500: #9095A0FF;
+    --color-de-fuente-neutral-650: #424955FF;
+    --color-de-fuente-neutral-500: #9095A0FF;
+    --color-de-fuente-neutral-900: #171A1FFF;
+  
+    --color-blanco: #fff;
+    --color-blanco-95: hsl(0, 0%, 95%)
+    --color-gris-80: #cccccc;
+    --color-gris-65: #a6a6a6;
+
+    --color-fondo-primario : var(--color-blanco) ;
+    --color-background-secundary: #f9f9fa;
+    --color-fondo-especial: var(--color-primario);
+
+    --estilo-de-fuente-Titulos:  "Cormorant Garamond", serif ; 
+    --estilo-de-fuente-Principal: "Manrope", serif;
+    
+    --peso-de-fuente-titulo-pequeño-700: 700;
+    --peso-de-fuente-principal-600: 600;
+    --peso-de-fuente-secundario-400: 400;
+
+    
+    --tamaño-de-fuente-Titulos-H1: 7.2rem;
+    --tamaño-de-fuente-Titulos-H2-principal: 4rem;
+    --tamaño-de-fuente-Titulos-H3: 1.8rem;
+    --tamaño-de-fuente-Titulos-H4: 2.4rem;
+    --tamaño-de-fuente-principal: 1.6rem;
+    --tamaño-de-fuente-small: 1.4rem;
+    --tamaño-de-fuente-ultra-small: 1.2rem;
+    
+    --tamaño-de-fuente-logo-darling: 3rem;
+
+
+    --tamaño-de-fuente-botones: 1.8rem;
+    --radio-de-boton-principal: 2.6rem;
+    --borde-boton-principal-white: 1px var(--color-blanco) solid;
+    --borde-boton-principal-verde: 1px var(--Color-primario) solid;
+    --fondo-de-boton-transparente: rgba(255, 255, 255, 0);  
+
+
+    --ancho-icon-nav: 20px;
+    --alto-icon-nav: 20px;
+    --ancho-icon-seccion: 62px;
+    --alto-icon-seccion: 62px;
+
+    
+}
+
+
+
+
+
+/* Se establece 62.5% para hacer uso de rem en este proyecto 1 rem = 10px  */
+
+html {
+    font-size: 62.5%;
+    font-family: var(--estilo-de-fuente-Principal);
+}
+
+body { 
+    background-color: var(--color-fondo-primario);
+    font-size: var(--tamaño-de-fuente-principal);
+ }
+ 
+
+
+h1, h2, h3 {
+    font-family: var(--estilo-de-fuente-Titulos);
+}
+
+
+
+.estado--oculto {
+    display: none;
+    visibility: hidden;
+}
+
+.globalheader {
+    position: fixed;
+    /* display: block; */
+    width: 100%;
+    z-index: 9999;
+
+}
+
+.globalheader__wrap {
+    display: grid;
+    overflow: hidden;
+    /* grid-template-columns: auto auto auto; */
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 62px;
+    align-items: center;
+    padding: 0 100px;
+    justify-items: center;
+    justify-content: space-evenly;
+    background-color: var(--Color-primario);
+
+}
+
+.globalheader__wrap a {
+    text-decoration: none;
+    
+}
+
+
+.globalheader__logo {
+    font-family: var(--estilo-de-fuente-Titulos);
+    font-size: var(--tamaño-de-fuente-logo-darling);
+    color: var(--color-secundario);
+    grid-column: 1/3;
+    justify-items: start;
+    text-align: left;
+}
+
+.globalnav {
+    padding: 0 20px;
+}
+
+.globalnav:hover a{
+    border-bottom: 2px var(--color-secundario) solid ;
+}
+
+.globalnav__list{
+     list-style: none;
+     display: flex;
+     gap: 50px;
+}
+
+
+.globalnav__item {
+    padding: 10px;
+}
+
+.globalnav__item a{
+    margin: 10px 0 10px 0px;
+    border-bottom:unset;
+    transition: 80ms ease-in-out;
+}
+
+
+.globalnav__item {
+    
+}
+
+.globalnav__link__text {
+    font-family: var(--estilo-de-fuente-Principal);
+    font-size: var(--tamaño-de-fuente-small);
+    font-weight: var(--peso-de-fuente-secundario-400);
+    color: var(--color-blanco);
+}
+
+
+.main__wrap {
+    top: 62px;
+    overflow: hidden;
+}
+
+
+/* Seccion del header by Holguer pinzon*/
+
+.main__headersection {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap-reverse;
+    padding: 50px;
+    height: auto;
+    background-color: var(--Color-primario);
+    background-image: url(../img/textures/texture.svg);
+
+}
+
+
+.headersection__headline-wrap {
+    width: 537px;
+    margin-right: 72px;
+    margin-bottom: 24px;
+}
+
+.headersection__title {
+    min-width: 500px;
+    font-size: var(--tamaño-de-fuente-Titulos-H1);
+    color: var(--color-secundario);
+    font-weight: var(--peso-de-fuente-secundario-400);
+}
+
+.headersection__art-wrap {
+    /* display: inherit;
+    justify-content: center;
+    align-items: center; */
+    position: relative;
+}
+
+.headersection__imageContainer{
+    width: 407px;
+}
+
+
+.headersection__video-wrap {
+    background-color: #9095A0;
+    width: 241px;
+    height: 321px;
+    overflow: hidden;
+    display: flex; 
+    border-radius: 150px 150px 0 0; 
+    resize: none;
+    justify-content: center;
+    align-items: center; 
+    position: absolute;
+    top:20%;
+    left: 70%;
+    /* left: -100px; */
+    /* max-width: 241px; */
+    pointer-events: none;
+    box-sizing: border-box;
+}
+
+.headersection__video-wrap video {
+    top: 0;
+    left: 0;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    pointer-events: auto;
+}
+
+
+/* Icon section Tatiana 1*/
+
+.icon-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff; 
+}
+
+.icon-box {
+    text-align: center;
+    line-height: 20px;
+    max-width: 200px;
+    padding: 10px;
+}
+
+
+.icon-box img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.icon-box h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #171A1FFF
+}
+
+.icon-box p {
+    font-size: 16px;
+    color: #9095A0;
+}
+
+
+
+
+/*Featured products section tatiana 1*/
+
+.featured-products {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 40px 20px;
+    background-color: #fff;
+    width: 100%;
+    height: 100%;
+}
+
+.featured-products h2 {
+    width: 264px;
+    height: 112px;
+    margin-left: 132px;
+    font-size: 40px;
+    line-height: 56px;
+    margin-bottom: 10px;
+    color: #0D554A;
+}
+
+
+.featured-text p {
+    width: 264px;
+    font-size: 16px;
+    color: #171A1F;
+    margin-bottom: 20px;
+    margin-left: 132px;
+    line-height: 26px
+}
+
+.button-shop-now {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: var(--fondo-de-boton-transparente);
+    border-radius: 26px;
+    cursor: pointer;
+    width: 200px;
+    height: 52px;
+}
+
+.button-default{
+    color: var(--Color-primario); 
+    border: var(--borde-boton-principal-verde);
+}
+
+.button-white {
+    color: var(--color-blanco);
+    border: var(--borde-boton-principal-white);
+
+}
+
+.product-item {
+    width: 276px;
+    height: 410px;
+    background-color:#fff;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: left;
+    position: relative;
+    margin-top: 48px;
+    margin-left: 48px; 
+}
+
+.product-item img {
+    width: 100%;
+    height: auto;
+}
+
+
+.product-item h4 {
+    font-size: 16px;
+    margin: 10px 0;
+    color: #171A1F;
+}
+
+.product-item p {
+    font-size: 16px;
+    color: #171A1F;
+    margin-bottom: 10px;
+}
+
+/* Our-Selection-of-Jewelry-Daniela */
+
+.Our-Selection-of-Jewelry{
+    position: relative;
+    width: 1440px;
+    height: 506px;
+    top: 1101px;
+    display: flex;
+    justify-content: space-between;
+    align-items: top;
+    padding: 40px 20px;
+    background-color: #FAFAFB;
+    margin: 0;
+}
+
+.Our-Selection-of-Jewelry h2{
+    width: 264px;
+    height: 112px;
+    font-size: var(--tamaño-de-fuente-Titulos-H2-principal);
+    font-weight: var(--peso-de-fuente-principal-600);
+    line-height: 56px;
+    margin-bottom: 10px;
+    color: var(--Color-primario);
+}
+
+.Our-Selection-tex p{
+    width: 264px;
+    font-size: var(--tamaño-de-fuente-principal);
+    font-weight: var(--peso-de-fuente-secundario-400);
+    color: var(--color-de-fuente-neutral-900);
+    margin-bottom: 20px;
+    line-height: 26px;
+}
+
+.Selection-grid{
+    display: flex;
+    gap: 20px;
+    overflow-x: scroll ;
+    height: auto;
+    width: 100%;
+}
+
+.Selection-item{
+    min-width: 276px;
+    width: 276px;
+    height: 320px;
+    margin-left: 3%;
+    background-color: var(--color-blanco);
+    border-radius: 8px;
+    text-align: left;
+    position: relative;
+}
+
+.Selection-item img{
+    width: 100%;
+    height: auto;
+}
+
+.Home-Our-story{
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    width: 1440px;
+    height: 564px;
+    background-color: #FAFAFB;
+}
+
+.video-our-story video{
+    width: 1176px;
+    height: 368px;
+}
+
+.Home-Our-story h2{
+    font-size: var(--tamaño-de-fuente-Titulos-H2-principal);
+    font-weight: var(--peso-de-fuente-principal-600);
+    background-color: var(--Color-primario);
+    text-align: center;
+}
