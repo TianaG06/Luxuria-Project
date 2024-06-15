@@ -1,0 +1,19 @@
+@media screen and (max-width: 734px) {
+    .main__headersection {
+        justify-content:unset;
+        padding: 5%;
+    }
+
+    .headersection__headline-wrap {
+        margin-right: 0;
+    }
+
+    .headersection__title [
+        min-width: none;
+    ]
+
+    .headersection__art-wrap{
+        display: none;
+    }
+
+}
