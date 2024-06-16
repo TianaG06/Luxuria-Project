@@ -341,6 +341,7 @@ p {
   display: flex;
   overflow-y: auto;
   gap: 20px;
+  scrollbar-width: none;
 }
 
 .product-item {
@@ -351,6 +352,10 @@ p {
   overflow: hidden;
   text-align: left;
 }
+
+.product-item:last-child {
+  margin-right: 10px;
+  }
 
 .product-item img {
   -o-object-fit: cover;
