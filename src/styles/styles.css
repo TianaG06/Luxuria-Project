@@ -383,7 +383,6 @@ p {
 
 .ourcollections-container {
   position: relative;
-  left: 0;
   min-height: 1082px;
   text-align: center;
   padding: var(--paddin-48-132);
