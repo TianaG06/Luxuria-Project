@@ -1,412 +1,365 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Joyeria Darling</title>
 
-    <!-- Configuracion -->
-    <link rel="shortcut icon" href="/src/assets/icons/favicons/favicons3.png" type="image/x-icon" />
-    <!-- SEO  -->
+<head>
+  <meta charset="UTF-8" />
+  <title>Joyeria Darling</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="src/styles/styles.css" />
-    <link rel="stylesheet" href="src/styles/normalize.css" />
-    <!-- <link rel="stylesheet" href="src/assets/styles/main-Root.css" /> -->
+  <!-- Configuracion -->
+  <link rel="shortcut icon" href="/src/assets/icons/favicons/favicons3.png" type="image/x-icon" />
+  <!-- SEO  -->
 
-    <!-- Cargas de fuente -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Manrope:wght@200..800&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <header class="globalheader">
-      <div class="globalheader__wrap">
-        <a class="globalheader__logo" href=""
-          ><span class="globalheader__logo__text">Darling.</span></a
-        >
-        <nav class="globalnav">
+  <!-- CSS -->
+  <link rel="stylesheet" href="src/styles/styles.css" />
+  <link rel="stylesheet" href="src/styles/normalize.css" />
+  <link rel="stylesheet" href="src/styles/builts.css">
+  <!-- <link rel="stylesheet" href="src/assets/styles/main-Root.css" /> -->
+
+  <!-- Cargas de fuente -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Manrope:wght@200..800&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+  <header class="globalheader">
+    <div class="globalheader__wrap">
+      <a class="globalheader__logo" href="/index.html"><span class="globalheader__logo__text">Darling.</span></a>
+      <div class="globalheader__nav-container">
+        <nav class="globalnav ">
           <ul class="globalnav__list">
             <li class="globalnav__item">
-              <a href="#" class="globalnav__link"
-                ><span class="globalnav__link__text">Home</span></a
-              >
+              <a href="#" class="globalnav__link"><span class="globalnav__link__text">Home</span></a>
             </li>
             <li class="globalnav__item">
-              <a href="#" class="globalnav__link"
-                ><span class="globalnav__link__text">Shop</span></a
-              >
+              <a href="#" class="globalnav__link"><span class="globalnav__link__text">Shop</span></a>
             </li>
             <li class="globalnav__item">
-              <a href="#" class="globalnav__link"
-                ><span class="globalnav__link__text">Collections</span></a
-              >
+              <a href="#" class="globalnav__link"><span class="globalnav__link__text">Collections</span></a>
             </li>
             <li class="globalnav__item">
-              <a href="#" class="globalnav__link"
-                ><span class="globalnav__link__text">About</span></a
-              >
+              <a href="#" class="globalnav__link">
+                <span class="globalnav__link__text">About</span></a>
             </li>
             <li class="globalnav__item">
-              <a href="#" class="globalnav__link"
-                ><span class="globalnav__link__text">Contact</span></a
-              >
+              <a href="#" class="globalnav__link"><span class="globalnav__link__text">Contact</span></a>
             </li>
           </ul>
         </nav>
+
+
         <div class="globalheader__icons">
           <a href="#" class="header__icon">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="20"
-              class="icon icon-account"
-              height="20"
-              viewBox="0 0 20 20"
-              fill="none"
-            >
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" class="icon icon-account" height="20" viewBox="0 0 20 20"
+              fill="none">
               <path
                 d="M10 8.5C11.6569 8.5 13 7.15685 13 5.5C13 3.84315 11.6569 2.5 10 2.5C8.34315 2.5 7 3.84315 7 5.5C7 7.15685 8.34315 8.5 10 8.5Z"
-                stroke="white"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
+                stroke="white" stroke-linecap="round" stroke-linejoin="round" />
               <path
                 d="M10 11C8.27609 11 6.62279 11.6848 5.40381 12.9038C4.18482 14.1228 3.5 15.7761 3.5 17.5L16.5 17.5C16.5 15.7761 15.8152 14.1228 14.5962 12.9038C13.3772 11.6848 11.7239 11 10 11Z"
-                stroke="white"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
+                stroke="white" stroke-linecap="round" stroke-linejoin="round" />
             </svg>
             <span class="estado--oculto">Iniciar Sesión</span>
           </a>
           <a href="#" class="header__icon">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="20"
-              class="icon icon-carrito"
-              height="20"
-              viewBox="0 0 20 20"
-              fill="none"
-            >
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" class="icon icon-carrito" height="20" viewBox="0 0 20 20"
+              fill="none">
               <path
                 d="M2.5 2.5L5.5 2.5L5.5 10C5.5 10.828 6.172 11.5 7 11.5L14.419 11.5C15.065 11.5 15.638 11.087 15.842 10.474L17.5 5.5L5.5 5.5"
-                stroke="white"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
+                stroke="white" stroke-linecap="round" stroke-linejoin="round" />
               <path
                 d="M6 17.5C6.82843 17.5 7.5 16.8284 7.5 16C7.5 15.1716 6.82843 14.5 6 14.5C5.17157 14.5 4.5 15.1716 4.5 16C4.5 16.8284 5.17157 17.5 6 17.5Z"
-                stroke="white"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
+                stroke="white" stroke-linecap="round" stroke-linejoin="round" />
               <path
                 d="M15 17.5C15.8284 17.5 16.5 16.8284 16.5 16C16.5 15.1716 15.8284 14.5 15 14.5C14.1716 14.5 13.5 15.1716 13.5 16C13.5 16.8284 14.1716 17.5 15 17.5Z"
-                stroke="white"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
+                stroke="white" stroke-linecap="round" stroke-linejoin="round" />
             </svg>
             <span class="estado--oculto">Carrito</span>
           </a>
         </div>
       </div>
-    </header>
-    <!-- Build for: Holguer Pinzon -->
+      <button class="globalheader__botonMobile">
+        <svg
+        xmlns="http://www.w3.org/2000/svg"
+        height="40px"
+        viewBox="0 -960 960 960"
+        width="40px"
+        fill="#f5d38eff"
+      >
+        <path
+          d="M120-240v-66.67h720V-240H120Zm0-206.67v-66.66h720v66.66H120Zm0-206.66V-720h720v66.67H120Z"
+        />
+      </svg>
 
-    <main id="home" class="main__wrap">
-      <section class="main__headersection">
-        <div class="headersection__headline-wrap">
-          <h1 class="headersection__title">
-            Sparkle & Shine: Exquisite Elegance Unveiled
-          </h1>
-          <button class="button-shop-now button-white">Shop now</button>
-        </div>
+      </button>
+    </div>
+  </header>
+  <!-- Build for: Holguer Pinzon -->
 
-        <div class="headersection__art-wrap">
-          <figure class="headersection__imageContainer">
-            <img
-              src="src/assets/img/home/imagenheader.webp"
-              alt="Imagen Header"
-              class="headersection__image"
-              loading="lazy"
-            />
-          </figure>
-          <div class="headersection__video-wrap">
-            <video
-              src="src/assets/video/6263177-uhd_3840_2160_25fps.mp4"
-              muted
-              preload="auto"
-            ></video>
-          </div>
-        </div>
-      </section>
+  <main id="home" class="main__wrap">
+    <section class="main__headersection">
+      <div class="headersection__headline-wrap">
+        <h1 class="headersection__title">
+          Sparkle & Shine: Exquisite Elegance Unveiled
+        </h1>
+        <button class="button-shop-now button-white">Shop now</button>
+      </div>
 
-      <!--Brand-Details por Tatiana-->
-      <section class="icon-section">
-        <div class="icon-box">
-          <img src="src/assets/icons/Delivery time 1.svg" alt="Delivery" />
-          <h3>Delivery</h3>
-          <p>
-            Ea esse elit anim commodo laborum pariatur nisi. Voluptate elit d
-          </p>
+      <div class="headersection__art-wrap">
+        <figure class="headersection__imageContainer">
+          <img src="src/assets/img/home/imagenheader.webp" alt="Imagen Header" class="headersection__image"
+            loading="lazy" />
+        </figure>
+        <div class="headersection__video-wrap">
+          <video src="src/assets/video/6263177-uhd_3840_2160_25fps.mp4" preload="auto"></video>
         </div>
-        <div class="icon-box">
-          <img src="src/assets/icons/Love message 1.svg" alt="Customer care" />
-          <h3>Customer care</h3>
-          <p>
-            Ea esse elit anim commodo laborum pariatur nisi. Voluptate elit d
-          </p>
-        </div>
-        <div class="icon-box">
-          <img
-            src="src/assets/icons/Lock landscape 1.svg"
-            alt="Payment security"
-          />
-          <h3>Payment security</h3>
-          <p>
-            Ea esse elit anim commodo laborum pariatur nisi. Voluptate elit d
-          </p>
-        </div>
-      </section>
+      </div>
+    </section>
 
-      <!--Featured Products por Tatiana-->
-      <section class="featured-products">
-        <div class="featured-text">
-          <h2>Featured Products</h2>
-          <p>
-            Quis Lorem laborum quis esse officia est commodo commodo anim est et
-            nulla.
-          </p>
-          <button class="button-shop-now button-default">Shop now</button>
-        </div>
-        <div class="products-grid">
-          <div class="product-item">
-            <img
-              src="src/assets/img/home/Radiance necklace.webp"
-              alt="Radiance Necklace"
-            />
-            <h3>Radiance Necklace</h3>
-            <p>$168.76</p>
-          </div>
-          <div class="product-item">
-            <img
-              src="src/assets/img/home/Exquisite earrings.webp"
-              alt="Exquisite Earrings"
-            />
-            <h3>Exquisite Earrings</h3>
-            <p>$125.28</p>
-          </div>
-          <div class="product-item">
-            <img
-              src="src/assets/img/home/Glamour necklace.webp"
-              alt="Glamour Necklace"
-            />
-            <h3>Glamour Necklace</h3>
-            <p>$620.73</p>
-          </div>
-          <div class="product-item">
-            <img src="src/assets/img/home/Delights.webp" alt="Delights" />
-            <h3>Delights</h3>
-            <p>$327.71</p>
-          </div>
-        </div>
-      </section>
+    <!--Brand-Details por Tatiana-->
+    <section class="icon-section">
+      <div class="icon-box">
+        <img src="src/assets/icons/Delivery time 1.svg" alt="Delivery" />
+        <h3>Delivery</h3>
+        <p>
+          Ea esse elit anim commodo laborum pariatur nisi. Voluptate elit d
+        </p>
+      </div>
+      <div class="icon-box">
+        <img src="src/assets/icons/Love message 1.svg" alt="Customer care" />
+        <h3>Customer care</h3>
+        <p>
+          Ea esse elit anim commodo laborum pariatur nisi. Voluptate elit d
+        </p>
+      </div>
+      <div class="icon-box">
+        <img src="src/assets/icons/Lock landscape 1.svg" alt="Payment security" />
+        <h3>Payment security</h3>
+        <p>
+          Ea esse elit anim commodo laborum pariatur nisi. Voluptate elit d
+        </p>
+      </div>
+    </section>
 
-      <!--Our Collections Section Tatiana-->
-      <section class="ourcollections-container">
-        <h2>Our Collections</h2>
-        <div class="collections-grid">
-          <div class="collection-item">
-            <img
-              src="src/assets/img/home/Luxurious Lustre.webp"
-              alt="Luxurious Lustre"
-            />
-            <h3 class="collection-text">Luxurious Lustre</h3>
-          </div>
-          <div class="collection-item elevated">
-            <img
-              src="src/assets/img/home/Radiant Reflections.webp"
-              alt="Radiant Reflections"
-            />
-            <h3 class="collection-text">Radiant Reflections</h3>
-          </div>
-          <div class="collection-item">
-            <img src="src/assets/img/home/Majestic Mementos.webp"Majestic
-            Mementos">
-            <h3 class="collection-text">Majestic Mementos</h3>
-          </div>
-          <div class="collection-item">
-            <img
-              src="src/assets/img/home/Blissful Baubles.webp"
-              alt="Blissful Baubles"
-            />
-            <h3 class="collection-text">Blissful Baubles</h3>
-          </div>
-          <div class="collection-item elevated">
-            <img
-              src="src/assets/img/home/Timeless Treasures.webp"
-              alt="Timeless Treasures"
-            />
-            <h3 class="collection-text">Timeless Treasures</h3>
-          </div>
-          <div class="collection-item">
-            <img
-              src="src/assets/img/home/Divine Diamonds.webp"
-              alt="Divine Diamonds"
-            />
-            <h3 class="collection-text">Divine Diamonds</h3>
-          </div>
-        </div>
+    <!--Featured Products por Tatiana-->
+    <section class="home-productOne-section">
+      <div class="home-productOne-section__text">
+        <h2>Featured Products</h2>
+        <p>
+          Quis Lorem laborum quis esse officia est commodo commodo anim est et
+          nulla.
+        </p>
         <button class="button-shop-now button-default">Shop now</button>
-      </section>
-
-      <!--Our-Selection-of-Jewelry-Daniela-->
-
-      <section class="Our-Selection-of-Jewelry">
-        <article class="Our-Selection-of-Jewelry-wrap">
-          <div class="Our-Selection-tex">
-            <h2>Our Selection of Jewelry</h2>
-            <p>
-              Nulla ad magna exercitation elit reprehenderit cupidatat veniam
-              velit aliqu
-            </p>
-            <button class="button-shop-now button-default">Shop now</button>
-          </div>
-          <div class="Selection-grid">
-            <div class="Selection-item">
-              <img
-                src="src/assets/img/Shimmering Ring.png"
-                alt="Shimmering Ring"
-              />
-              <h3>Shimmering Ring</h3>
-              <p>$168.76</p>
-            </div>
-            <div class="Selection-item">
-              <img
-                src="src/assets/img/Exquisite Earrings.png"
-                alt="Exquisite Earrings"
-              />
-              <h3>Exquisite Earrings</h3>
-              <p>$125.28</p>
-            </div>
-            <div class="Selection-item">
-              <img
-                src="src/assets/img/Elegance Earrings.png"
-                alt="Elegance Earrings"
-              />
-              <h3>Elegance Earrings</h3>
-              <p>$620.73</p>
-            </div>
-            <div class="Selection-item">
-              <img src="src/assets/img/Luxury Ch.png" alt="Luxury Ch" />
-              <h3>Luxury Ch</h3>
-              <p>$327.71</p>
-            </div>
-          </div>
-
-        </article>
-      </section>
-
-      <section class="Home-Our-story">
-        <div class="story__wrap">
-          <h2>Our story</h2>
-          <div class="video-our-story">
-            <video src="src/assets/video/855854-hd_1920_1080_24fps.mp4" muted controls loops preload="auto"></video>
-          </div>
+      </div>
+      <div class="products-grid">
+        <div class="product-item">
+          <img src="src/assets/img/home/Radiance necklace.webp" alt="Radiance Necklace" />
+          <h3>Radiance Necklace</h3>
+          <p>$168.76</p>
         </div>
-      </section>
+        <div class="product-item">
+          <img src="src/assets/img/home/Exquisite earrings.webp" alt="Exquisite Earrings" />
+          <h3>Exquisite Earrings</h3>
+          <p>$125.28</p>
+        </div>
+        <div class="product-item">
+          <img src="src/assets/img/home/Glamour necklace.webp" alt="Glamour Necklace" />
+          <h3>Glamour Necklace</h3>
+          <p>$620.73</p>
+        </div>
+        <div class="product-item">
+          <img src="src/assets/img/home/Delights.webp" alt="Delights" />
+          <h3>Delights</h3>
+          <p>$327.71</p>
+        </div>
+      </div>
+    </section>
 
-      <!-- aqui comienza el footer by holguer  -->
-      <section class="footer-section">
-        <div class="footer-section__text-wrap">
-          <h2 class="footer-section__title">From the people</h2>
-          <p class="footer-section__description">
-            We love hearing from our customers!<br> You’re the reason we’re here and
-            the reason we do what we do.
+    <!--Our Collections Section Tatiana-->
+    <section class="ourcollections-container">
+      <h2>Our Collections</h2>
+      <div class="collections-grid">
+        <div class="collection-item">
+          <img src="src/assets/img/home/Luxurious Lustre.webp" alt="Luxurious Lustre" />
+          <h3 class="collection-text">Luxurious Lustre</h3>
+        </div>
+        <div class="collection-item elevated">
+          <img src="src/assets/img/home/Radiant Reflections.webp" alt="Radiant Reflections" />
+          <h3 class="collection-text">Radiant Reflections</h3>
+        </div>
+        <div class="collection-item">
+          <img src="src/assets/img/home/Majestic Mementos.webp" Majestic Mementos">
+          <h3 class="collection-text">Majestic Mementos</h3>
+        </div>
+        <div class="collection-item">
+          <img src="src/assets/img/home/Blissful Baubles.webp" alt="Blissful Baubles" />
+          <h3 class="collection-text">Blissful Baubles</h3>
+        </div>
+        <div class="collection-item elevated">
+          <img src="src/assets/img/home/Timeless Treasures.webp" alt="Timeless Treasures" />
+          <h3 class="collection-text">Timeless Treasures</h3>
+        </div>
+        <div class="collection-item">
+          <img src="src/assets/img/home/Divine Diamonds.webp" alt="Divine Diamonds" />
+          <h3 class="collection-text">Divine Diamonds</h3>
+        </div>
+      </div>
+      <button class="button-shop-now button-default">Shop now</button>
+    </section>
+
+    <!--Our-Selection-of-Jewelry-Daniela-->
+
+    <section class="home-productTwo-section">
+      <div class="home-productTwo-section__text">
+        <h2>Our Selection of Jewelry</h2>
+        <p>
+          Nulla ad magna exercitation elit reprehenderit cupidatat veniam
+          velit aliqu
+        </p>
+        <button class="button-shop-now button-default">Shop now</button>
+      </div>
+      <div class="Selection-grid">
+        <div class="Selection-item">
+          <img src="src/assets/img/Shimmering Ring.png" alt="Shimmering Ring" />
+          <h3>Shimmering Ring</h3>
+          <p>$168.76</p>
+        </div>
+        <div class="Selection-item">
+          <img src="src/assets/img/Exquisite Earrings.png" alt="Exquisite Earrings" />
+          <h3>Exquisite Earrings</h3>
+          <p>$125.28</p>
+        </div>
+        <div class="Selection-item">
+          <img src="src/assets/img/Elegance Earrings.png" alt="Elegance Earrings" />
+          <h3>Elegance Earrings</h3>
+          <p>$620.73</p>
+        </div>
+        <div class="Selection-item">
+          <img src="src/assets/img/Luxury Ch.png" alt="Luxury Ch" />
+          <h3>Luxury Ch</h3>
+          <p>$327.71</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="Home-Our-story">
+      <div class="story__wrap">
+        <h2>Our story</h2>
+        <div class="video-our-story">
+          <video src="src/assets/video/855854-hd_1920_1080_24fps.mp4" muted controls loops preload="auto"></video>
+        </div>
+      </div>
+    </section>
+
+    <!-- aqui comienza el footer by holguer  -->
+    <section class="footer-section">
+      <div class="footer-section__text-wrap">
+        <h2 class="footer-section__title">From the people</h2>
+        <p class="footer-section__description">
+          We love hearing from our customers!<br />
+          You’re the reason we’re here and the reason we do what we do.
+        </p>
+      </div>
+      <div class="footer-section__feedback-card">
+        <figure class="feedback-card__img-container">
+          <img src="src/assets/img/home/Image 1.png" alt="" srcset="" />
+        </figure>
+        <div class="feedback-card__wrap-text">
+          <p class="feedback-card__parrafo">
+            The ring itself is stunning, with a beautiful design that catches
+            the light and sparkles from every angle. The quality of the
+            materials used is evident, as the ring feels substantial and
+            durable. The gemstone is exquisite, with a vibrant color and
+            exceptional clarity.
           </p>
-        </div>
-        <div class="footer-section__feedback-card">
-          <figure class="feedback-card__img-container">
-            <img src="src/assets/img/home/Image 1.png" alt="" srcset="" />
-          </figure>
-          <div class="feedback-card__wrap-text">
-            <p class="feedback-card__parrafo">
-              The ring itself is stunning, with a beautiful design that catches
-              the light and sparkles from every angle. The quality of the
-              materials used is evident, as the ring feels substantial and
-              durable. The gemstone is exquisite, with a vibrant color and
-              exceptional clarity.
-            </p>
-  
-            <h3 class="feedback-card__person-name">Anna Fernandez</h3>
-            <span class="feedback-card__person-pais">USA</span>
-            <div class="feedback-card__botones">
-              <button id="botonCircularNext" type="submit" class="buttonCircle btncNext"></button>
-              <button id="botonCircularPrev" type="submit" class="buttonCircle btncPrev"></button>
-            </div>
+
+          <h3 class="feedback-card__person-name">Anna Fernandez</h3>
+          <span class="feedback-card__person-pais">USA</span>
+          <div class="feedback-card__botones">
+            <button id="botonCircularNext" type="submit" class="buttonCircle btncNext"><svg
+                xmlns="http://www.w3.org/2000/svg" width="14" height="24" viewBox="0 0 14 24" fill="none">
+                <path
+                  d="M13.9534 2.45341L11.875 0.375L0.25 12L11.875 23.625L13.9534 21.5466L4.40682 12L13.9534 2.45341Z"
+                  fill="#EFFDFA" />
+              </svg></button>
+            <button id="botonCircularPrev" type="submit" class="buttonCircle btncPrev"><svg
+                xmlns="http://www.w3.org/2000/svg" width="14" height="24" viewBox="0 0 14 24" fill="none">
+                <path
+                  d="M13.9534 2.45341L11.875 0.375L0.25 12L11.875 23.625L13.9534 21.5466L4.40682 12L13.9534 2.45341Z"
+                  fill="#EFFDFA" />
+              </svg></button>
           </div>
-          
-        </div>
-      </section>
-
-    </main>
-
-    <footer class="footer">
-      <div class="footer__wrap-box1">
-        <a class="footer__logo" href=""><span class="footer__logo__text">Darling.</span></a>
-        <div class="footer__nav-footer">
-
-          <div class="footer__nav-footer-colum">
-            <ul class="nav-footer__list">
-              <li class="nav-footer__item"><a href="" class="nav-footer__link">Shop</a></li>
-              <li class="nav-footer__item"><a href="" class="nav-footer__link">Collections</a></li>
-              <li class="nav-footer__item"><a href="" class="nav-footer__link">About</a></li>
-            </ul>
-          </div>
-          <div class="footer__nav-footer-colum">
-            <ul class="nav-footer__list">
-              <li class="nav-footer__item"><a href="" class="nav-footer__link">Contact</a></li>
-              <li class="nav-footer__item"><a href="" class="nav-footer__link">Privacy</a></li>
-              <li class="nav-footer__item"><a href="" class="nav-footer__link">Terms</a></li>
-            </ul>
-          </div>
-
-        </div>
-        <div class="footer__sub-noticias-wrap">
-          <h3 class="sub-noticias__title">Subscribe to our newsletter</h3>
-          <p class="sub-noticias__descripcion">For product announcements and exclusive insights</p>
-          <form action="" class="sub-noticias__form-subscripcion">
-            <figure class="form-subscripcion__icon"></figure>
-            <input type="email" placeholder="Input your email" class="form-subscripcion__input" >
-            <button type="submit" class="form-subscripcion__boton boton-especial">Subscribe</button>
-          </form>
         </div>
       </div>
-      <div class="footer__wrap-box2">
-        <span class="footer__copyright-title">© 2022 Brand, Inc.</span>
-        <div class="footer__socialicons-wrap">
-          <a href="http://" target="" rel="noopener noreferrer" class="socialicons__link"> 
-            <figure class="socialicons__icon icon-twitter">
-            </figure>
-          </a>
-          <a href="http://" target="" rel="noopener noreferrer" class="socialicons__link"> 
-            <figure class="socialicons__icon icon-facebook">
-            </figure>
-          </a>
-          <a href="http://" target="" rel="noopener noreferrer" class="socialicons__link"> 
-            <figure class="socialicons__icon icon-linkedin">
-            </figure>
-          </a>
-          <a href="http://" target="" rel="noopener noreferrer" class="socialicons__link"> 
-            <figure class="socialicons__icon icon-youtube">
-            </figure>
-          </a>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__wrap-box1">
+      <a class="footer__logo" href=""><span class="footer__logo__text">Darling.</span></a>
+      <div class="footer__nav-footer">
+        <div class="footer__nav-footer-colum">
+          <ul class="nav-footer__list">
+            <li class="nav-footer__item">
+              <a href="" class="nav-footer__link">Shop</a>
+            </li>
+            <li class="nav-footer__item">
+              <a href="" class="nav-footer__link">Collections</a>
+            </li>
+            <li class="nav-footer__item">
+              <a href="" class="nav-footer__link">About</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__nav-footer-colum">
+          <ul class="nav-footer__list">
+            <li class="nav-footer__item">
+              <a href="" class="nav-footer__link">Contact</a>
+            </li>
+            <li class="nav-footer__item">
+              <a href="" class="nav-footer__link">Privacy</a>
+            </li>
+            <li class="nav-footer__item">
+              <a href="" class="nav-footer__link">Terms</a>
+            </li>
+          </ul>
         </div>
       </div>
-    </footer>
-  </body>
+      <div class="footer__sub-noticias-wrap">
+        <h3 class="sub-noticias__title">Subscribe to our newsletter</h3>
+        <p class="sub-noticias__descripcion">
+          For product announcements and exclusive insights
+        </p>
+        <form action="" class="sub-noticias__form-subscripcion">
+          <figure class="form-subscripcion__icon"></figure>
+          <input type="email" placeholder="Input your email" class="form-subscripcion__input" />
+          <button type="submit" class="form-subscripcion__boton boton-especial">
+            Subscribe
+          </button>
+        </form>
+      </div>
+    </div>
+    <div class="footer__wrap-box2">
+      <span class="footer__copyright-title">© 2022 Brand, Inc.</span>
+      <div class="footer__socialicons-wrap">
+        <a href="http://" target="" rel="noopener noreferrer" class="socialicons__link">
+          <figure class="socialicons__icon icon-twitter"></figure>
+        </a>
+        <a href="http://" target="" rel="noopener noreferrer" class="socialicons__link">
+          <figure class="socialicons__icon icon-facebook"></figure>
+        </a>
+        <a href="http://" target="" rel="noopener noreferrer" class="socialicons__link">
+          <figure class="socialicons__icon icon-linkedin"></figure>
+        </a>
+        <a href="http://" target="" rel="noopener noreferrer" class="socialicons__link">
+          <figure class="socialicons__icon icon-youtube"></figure>
+        </a>
+      </div>
+    </div>
+  </footer>
+</body>
+
 </html>
