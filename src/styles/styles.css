@@ -55,6 +55,10 @@
 
   --max-width-general: 1440px;
   --grid-colums-auto: 3;
+
+
+
+  --Trasicion-MidSlow: 280ms cubic-bezier(0.83, 0, 0.2, 1);
 }
 
 /* Se establece 62.5% para hacer uso de rem en este proyecto 1 rem = 10px  */
@@ -121,23 +125,44 @@ p {
 
 .globalheader__nav-container {
   display: flex;
+  align-items: center;
 }
 
 .globalnav {
   padding: 0 20px;
 }
 
-.globalnav:hover a {
-  border-bottom: 2px var(--color-secundario) solid;
-}
 
 .globalnav__list {
   list-style: none;
   display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
 }
 
 .globalnav__item {
+  display: inherit;
+}
+
+.globalnav__link__text {
   padding: 10px;
+  transition: var(--Trasicion-MidSlow);
+  -webkit-transition: var(--Trasicion-MidSlow);
+  -moz-transition: var(--Trasicion-MidSlow);
+  -ms-transition: var(--Trasicion-MidSlow);
+  -o-transition: var(--Trasicion-MidSlow);
+}
+
+.globalnav__link:hover ::before{
+  content: "";
+  width: 100%;
+  height: auto;
+  border-bottom: 2px var(--color-secundario) solid;
+  position: absolute;
+  z-index: 1;
+  bottom: -5px;
+  right: 0;
 }
 
 .globalnav__item a {
@@ -157,6 +182,20 @@ p {
   display: inherit;
   align-items: center;
   justify-content: center;
+  height: 20px;
+  gap: 10px;
+}
+
+.header__icon {
+  height: 100%;
+}
+
+.header__icon svg path {
+  stroke-width: 1.2;
+}
+
+.header__icon:hover svg path {
+  stroke: var(--color-secundario);
 }
 
 .main__wrap {
@@ -333,12 +372,33 @@ p {
 .button-default {
   color: var(--Color-primario);
   border: var(--borde-boton-principal-verde);
+  transition: var(--Trasicion-MidSlow);
+  -webkit-transition: var(--Trasicion-MidSlow);
+  -moz-transition: var(--Trasicion-MidSlow);
+  -ms-transition: var(--Trasicion-MidSlow);
+  -o-transition: var(--Trasicion-MidSlow);
+}
+
+.button-default:hover {
+  color: var(--color-blanco);
+  background-color: var(--Color-primario);
 }
 
 .button-white {
   color: var(--color-blanco);
   border: var(--borde-boton-principal-white);
+  transition: var(--Trasicion-MidSlow);
+  -webkit-transition: var(--Trasicion-MidSlow);
+  -moz-transition: var(--Trasicion-MidSlow);
+  -ms-transition: var(--Trasicion-MidSlow);
+  -o-transition: var(--Trasicion-MidSlow);
 }
+
+.button-white:hover {
+  color: var(--Color-primario);
+  background-color: var(--color-blanco);
+}
+
 
 .products-grid {
   display: flex;
@@ -658,19 +718,53 @@ p {
   border: var(--borde-boton-principal-white);
   border-radius: 50%;
   cursor: pointer;
+  transition: var(--Trasicion-MidSlow);
+  -webkit-transition: var(--Trasicion-MidSlow);
+  -moz-transition: var(--Trasicion-MidSlow);
+  -ms-transition: var(--Trasicion-MidSlow);
+  -o-transition: var(--Trasicion-MidSlow);
 }
 
-.btncNext {
-  background-image: url(/src/assets/icons/buttonflecha.svg);
-  background-repeat: no-repeat;
-  background-position: center;
+.buttonCircle:hover {
+  background-color: var(--color-blanco);
+} 
+
+.buttonCircle svg {
+  transform: translateX(-1px);
+  -webkit-transform: translateX(-1px);
+  -moz-transform: translateX(-1px);
+  -ms-transform: translateX(-1px);
+  -o-transform: translateX(-1px);
+  transition: var(--Trasicion-MidSlow);
+  -webkit-transition: var(--Trasicion-MidSlow);
+  -moz-transition: var(--Trasicion-MidSlow);
+  -ms-transition: var(--Trasicion-MidSlow);
+  -o-transition: var(--Trasicion-MidSlow);
+}
+
+.buttonCircle:hover svg {
+  transform: translateX(-3px);
+  -webkit-transform: translateX(-3px);
+  -moz-transform: translateX(-3px);
+  -ms-transform: translateX(-3px);
+  -o-transform: translateX(-3px);
+}
+
+
+
+.buttonCircle svg path {
+  fill: white;
+}
+
+.buttonCircle:hover svg path {
+  fill: #093931ff; /* Cambia el color del SVG al hacer hover */
 }
 
 .btncPrev {
-  background-image: url(/src/assets/icons/buttonflecha.svg);
   background-repeat: no-repeat;
   background-position: center;
   transform: rotate(180deg);
+  background-position-x: 16px;
 }
 
 /* footer */
@@ -797,6 +891,17 @@ p {
   background-color: var(--color-secundario);
   border: none;
   border-radius: 0 18px 18px 0;
+  transition: var(--Trasicion-MidSlow);
+  -webkit-transition: var(--Trasicion-MidSlow);
+  -moz-transition: var(--Trasicion-MidSlow);
+  -ms-transition: var(--Trasicion-MidSlow);
+  -o-transition: var(--Trasicion-MidSlow);
+}
+
+.boton-especial:hover {
+  background-color: var(--color-secundario);
+  filter: brightness(115%);
+  -webkit-filter: brightness(115%);
 }
 
 .footer__wrap-box2 {
