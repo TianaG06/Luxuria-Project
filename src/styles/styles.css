@@ -89,19 +89,21 @@ p {
 
 .globalheader {
   position: fixed;
-  width: 100vw;
+  width: 100%;
   z-index: 9999;
   top: 0;
+  background-color: var(--Color-primario);
 }
 
 .globalheader__wrap {
+  max-width: 1440px;
   display: flex;
   overflow: hidden;
   height: 62px;
   align-items: center;
   justify-content: space-between;
-  padding: 0 132px;
-  background-color: var(--Color-primario);
+  padding: 0 5%;
+  margin: 0 auto;
 }
 
 .globalheader__wrap a {
@@ -144,7 +146,6 @@ p {
   transition: 80ms ease-in-out;
 }
 
-
 .globalnav__link__text {
   font-family: var(--estilo-de-fuente-Principal);
   font-size: var(--tamaño-de-fuente-small);
@@ -163,7 +164,6 @@ p {
   padding-top: 62px;
 }
 
-
 /* Seccion del header by Holguer pinzon*/
 
 .main__headersection {
@@ -174,6 +174,7 @@ p {
   flex-wrap: wrap-reverse;
   padding: 50px;
   height: auto;
+  gap: 48px;
   overflow: hidden;
   background-image: url(../assets/img/textures/texture.svg);
   background-color: var(--Color-primario);
@@ -290,7 +291,7 @@ p {
   justify-content: center;
   align-items: center;
   background-color: var(--color-background-secundary);
-  padding: 48px 0 48px 132px;
+  padding: 48px 0 48px 5%;
 }
 
 .home-productOne-section__text {
@@ -379,8 +380,6 @@ p {
   margin: 0 0 18px 12px;
 }
 
-
-
 /*Our collections - Tatiana*/
 
 .ourcollections-container {
@@ -402,7 +401,7 @@ p {
 .collections-grid {
   display: grid;
   max-width: 1440px;
-  grid-template-columns: repeat(auto-fit, minmax(min(100%,360px),360px));
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 360px), 360px));
   gap: 40px;
   margin: 0 auto;
   margin-bottom: 36px;
@@ -448,7 +447,6 @@ p {
   margin: 0;
 }
 
-
 /*Our-Selection-of-Jewelry-Daniela*/
 .home-productTwo-section {
   width: 100%;
@@ -458,7 +456,7 @@ p {
   justify-content: center;
   align-items: center;
   background-color: var(--color-background-secundary);
-  padding: 48px 0 48px 132px;
+  padding: 48px 0 48px 5%;
 }
 
 .Our-Selection-of-Jewelry-wrap {
@@ -497,6 +495,7 @@ p {
   display: flex;
   overflow-y: auto;
   gap: 20px;
+  scrollbar-width: none;
 }
 
 .Selection-item {
@@ -535,7 +534,7 @@ p {
   width: 100%;
   height: 564px;
   background-color: var(--color-background-secundary);
-  padding: var(--paddin-48-132);
+  padding: 0 0 48px 0;
 }
 
 .story__wrap {
@@ -572,19 +571,17 @@ p {
 .footer-section {
   display: flex;
   width: 100%;
-  height: -webkit-max-content;
-  height: -moz-max-content;
-  height: max-content;
-  padding: 72px 134px 75px;
+  height: auto;
+  padding: 72px 0 75px 0;
   background-color: var(--Color-primario);
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  gap: 20px;
 }
 
 .footer-section__text-wrap {
   color: var(--color-blanco);
-
   margin-bottom: 50px;
 }
 
@@ -601,22 +598,27 @@ p {
 }
 
 .footer-section__feedback-card {
-  height: 375px;
+  min-height: 375px;
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
   background-color: var(--color-primario-oscuro);
 }
 
 .feedback-card__img-container {
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
   width: fit-content;
   transform-origin: 0 0;
 }
 
+.feedback-card__img-container img {
+  object-fit: cover;
+  width: 100%;
+}
+
 .feedback-card__wrap-text {
   padding: 32px;
-  width: 324px;
+  max-width: 324px;
 }
 
 .feedback-card__parrafo {
@@ -640,9 +642,10 @@ p {
 .feedback-card__botones {
   display: flex;
   position: absolute;
-  bottom: -24px;
+  bottom: -25px;
   right: 0;
   gap: 18px;
+  z-index: 1;
 }
 
 .buttonCircle {
@@ -676,13 +679,18 @@ p {
   width: 100%;
   min-height: 234px;
   background-color: var(--Color-primario);
+  overflow: hidden;
+  top: -1px;
 }
 
 .footer__wrap-box1 {
   display: flex;
   justify-content: space-between;
+  gap: 48px;
   padding: var(--paddin-48-132);
   color: var(--color-blanco);
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 .footer__wrap-box1 a,
@@ -701,7 +709,6 @@ p {
 .footer__nav-footer {
   display: flex;
   justify-content: space-between;
-  align-items: center;
 }
 
 .footer__nav-footer-colum {
@@ -795,13 +802,52 @@ p {
 .footer__wrap-box2 {
   width: 100%;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
+  padding: 0 132px;
   align-items: center;
+  padding-bottom: 25px;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 .footer__copyright-title {
   font-size: var(--tamaño-de-fuente-small);
   color: var(--color-blanco);
+  width: 100%;
+  max-width: 1440px;
 }
 
-.footer__socialicons-wrap {}
+.footer__socialicons-wrap {
+  display: flex;
+  width: fit-content;
+  gap: 16px;
+}
+
+.socialicons__link {
+  list-style: none;
+}
+
+.socialicons__icon {
+  display: flex;
+  width: 24px;
+  height: 24px;
+  background-image: none;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.icon-twitter {
+  background-image: url(/src/assets/icons/icon_social_networks/icon__x.svg);
+}
+
+.icon-facebook {
+  background-image: url(/src/assets/icons/icon_social_networks/icon__facebook.svg);
+}
+
+.icon-linkedin {
+  background-image: url(/src/assets/icons/icon_social_networks/icon__linkedin.svg);
+}
+
+.icon-youtube {
+  background-image: url(/src/assets/icons/icon_social_networks/icon__youtube.svg);
+}
