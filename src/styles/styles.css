@@ -154,6 +154,7 @@ p {
   -o-transition: var(--Trasicion-MidSlow);
 }
 
+
 .globalnav__link:hover ::before{
   content: "";
   width: 100%;
@@ -196,6 +197,35 @@ p {
 
 .header__icon:hover svg path {
   stroke: var(--color-secundario);
+}
+
+
+.globalheader__botonMobile {
+  background-color: transparent;
+  cursor: pointer;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  border: none;
+}
+
+
+
+.globalheader__botonMobile svg {
+  width: 100%;
+  height: auto;
+  transition: 80ms ease-in-out;
+  -webkit-transition:;
+  -moz-transition:;
+  -ms-transition:;
+  -o-transition:;
+}
+
+.globalheader__botonMobile svg:hover {
+  filter: brightness(120%);
+  -webkit-filter: brightness(120%);
 }
 
 .main__wrap {
@@ -848,10 +878,16 @@ p {
   display: none;
 }
 
+.sub-noticias__form-subscripcion button:focus {
+  border: none;
+  outline: none;
+}
+
 .form-subscripcion__input {
   background-color: transparent;
   border: none;
   padding: 10px;
+  margin-left: 10px;
   color: var(--color-blanco);
   border-radius: 18px 0 0 18px;
   -webkit-border-radius: 18px 0 0 18px;
@@ -862,27 +898,39 @@ p {
 
 .form-subscripcion__input:focus {
   border: none;
+  outline: none;
 }
 
 .form-subscripcion__input::-webkit-input-placeholder {
-  padding: 10px;
+  color: var(--color-background-secundary);
 }
 
 .form-subscripcion__input::-moz-placeholder {
-  padding: 10px;
+  color: var(--color-background-secundary);
 }
 
 .form-subscripcion__input:-ms-input-placeholder {
-  padding: 10px;
+  color: var(--color-background-secundary);
 }
 
 .form-subscripcion__input::-ms-input-placeholder {
-  padding: 10px;
+  color: var(--color-background-secundary);
 }
 
 .form-subscripcion__input::placeholder {
-  padding: 10px;
+  color: var(--color-background-secundary);
+  transition: var(--Trasicion-MidSlow);
+  -webkit-transition: var(--Trasicion-MidSlow);
+  -moz-transition: var(--Trasicion-MidSlow);
+  -ms-transition: var(--Trasicion-MidSlow);
+  -o-transition: var(--Trasicion-MidSlow);
 }
+
+.form-subscripcion__input:focus::placeholder {
+  opacity: 0.2;
+}
+
+
 
 .boton-especial {
   cursor: pointer;

@@ -35,6 +35,14 @@
         padding: 5%;
     }
 
+    .globalheader__nav-container {
+        display: none;
+    }
+
+    .globalheader__botonMobile {
+        display: flex;
+    }
+
     /* Seccion header */
     .main__headersection {
         justify-content: center;
