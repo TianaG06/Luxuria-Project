@@ -1046,20 +1046,31 @@ p {
 
 .main__date{
   position: relative;
-  display: grid;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  margin-bottom: 100px;
+}
+
+.main__container-list{
+  position: relative;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   background-color: var(--color-blanco);
   border: 2px solid #DEE1E6FF;
-  left: 350px;
   padding: 20px;
   max-width: 500px;
-  box-shadow: 0px 0px 1px #171a1f, 0px 0px 2px #171a1f;
   border-radius: 4px;
 }
 
 .main__list{
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 .linea{
@@ -1074,7 +1085,7 @@ p {
 .items__order_line{
   display: flex;
   align-items: center;
-  margin-bottom: 5px;
+  height: max-content;
 }
 
 .items__order_line img {
@@ -1083,6 +1094,10 @@ p {
   border-radius: 6px;
   object-fit: cover;
   margin-right: 10px;
+}
+
+.details{
+  height: 100%;
 }
 
 .details p {
@@ -1104,11 +1119,6 @@ p {
   line-height: 22px; 
   font-weight: 400; 
   color: #171A1FFF;
-  left: 100px;
-}
-
-.order-line{
-  overflow-y: scroll;
 }
 
 .order-line h2{
@@ -1135,11 +1145,18 @@ p {
   color: #9095A0FF;
 }
 
+.cards-container{
+  max-height: 200px;
+  overflow-y: scroll;
+  margin-bottom: 10px;
+}
+
 .precio{
   position: relative;
   display: flex;
   bottom: 60px;
   margin-left: 280px;
+  color: #171A1FFF;
 }
 
 .button-Continue_shopping{
@@ -1156,8 +1173,8 @@ p {
   border-radius: 22px;
   cursor: pointer;
   height: 44px;
-  width: 35%;
-  left: 150px;
+  width: 40%;
+  left: 30%;
 }
 
 .input-container-payment-success{
@@ -1174,17 +1191,23 @@ p {
 input[type="text"] {
   border: none;
   background: none;
-  color: #333;
+  color: #323842FF;
   font-size: 16px;
   text-align: center;
   width: 100%;
   height: 100%;
   outline: none;
-  font-family: 'Arial', sans-serif;
+  font-family: var(--estilo-de-fuente-Principal);
 }
 
 .datosfinal{
   position: relative;
+  justify-content: right;
   display: flex;
-  left: 100px;
+}
+
+.container_icon-name{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
