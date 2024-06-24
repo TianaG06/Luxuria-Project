@@ -157,6 +157,23 @@
     }
 
 
+
+   /* product details */
+
+   .product-details__section{
+    padding: 5%;
+}
+
+.product-details__img-Galery {
+    flex-direction: column-reverse;
+}
+
+.img-galery__aside-conteiner {
+    flex-direction: row;
+    padding-top: 10px;
+    
+}
+ 
 }
 
 @media screen and (max-width: 1024px) {
