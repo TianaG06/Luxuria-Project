@@ -37,6 +37,7 @@
   --tamaño-de-fuente-logo-darling: 3rem;
 
   --tamaño-de-fuente-our-collections-fotos: 3.2rem;
+  --tamaño-de-fuente-our-products-listing: 6.2rem;
 
   --tamaño-de-fuente-botones: 1.8rem;
   --radio-de-boton-principal: 2.6rem;
@@ -1004,3 +1005,278 @@ p {
 .icon-youtube {
   background-image: url(/src/assets/icons/icon_social_networks/icon__youtube.svg);
 }
+
+
+
+/*Product listing Tatiana*/
+
+.main__productlisting {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap-reverse;
+  padding: 50px;
+  height: auto;
+  gap: 48px;
+  overflow: hidden;
+  background-image: url(../assets/img/textures/texture.svg);
+  background-color: var(--Color-primario);
+}
+
+
+
+.productlisting__headline-wrap {
+  width: 80%;
+  margin-bottom: 146px;
+
+}
+
+
+
+
+.productlisting__headline-wrap h1 {
+  text-align: center;
+  color: var(--color-secundario);
+  font-weight: var(--peso-de-fuente-principal-400);
+  font-size: var(--tamaño-de-fuente-our-products-listing);
+}
+
+
+
+.search__bar {
+  display: flex;
+  align-items: center;
+  background-color: var(--color-blanco);
+  border-radius: 25px;
+  padding: 10px 20px;
+  width: 95%;
+  margin: 0 auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.search__bar button {
+  width: 100%;
+  display: flex;
+  background: transparent;
+  cursor: pointer;
+  border: none;
+}
+
+
+.search__bar input {
+  padding: 2px 10px;
+  border: none;
+  outline: none;
+  width: 100%;
+}
+
+.search__bar ::placeholder {
+  display: flex;
+  width: 100%;
+  font-family: var(--estilo-de-fuente-Principal);
+  font-size: var(--tamaño-de-fuente-Titulos-H3);
+  color: var(--color-de-fuente-neutral-900);
+}
+
+
+/*Product listing botones Tatiana*/
+
+.main__categorieproducts{
+  max-width: 1440px;
+  margin-top: 72px;
+  margin-left: 9.1%;
+  margin-right: 9.1%;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+}
+
+.categorieproducts__buttons{
+  display: flex;
+  gap: 10px;
+}
+
+
+.button__active {
+  background-color: var(--Color-primario);
+  color: var(--color-blanco);
+  border-radius: 20px;
+  padding: 10px 60px;
+  height: 38px;
+  border: none;
+}
+
+.button__options {
+  background-color: transparent;
+  border: none;
+  border-right: 1px solid rgb(99, 221, 215);
+  padding: 1px 30px 0 10px;
+  height: 22px;
+  margin-top: 5px;
+}
+
+
+.button__options:first-of-type {
+  border-left: none;
+}
+
+.button__options:hover {
+  cursor: pointer;
+}
+
+
+.categorieproducts__buttons button:nth-child(5) {
+  border-right: none;
+}
+
+
+.main__categorieproducts button:nth-child(6) {
+  float: right;
+  margin-left: 20%;
+}
+
+
+
+.main__categorieproducts .button__sortbyoption {
+  display: flex;
+  position: relative;
+  background-color: transparent;
+  color: var(--Color-primario);
+}
+
+.button__sortbyoption {
+  border: none;
+  border-bottom: 1px solid var(--Color-primario);
+  padding-right: 34px;
+  height: 36px;
+  position: relative;
+  left: 32%;
+  display: flex;
+  background-color: transparent;
+  color: var(--Color-primario);
+}
+
+
+
+
+
+/*Cards Tatiana*/
+
+.main__cards {
+  padding: 3.7rem;
+  display: grid;
+  /* grid-template-columns: repeat(auto-fit, minmax(17.4rem, 1fr)); */
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  margin-left: 90px;
+  margin-right: 90px;
+}
+
+.card__container {
+  border-radius: 8px; /* border-xl */
+  box-shadow: 0px 0px 1px var(--color-de-fuente-neutral-500), 0px 0px 2px var(--color-de-fuente-neutral-500);
+  aspect-ratio: 276/404;
+}
+
+.card__container figure {
+  width: 100%;
+  aspect-ratio: 276/320;
+}
+
+.card__container figure img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 8px 8px 0 0;
+}
+
+.card__container div h2 {
+  font-family: var(--estilo-de-fuente-Titulos);
+  font-size: var(--tamaño-de-fuente-Titulos-H3);
+  font-weight: var(--peso-de-fuente-titulo-pequeño-700);
+}
+
+.card__container div p {
+  font-family: var(--estilo-de-fuente-Principal);
+  font-size: var(--tamaño-de-fuente-small);
+  font-weight: var(--peso-de-fuente-principal-400);
+}
+
+.card__container div {
+  padding: 0.75em 1.25em 0.75em 0.75em;
+}
+
+
+  .card__container:nth-child(9) figure {
+    aspect-ratio: 576/734;
+  }
+  .card__container:nth-child(9) h2 {
+    font-size: 1.75rem;
+  }
+
+
+  .header__menu {
+    display: block;
+  }
+
+  .header__links {
+    display: none;
+  }
+
+
+
+
+
+  /*Pagination botones abajo Tatiana*/
+
+.buttons__pagination{
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    height:20vh;
+}
+
+  .pagination {
+    display: flex;
+    align-items: center;
+}
+
+.pagination a, .pagination span {
+    color: var(--color-de-fuente-neutral-500);
+    text-decoration: none;
+    margin: 0 5px;
+    border-radius: 50%;
+    border: 1px solid transparent;
+    font-size: 18px;
+    padding: 5px 10px;
+    display: flex;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.pagination a.active {
+    color: var(--Color-primario);
+    border: 1px solid var(--Color-primario);
+    border-radius: 50%;
+    padding: 5px 10px;
+}
+
+.pagination a:hover {
+  background-color: var(--Color-primario);
+  color:var(--color-blanco);
+}
+
+
+.pagination a:hover:not(.active) {
+    color:var(--Color-primario);
+    color: var(--color-blanco);
+}
+
+.pagination span {
+    cursor: default;
+    padding: 12px;
+}
+
+
+
