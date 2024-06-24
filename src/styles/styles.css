@@ -1000,8 +1000,8 @@ p {
 }
 
 /* PRODUCT LISTING  */
-.product-details__nav{
-width: fit-content;
+.product-details__nav {
+  width: fit-content;
 }
 
 .product-details__list {
@@ -1039,12 +1039,16 @@ width: fit-content;
   flex-direction: column;
   align-content: center;
   gap: 24px;
+  min-height: 826px;
+  width: 100%;
+  overflow: hidden;
 }
 
-.product-details__section-wrap{
+.product-details__section-wrap {
   display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 64px;
 }
 .product-details__img-Galery {
   display: flex;
@@ -1058,14 +1062,14 @@ width: fit-content;
   width: max-content;
 }
 
-.img-container {
+.img-galery__aside-conteiner .img-container {
   width: 64px;
   height: 82px;
   border-radius: 4px;
   overflow: hidden;
 }
 
-.img-container img {
+.img-galery__aside-conteiner .img-container img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -1074,9 +1078,15 @@ width: fit-content;
 .selected-Active {
   border: 2px var(--Color-primario) solid;
 }
+
+.img-galery__aside-conteiner .img-container:hover {
+  filter: brightness(105%);
+}
+
+
 .img-galery__main-img-wrap {
-  width: 477px;
-  height: 636px;
+  max-width: 477px;
+  max-height: 636px;
   overflow: hidden;
 }
 .main-img__container {
@@ -1084,16 +1094,11 @@ width: fit-content;
   width: 100%;
   overflow: hidden;
   border-radius: 8px;
-  -webkit-border-radius: 8px;
-  -moz-border-radius: 8px;
-  -ms-border-radius: 8px;
-  -o-border-radius: 8px;
 }
 
 .main-img__container img {
   object-fit: cover;
-  width: 477px;
-  height: 636px;
+  width: 100%;
 }
 
 .checkbox-favorito {
@@ -1127,10 +1132,10 @@ width: fit-content;
 }
 
 .product-details__details-box {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-auto-rows: max-content;
-  padding-left: 64px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-width: 556px;
 }
 .product-title__details-box {
   color: var(--Color-primario);
@@ -1147,15 +1152,15 @@ width: fit-content;
   color: var(--color-secundario-oscuro);
   font-size: var(--tamaño-de-fuente-Titulos-H2-principal);
   font-weight: var(--peso-de-fuente-principal-600);
-  padding: 10px 0 10px 0;
+  /* padding: 10px 0 10px 0; */
   line-height: 56px;
 }
 
-.colors-option__details-box,
+/* .colors-option__details-box,
 .size-options__details-box,
 .quantity__details-box {
   padding: 4px 16px 12px 0;
-}
+} */
 
 .text__colors-option,
 .text__size-options,
@@ -1184,10 +1189,6 @@ width: fit-content;
   margin-right: 16px;
   cursor: pointer;
   transition: var(--Trasicion-MidSlow);
-  -webkit-transition: var(--Trasicion-MidSlow);
-  -moz-transition: var(--Trasicion-MidSlow);
-  -ms-transition: var(--Trasicion-MidSlow);
-  -o-transition: var(--Trasicion-MidSlow);
 }
 
 .color-option-button:hover {
@@ -1239,9 +1240,16 @@ width: fit-content;
   color: var(--color-de-fuente-neutral-650);
   cursor: help;
 }
+
+.link__size-options:hover {
+  color: var(--color-secundario-oscuro);
+}
 .sizes__size-options {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
+  align-content: flex-start;
+  
 }
 .button-small-sizes {
   display: flex;
@@ -1259,10 +1267,6 @@ width: fit-content;
   cursor: pointer;
   flex-wrap: wrap;
   transition: all 80ms ease;
-  -webkit-transition: all 80ms ease;
-  -moz-transition: all 80ms ease;
-  -ms-transition: all 80ms ease;
-  -o-transition: all 80ms ease;
 }
 
 .button-small-sizes:hover {
@@ -1333,7 +1337,7 @@ width: fit-content;
   display: flex;
   flex-wrap: wrap;
   gap: 24px;
-  padding-bottom: 24px;
+  justify-content: center;
 }
 
 .button-add-to-bag,
@@ -1374,11 +1378,12 @@ width: fit-content;
 }
 
 .details__container {
-  width: 556px;
-  height: 100px;
+
+  max-width: 556px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 10px;
 }
 
 .details-segments__details-box {
@@ -1445,8 +1450,8 @@ width: fit-content;
 }
 .description-product__article {
   background-color: var(--color-background-secundary);
-  width: 1176px;
-  height: 949px;
+  max-width: 1176px;
+  max-height: 949px;
   border-radius: 8px;
   padding: 72px 48px;
   display: flex;
