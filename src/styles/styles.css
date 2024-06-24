@@ -1,17 +1,21 @@
 :root {
   --Color-primario: #093931ff;
+  --color-primario-claro: #0D554AFF;
   --color-primario-oscuro: #171a1f4d;
   --color-secundario: #f5d38eff;
+  --color-secundario-oscuro: #B37D10FF;
 
   --color-de-fuente-neutral-500: #9095a0ff;
+  --color-de-fuente-neutral-600: #565E6CFF;
   --color-de-fuente-neutral-650: #424955ff;
-  --color-de-fuente-neutral-500: #9095a0ff;
   --color-de-fuente-neutral-900: #171a1fff;
 
   --color-blanco: #fff;
   --color-blanco-95: hsl(0, 0%, 95%);
   --color-gris-80: #cccccc;
   --color-gris-65: #a6a6a6;
+
+  --color-bordes-oscurecidos: #093931ff;
 
   --color-fondo-primario: var(--color-blanco);
   --color-background-secundary: #f9f9fa;
@@ -217,6 +221,10 @@ p {
   width: 100%;
   height: auto;
   transition: 80ms ease-in-out;
+  -webkit-transition: 80ms ease-in-out;
+  -moz-transition: 80ms ease-in-out;
+  -ms-transition: 80ms ease-in-out;
+  -o-transition: 80ms ease-in-out;
   -webkit-transition: 80ms ease-in-out;
   -moz-transition: 80ms ease-in-out;
   -ms-transition: 80ms ease-in-out;
