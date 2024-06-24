@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Joyeria Darling</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Configuracion -->
+  <link rel="shortcut icon" href="/src/assets/icons/favicons/favicons3.png" type="image/x-icon" />
+  <!-- SEO  -->
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/src/styles/styles.css" />
+  <link rel="stylesheet" href="/src/styles/normalize.css" />
+  <link rel="stylesheet" href="/src/styles/builts.css">
+  <!-- <link rel="stylesheet" href="src/assets/styles/main-Root.css" /> -->
+
+  <!-- Cargas de fuente -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Manrope:wght@200..800&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+  <header class="globalheader">
+    <div class="globalheader__wrap">
+      <a class="globalheader__logo" href="/index.html"><span class="globalheader__logo__text">Darling.</span></a>
+      <div class="globalheader__nav-container">
+        <nav class="globalnav ">
+          <ul class="globalnav__list">
+            <li class="globalnav__item">
+              <a href="#" class="globalnav__link"><span class="globalnav__link__text">Home</span></a>
+            </li>
+            <li class="globalnav__item">
+              <a href="#" class="globalnav__link"><span class="globalnav__link__text">Shop</span></a>
+            </li>
+            <li class="globalnav__item">
+              <a href="#" class="globalnav__link"><span class="globalnav__link__text">Collections</span></a>
+            </li>
+            <li class="globalnav__item">
+              <a href="#" class="globalnav__link">
+                <span class="globalnav__link__text">About</span></a>
+            </li>
+            <li class="globalnav__item">
+              <a href="#" class="globalnav__link"><span class="globalnav__link__text">Contact</span></a>
+            </li>
+          </ul>
+        </nav>
+
+
+        <div class="globalheader__icons">
+          <a href="#" class="header__icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" class="icon icon-account" height="20" viewBox="0 0 20 20"
+              fill="none">
+              <path
+                d="M10 8.5C11.6569 8.5 13 7.15685 13 5.5C13 3.84315 11.6569 2.5 10 2.5C8.34315 2.5 7 3.84315 7 5.5C7 7.15685 8.34315 8.5 10 8.5Z"
+                stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+              <path
+                d="M10 11C8.27609 11 6.62279 11.6848 5.40381 12.9038C4.18482 14.1228 3.5 15.7761 3.5 17.5L16.5 17.5C16.5 15.7761 15.8152 14.1228 14.5962 12.9038C13.3772 11.6848 11.7239 11 10 11Z"
+                stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+            <span class="estado--oculto">Iniciar Sesión</span>
+          </a>
+          <a href="#" class="header__icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" class="icon icon-carrito" height="20" viewBox="0 0 20 20"
+              fill="none">
+              <path
+                d="M2.5 2.5L5.5 2.5L5.5 10C5.5 10.828 6.172 11.5 7 11.5L14.419 11.5C15.065 11.5 15.638 11.087 15.842 10.474L17.5 5.5L5.5 5.5"
+                stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+              <path
+                d="M6 17.5C6.82843 17.5 7.5 16.8284 7.5 16C7.5 15.1716 6.82843 14.5 6 14.5C5.17157 14.5 4.5 15.1716 4.5 16C4.5 16.8284 5.17157 17.5 6 17.5Z"
+                stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+              <path
+                d="M15 17.5C15.8284 17.5 16.5 16.8284 16.5 16C16.5 15.1716 15.8284 14.5 15 14.5C14.1716 14.5 13.5 15.1716 13.5 16C13.5 16.8284 14.1716 17.5 15 17.5Z"
+                stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+            <span class="estado--oculto">Carrito</span>
+          </a>
+        </div>
+      </div>
+      <button class="globalheader__botonMobile">
+        <svg
+        xmlns="http://www.w3.org/2000/svg"
+        height="40px"
+        viewBox="0 -960 960 960"
+        width="40px"
+        fill="#f5d38eff"
+      >
+        <path
+          d="M120-240v-66.67h720V-240H120Zm0-206.67v-66.66h720v66.66H120Zm0-206.66V-720h720v66.67H120Z"
+        />
+      </svg>
+
+      </button>
+    </div>
+  </header>
+
+<!--Barra de busqueda Tatiana-->
+
+  <main id="product_listing" class="main__wrap">
+    <section class="main__productlisting">
+    <div class="productlisting__headline-wrap">
+        <h1 class="productlisting__title">
+        Our Products
+        </h1>
+    <div class="search__bar">
+        <button>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M20.5716 20.5714L17.1431 17.1428" stroke="#323842" stroke-width="2.05714" stroke-miterlimit="10" stroke-linecap="square"/>
+                <path d="M10.2859 17.1428C14.0729 17.1428 17.143 14.0727 17.143 10.2856C17.143 6.49851 14.0729 3.42847 10.2859 3.42847C6.49876 3.42847 3.42871 6.49851 3.42871 10.2856C3.42871 14.0727 6.49876 17.1428 10.2859 17.1428Z" stroke="#323842" stroke-width="2.05714" stroke-miterlimit="10" stroke-linecap="square"/>
+                <path d="M6.85693 10.2857C6.85693 9.37644 7.21816 8.50436 7.86114 7.86138C8.50412 7.2184 9.37619 6.85718 10.2855 6.85718" stroke="#323842" stroke-width="2.05714" stroke-miterlimit="10"/>
+                </svg>
+                <input type="search" id="buscar" name="buscar" placeholder="Find jewelry you like">
+        </button>
+    </div>
+    </div>
+    </section>
+    
+
+<!--Botones de selección de productos Tatiana-->
+
+    <section class="main__categorieproducts">
+      
+        <div class="categorieproducts__buttons">
+            <button class="button__active">All</button>
+            <button class="button__options">Rings</button>
+            <button class="button__options">Bracelets</button>
+            <button class="button__options">Necklaces</button>
+            <button class="button__options">Earrings</button>
+        </div>
+
+        <select class="button__sortbyoption" name="Sort by options">
+          <option class="sort__by__price">Sort by price</option>
+        <option class="sort__by__name">Sort by name</option>
+      </select>
+
+    </section>
+
+
+
+
+<!--Contenedores de imagenes Tatiana-->
+
+<section class="main__cards">
+    <article class="card__container">
+        <figure>
+          <img src="../assets/img/home/Luxury Gems Necklaces.webp" alt="Luxury Gems Necklace" />
+        </figure>
+        <div>
+          <h2>Luxury Gems Necklace</h2>
+          <p>$168.76</p>
+        </div>
+      </article>
+
+      <article class="card__container">
+        <figure>
+          <img src="../assets/img/home/Aurora Ring.webp" alt="Aurora Ring" />
+        </figure>
+        <div>
+          <h2>Aurora Ring</h2>
+          <p>$125.28</p>
+        </div>
+      </article>
+
+      <article class="card__container">
+        <figure>
+          <img src="../assets/img/home/Reflections Necklace.webp" alt="Reflections Necklace" />
+        </figure>
+        <div>
+          <h2>Reflections Necklace</h2>
+          <p>$620.73</p>
+        </div>
+      </article>
+
+      <article class="card__container">
+        <figure>
+          <img src="../assets/img/home/Dreamy Infinity Ring.webp" alt="Dreamy Infinity Ring" />
+        </figure>
+        <div>
+          <h2>Dreamy Infinity Ring</h2>
+          <p>$327.71</p>
+        </div>
+      </article>
+
+      <article class="card__container">
+        <figure>
+          <img src="../assets/img/home/Opulent Jewels Ring.webp" alt="Opulent Jewels Ring" />
+        </figure>
+        <div>
+          <h2>Opulent Jewels Ring</h2>
+          <p>$168.76</p>
+        </div>
+      </article>
+
+      <article class="card__container">
+        <figure>
+          <img src="../assets/img/home/Serene Solitaire Earrings.webp" alt="Serene Solitaire Earrings" />
+        </figure>
+        <div>
+          <h2>Serene Solitaire Earrings</h2>
+          <p>$125.28</p>
+        </div>
+      </article>
+
+      <article class="card__container">
+        <figure>
+          <img src="../assets/img/home/Timeless Halo Earrings.webp" alt="Timeless Halo Earrings" />
+        </figure>
+        <div>
+          <h2>Timeless Halo Earrings</h2>
+          <p>$620.73</p>
+        </div>
+      </article>
+
+      <article class="card__container">
+        <figure>
+          <img src="../assets/img/home/Exquisite Earrings azules.webp" alt="Exquisite Earrings" />
+        </figure>
+        <div>
+          <h2>Exquisite Earrings</h2>
+          <p>$327.71</p>
+        </div>
+      </article>
+
+      <article class="card__container">
+        <figure>
+          <img src="../assets/img/home/Timeless Elegance Ring.webp" alt="Timeless Elegance Ring" />
+        </figure>
+        <div>
+          <h2>Timeless Elegance Ring</h2>
+          <p>$168.76</p>
+        </div>
+      </article>
+
+      <article class="card__container">
+        <figure>
+          <img src="../assets/img/home/Luxury Charms Ring.webp" alt= "Luxury Charms Ring" />
+        </figure>
+        <div>
+          <h2>Luxury Charms Ring</h2>
+          <p>$620.73</p>
+        </div>
+      </article>
+
+      <article class="card__container">
+        <figure>
+          <img src="../assets/img/home/Blissful Bloom Ring.webp" alt="Blissful Bloom Ring" />
+        </figure>
+        <div>
+          <h2>Blissful Bloom Ring</h2>
+          <p>$620.73</p>
+        </div>
+      </article>
+
+      <article class="card__container">
+        <figure>
+          <img src="../assets/img/home/Sparkling Ring.webp" alt="Sparkling Ring " />
+        </figure>
+        <div>
+          <h2>Sparkling Ring</h2>
+          <p>$620.73</p>
+        </div>
+      </article>
+      
+      <article class="card__container">
+        <figure>
+          <img src="../assets/img/home/Glimmering Ring.webp" alt="Glimmering Ring" />
+        </figure>
+        <div>
+          <h2>Glimmering Ring</h2>
+          <p>$620.73</p>
+        </div>
+      </article>
+</section>
+
+
+<!--Botones de cambio de página Tatiana-->
+<section class="buttons__pagination">
+<div class="pagination">
+  <a href="#">&lt;</a>
+  <a href="#">1</a>
+  <a href="#" class="active">2</a>
+  <a href="#">3</a>
+  <span>...</span>
+  <a href="#">10</a>
+  <a href="#">&gt;</a>
+</div>
+</section>
+
+
+<!--Iconos de abajo Tatiana-->
+
+<section class="icon-section">
+  <div class="icon-box">
+    <img src="/src/assets/icons/Delivery time 1.svg" alt="Delivery" />
+    <h3>Delivery</h3>
+    <p>
+      Ea esse elit anim commodo laborum pariatur nisi. Voluptate elit d
+    </p>
+  </div>
+  <div class="icon-box">
+    <img src="/src/assets/icons/Love message 1.svg" alt="Customer care" />
+    <h3>Customer care</h3>
+    <p>
+      Ea esse elit anim commodo laborum pariatur nisi. Voluptate elit d
+    </p>
+  </div>
+  <div class="icon-box">
+    <img src="/src/assets/icons/Lock landscape 1.svg" alt="Payment security" />
+    <h3>Payment security</h3>
+    <p>
+      Ea esse elit anim commodo laborum pariatur nisi. Voluptate elit d
+    </p>
+  </div>
+</section>
+</main>
+
+
+<!--Footer hecho por Holguer-->
+
+<footer class="footer">
+  <div class="footer__wrap-box1">
+    <a class="footer__logo" href=""><span class="footer__logo__text">Darling.</span></a>
+    <div class="footer__nav-footer">
+      <div class="footer__nav-footer-colum">
+        <ul class="nav-footer__list">
+          <li class="nav-footer__item">
+            <a href="" class="nav-footer__link">Shop</a>
+          </li>
+          <li class="nav-footer__item">
+            <a href="" class="nav-footer__link">Collections</a>
+          </li>
+          <li class="nav-footer__item">
+            <a href="" class="nav-footer__link">About</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__nav-footer-colum">
+        <ul class="nav-footer__list">
+          <li class="nav-footer__item">
+            <a href="" class="nav-footer__link">Contact</a>
+          </li>
+          <li class="nav-footer__item">
+            <a href="" class="nav-footer__link">Privacy</a>
+          </li>
+          <li class="nav-footer__item">
+            <a href="" class="nav-footer__link">Terms</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__sub-noticias-wrap">
+      <h3 class="sub-noticias__title">Subscribe to our newsletter</h3>
+      <p class="sub-noticias__descripcion">
+        For product announcements and exclusive insights
+      </p>
+      <form action="" class="sub-noticias__form-subscripcion">
+        <figure class="form-subscripcion__icon"></figure>
+        <input type="email" placeholder="Input your email" class="form-subscripcion__input" />
+        <button type="submit" class="form-subscripcion__boton boton-especial">
+          Subscribe
+        </button>
+      </form>
+    </div>
+  </div>
+  <div class="footer__wrap-box2">
+    <span class="footer__copyright-title">© 2022 Brand, Inc.</span>
+    <div class="footer__socialicons-wrap">
+      <a href="http://" target="" rel="noopener noreferrer" class="socialicons__link">
+        <figure class="socialicons__icon icon-twitter"></figure>
+      </a>
+      <a href="http://" target="" rel="noopener noreferrer" class="socialicons__link">
+        <figure class="socialicons__icon icon-facebook"></figure>
+      </a>
+      <a href="http://" target="" rel="noopener noreferrer" class="socialicons__link">
+        <figure class="socialicons__icon icon-linkedin"></figure>
+      </a>
+      <a href="http://" target="" rel="noopener noreferrer" class="socialicons__link">
+        <figure class="socialicons__icon icon-youtube"></figure>
+      </a>
+    </div>
+  </div>
+</footer>
+
+
+
+
+
+
+
+
+</body>
+</html>
