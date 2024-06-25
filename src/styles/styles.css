@@ -1764,8 +1764,8 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 60vh;
   text-align: center;
+  margin-bottom: 50px;
 }
 
 .card__Payment_Success figure img{
