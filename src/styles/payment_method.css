@@ -206,7 +206,6 @@
   line-height: 28px;
   font-weight: 700;
   color: #171a1fff;
-  font-family: var(--tipograpy-headings);
   margin-bottom: 9px;
 }
 
@@ -259,7 +258,6 @@
   line-height: 28px;
   font-weight: 700;
   color: #e8502eff;
-  font-family: var(--tipograhy-body);
   margin-top: 13px;
 }
 
@@ -271,15 +269,19 @@
 .payment-button button {
   width: 300px;
   height: 44px;
-  background-color: var(--color-text-primary);
+  background-color: var(--Color-primario);
   border: none;
   border-radius: 22px;
   font-size: 16px;
   line-height: 26px;
   font-weight: 400;
   color: #ffffffff;
-  font-family: var(--tipograhy-body);
   cursor: pointer;
+  transition: var(--Trasicion-MidSlow);
+}
+
+.payment-button button:hover {
+  background-color: var(--color-primario-claro);
 }
 /* ---Aqui termina el Main--- */
 
