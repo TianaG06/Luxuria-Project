@@ -51,3 +51,25 @@ console.log(productsFilterByPrice(productsArr,"acendente"));
 console.log(productsFilterByPrice(productsArr,"decendente"));
 
 
+// Total a pagar
+
+
+const productosComprados = [
+    { name: "Luxury Charms Ring", count: 2, price: 620000 },
+    { name: "Dreamy Infinity Ring", count: 3, price: 327.71 },
+    { name: "Reflections Necklace", count: 1, price: 620.73 }
+];
+
+
+const cantidadPedido = 5;
+
+const totalToPay = (products, cantidad, price) => {
+    return products.reduce((total, products) => {
+        const cantidad = parseInt(products.count, 10);
+        const precioUnitario = parseInt(products.price, 10);
+        return total + (cantidad * precioUnitario);
+    }, 0);
+};
+
+const totalToPayResult = totalToPay (productosComprados);
+console.log ("Total a pagar:", totalToPayResult);
