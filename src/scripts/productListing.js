@@ -5,9 +5,7 @@ const productsArr = productData;
 // filtrado por tipo
 
 const productsFilterByType = (products, productType) => {
-    return products.filter((product) => {
-    return product.type.toLowerCase() === productType.toLowerCase();
-    });
+    return products.filter((product) =>  product.type.toLowerCase() === productType.toLowerCase());
 };
 
 const productTypeCategorys = "Collar"
@@ -17,9 +15,7 @@ console.log(productosFiltrados);
 // filtrado por nombre
 
 const productsFilterByName = (products, TermOfSearch) => {
-        return products.filter((product) => {
-        return product.name.toLowerCase().includes(TermOfSearch.toLowerCase());
-    });
+        return products.filter((product) => product.name.toLowerCase().includes(TermOfSearch.toLowerCase()));
 };
 
 const NameSearchInput = "Lux";
