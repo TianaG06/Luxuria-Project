@@ -1,6 +1,5 @@
 import { productData } from "/src/modules/data/products-data.js";
 const carShop = [];
-console.log(carShop + "este es mi carro");
 const productsArr = productData;
 
 // filtrado por tipo
@@ -48,6 +47,8 @@ console.log(productsFilterByPrice(productsArr, "decendente"));
 
 // Total a pagar
 
+
+
 const cantidadProducto = 18;
 const productID = 4;
 
@@ -68,7 +69,7 @@ const AgregarAlCarrito = (id) => {
                 subtotal: subtotal
             });
             console.log(`Añadido al carrito: ${productSelected.name} - Cantidad: ${cantidadProducto}`);
-            console.log('Carrito:');
+            console.table(carShop);
 
             carShop.forEach(producto => {
                 console.log(`ID: ${producto.id}, Nombre: ${producto.name}, Cantidad: ${producto.cantidad}, Precio Unitario: ${producto.price}`);

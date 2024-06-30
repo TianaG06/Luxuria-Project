@@ -7,6 +7,7 @@
   --color-secundario: #f5d38eff;
   --color-secundario-oscuro: #b37d10ff;
 
+  --color-de-fuente-neutral-300: #DEE1E6FF;
   --color-de-fuente-neutral-500: #9095a0ff;
   --color-de-fuente-neutral-600: #565e6cff;
   --color-de-fuente-neutral-650: #424955ff;
@@ -39,6 +40,7 @@
   --tamaño-de-fuente-principal: 1.6rem;
   --tamaño-de-fuente-small: 1.4rem;
   --tamaño-de-fuente-ultra-small: 1.2rem;
+  --tamaño-de-fuente-mini: 1.1rem;
 
   --tamaño-de-fuente-logo-darling: 3rem;
 
@@ -1367,7 +1369,7 @@ p {
   background-color: transparent;
   border: 1px var(--color-primario-claro) solid;
   color: var(--color-primario-claro);
-  font-size: var(--tamaño-de-fuente-botones);
+  font-size: var(--tamaño-de-fuente-principal);
   line-height: 28px;
   cursor: pointer;
   display: flex;
