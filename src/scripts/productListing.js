@@ -91,3 +91,15 @@ const calcularTotalCarrito = () => {
 }
 
 AgregarAlCarrito(productID);
+
+
+//Filtros botones product listing Tatiana 
+
+// const filtrosProducts = document.getElementById("filtros-products");
+
+// const listaProducts = productData.map((productData) => productData.categoria);
+// const categorias = [...new Set(listaProducts)]; 
+// const contenedorProducts = document.querySelector("product-listing");
+
+
+//Funcionalidad botones "todos" product listing

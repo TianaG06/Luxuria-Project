@@ -109,12 +109,196 @@ export const productData = [
         price: 327.71,
         type: "Anillo",
         product_Img: "/src/assets/img/home/Dreamy Infinity Ring.webp",
-        description: "Collar Reflections de plata con color rojo",
+        description: "Anillo Dreamy de color rosado con piedras preciosas",
+        inStock: [
+            { talla: 48, color: "plateado", cantidad: 10, count: 1 },
+            { talla: 50, color: "dorado", cantidad: 4, count: 1 },
+            { talla: 52, color: "morado", cantidad: 10, count: 1 },
+            { talla: 54, color: "azul", cantidad: 5, count: 1 },
+        ],
+        stockTotal: function () {
+            let total = 0;
+            for (let item of this.inStock) {
+                total += item.cantidad;
+            };
+            return total ;
+        },
+    },
+
+    {
+        id: 5,
+        name: "Opulent Jewels Ring",
+        bar_Code: "B003",
+        price: 168.76,
+        type: "Anillo",
+        product_Img: "/src/assets/img/home/Dreamy Infinity Ring.webp",
+        description: "Anillo Opulent con tonos grises y negros",
         inStock: [
             { talla: 48, color: "plateado", cantidad: 10, count: 1 },
             { talla: 50, color: "dorado", cantidad: 4, count: 1 },
             { talla: 52, color: "morado", cantidad: 1, count: 1 },
             { talla: 54, color: "azul", cantidad: 9, count: 1 },
+        ],
+        stockTotal: function () {
+            let total = 0;
+            for (let item of this.inStock) {
+                total += item.cantidad;
+            };
+            return total ;
+        },
+    },
+
+    {
+        id: 6,
+        name: "Serene Solitaire Earrings",
+        bar_Code: "C001",
+        price: 125.28,
+        type: "Aretes",
+        product_Img: "/src/assets/img/home/Serene Solitaire Earrings.webp",
+        description: "Aretes Serene dorados con piedra preciosa azul",
+        inStock: [
+            { talla: 1, color: "plateado", cantidad: 1, count: 1 },
+            { talla: 2, color: "dorado", cantidad: 4, count: 1 },
+            { talla: 3, color: "morado", cantidad: 1, count: 1 },
+            { talla: 4, color: "azul", cantidad: 7, count: 1 },
+        ],
+        stockTotal: function () {
+            let total = 0;
+            for (let item of this.inStock) {
+                total += item.cantidad;
+            };
+            return total ;
+        },
+    },
+
+    {
+        id: 7,
+        name: "Timeless Halo Earrings",
+        bar_Code: "C002",
+        price: 620.73,
+        type: "Aretes",
+        product_Img: "/src/assets/img/home/Timeless Halo Earrings.webp",
+        description: "Aretes Timeless de plata con diamantes",
+        inStock: [
+            { talla: 1, color: "plateado", cantidad: 1, count: 1 },
+            { talla: 2, color: "dorado", cantidad: 5, count: 1 },
+            { talla: 3, color: "morado", cantidad: 7, count: 1 },
+            { talla: 4, color: "azul", cantidad: 7, count: 1 },
+        ],
+        stockTotal: function () {
+            let total = 0;
+            for (let item of this.inStock) {
+                total += item.cantidad;
+            };
+            return total ;
+        },
+    },
+
+    {
+        id: 8,
+        name: "Exquisite Earrings",
+        bar_Code: "C003",
+        price: 327.71,
+        type: "Aretes",
+        product_Img: "/src/assets/img/home/Exquisite Earrings.webp",
+        description: "Aretes Exquisite de plata con piedra aguamarina",
+        inStock: [
+            { talla: 1, color: "plateado", cantidad: 1, count: 1 },
+            { talla: 2, color: "dorado", cantidad: 2, count: 1 },
+            { talla: 3, color: "morado", cantidad: 4, count: 1 },
+            { talla: 4, color: "azul", cantidad: 7, count: 1 },
+        ],
+        stockTotal: function () {
+            let total = 0;
+            for (let item of this.inStock) {
+                total += item.cantidad;
+            };
+            return total ;
+        },
+    },
+
+    {
+        id: 9,
+        name: "Timeless Elegance Ring",
+        bar_Code: "B004",
+        price: 168.76,
+        type: "Anillo",
+        product_Img: "/src/assets/img/home/Dreamy Infinity Ring.webp",
+        description: "Anillo Timeless de oro con piedras moradas",
+        inStock: [
+            { talla: 48, color: "plateado", cantidad: 5, count: 1 },
+            { talla: 50, color: "dorado", cantidad: 4, count: 1 },
+            { talla: 52, color: "morado", cantidad: 1, count: 1 },
+            { talla: 54, color: "azul", cantidad: 9, count: 1 },
+        ],
+        stockTotal: function () {
+            let total = 0;
+            for (let item of this.inStock) {
+                total += item.cantidad;
+            };
+            return total ;
+        },
+    },
+
+    {
+        id: 10,
+        name: "Blissful Bloom Ring",
+        bar_Code: "B005",
+        price: 620.73,
+        type: "Anillo",
+        product_Img: "/src/assets/img/home/Blissful Bloom Ring.webp",
+        description: "Anillo Blissful dorado",
+        inStock: [
+            { talla: 48, color: "plateado", cantidad: 5, count: 1 },
+            { talla: 50, color: "dorado", cantidad: 4, count: 1 },
+            { talla: 52, color: "morado", cantidad: 1, count: 1 },
+            { talla: 54, color: "azul", cantidad: 3, count: 1 },
+        ],
+        stockTotal: function () {
+            let total = 0;
+            for (let item of this.inStock) {
+                total += item.cantidad;
+            };
+            return total ;
+        },
+    },
+
+    {
+        id: 11,
+        name: "Sparkling Ring",
+        bar_Code: "B006",
+        price: 620.73,
+        type: "Anillo",
+        product_Img: "/src/assets/img/home/Sparkling Ring.webp",
+        description: "Anillo Sparkling de oro con piedras preciosas",
+        inStock: [
+            { talla: 48, color: "plateado", cantidad: 5, count: 1 },
+            { talla: 50, color: "dorado", cantidad: 4, count: 1 },
+            { talla: 52, color: "morado", cantidad: 4, count: 1 },
+            { talla: 54, color: "azul", cantidad: 3, count: 1 },
+        ],
+        stockTotal: function () {
+            let total = 0;
+            for (let item of this.inStock) {
+                total += item.cantidad;
+            };
+            return total ;
+        },
+    },
+
+    {
+        id: 12,
+        name: "Glimmering Ring",
+        bar_Code: "B008",
+        price: 620.73,
+        type: "Anillo",
+        product_Img: "/src/assets/img/home/Glimmering Ring.webp",
+        description: "Anillo Glimmering de oro con diamantes",
+        inStock: [
+            { talla: 48, color: "plateado", cantidad: 5, count: 1 },
+            { talla: 50, color: "dorado", cantidad: 3, count: 1 },
+            { talla: 52, color: "morado", cantidad: 4, count: 1 },
+            { talla: 54, color: "azul", cantidad: 3, count: 1 },
         ],
         stockTotal: function () {
             let total = 0;
