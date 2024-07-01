@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/styles/normalize.css">
+    <link rel="stylesheet" href="/src/styles/styles.css">
+    <title>modulo cart</title>
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Manrope:wght@200..800&display=swap"
+        rel="stylesheet" />
+
+    <style>
+        body {
+            background-color: #9c9c9c77;
+
+        }
+
+        /* desde aqui se copia */
+        .cartShop__module {
+            width: 440px;
+            height: 100vh;
+            background-color: var(--color-blanco);
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            right: 0;
+            padding: 36px;
+        }
+
+        .cartShop__module__header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .cartShop__module__header h1 {
+            margin: 0;
+            width: fit-content;
+            font-weight: var(--peso-de-fuente-principal-600);
+            color: var(--color-primario-claro);
+            font-size: var(--tamaño-de-fuente-Titulos-H2-principal);
+            line-height: 56px;
+            padding-bottom: 20px;
+        }
+
+        .cartShop__module__header button {
+            height: 24px;
+            width: 24px;
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+            transition: var(--Trasicion-MidSlow);
+        }
+
+
+        .cartShop__module__header button svg path {
+            stroke: var(--Color-primario);
+        }
+
+        .cartShop__module__header button svg:first-child:hover {
+            animation: botonCerrar 500ms ease-in-out;
+        }
+
+        @keyframes botonCerrar {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(180deg);
+            }
+        }
+
+        .cartShop__module__products-container {
+            list-style: none;
+            width: 100%;
+            min-height: 68%;
+            display: flex;
+            flex-direction: column;
+        }
+
+
+        hr {
+            margin: 12px 0;
+            border: 1px solid var(--color-de-fuente-neutral-300);
+        }
+
+        /* -----------------------card ------------ */
+        .cartShop__module__card {
+            width: 100%;
+            height: 94px;
+            display: flex;
+            align-items: center;
+            gap: 16px;
+        }
+
+        .cartShop__module__img-container {
+            width: 94px;
+            height: 94px;
+            overflow: hidden;
+            border-radius: 6px;
+        }
+
+        .cartShop__module__img-container img {
+            object-fit: cover;
+            width: 100%;
+        }
+
+        .cartShop__module__infomation-container {
+            width: fit-content;
+
+            display: flex;
+            flex-direction: column;
+        }
+
+        .cartShop__module__infomation-container h3 {
+            width: fit-content;
+            color: var(--peso-de-fuente-titulo-pequeño-700);
+        }
+
+        .cartShop__module__infomation-container .item-code {
+            font-size: var(--tamaño-de-fuente-mini);
+            color: var(--color-de-fuente-neutral-500);
+            line-height: 18px;
+        }
+
+
+        .cartShop__module__infomation-container .item-price {
+            font-size: var(--tamaño-de-fuente-small);
+            color: var(--color-de-fuente-neutral-500);
+            line-height: 22px;
+        }
+
+        .cartShop__module__side-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 100%;
+            padding: 10px;
+            position: absolute;
+            right: 0;
+        }
+
+        .cartShop__module__edit-button {
+            align-items: center;
+            justify-content: center;
+            color: var(--color-de-fuente-neutral-500);
+            cursor: pointer;
+            background-color: transparent;
+            border: none;
+
+        }
+
+        .cartShop__module__edit-button:hover svg path {
+            fill: var(--color-secundario);
+        }
+
+
+        .cartShop__module__side-container span {
+            font-family: var(--estilo-de-fuente-Principal);
+            font-size: var(--tamaño-de-fuente-small);
+            color: var(--color-de-fuente-neutral-900);
+            pointer-events: none;
+        }
+
+
+        .cartShop__module__footer {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 12px;
+            align-self: baseline
+        }
+
+        .cartShop__module__total-container {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .cartShop__module__total-container:first-child {
+            font-size: var(--tamaño-de-fuente-small);
+        }
+
+        .cartShop__module__total-container:last-child {
+            font-weight: var(--peso-de-fuente-titulo-pequeño-700);
+        }
+
+        .cartShop__module__button-buy-now {
+            width: 100%;
+            height: 52px;
+            border-radius: 26px;
+            background-color: var(--Color-primario);
+            border: 1px var(--color-primario-claro) solid;
+            color: var(--color-blanco);
+            font-size: var(--tamaño-de-fuente-principal);
+            line-height: 28px;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            text-decoration: none;
+        }
+
+        .cartShop__module__button-buy-now:hover {
+            background-color: var(--color-primario-claro);
+        }
+    </style>
+</head>
+
+<body>
+    <section class="cartShop__module">
+        <div class="cartShop__module__header">
+            <h1>Your cart</h1>
+            <button class="button-close" type="button">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M18 6L6 18" stroke="#323842" stroke-width="2.05714" stroke-miterlimit="10"
+                        stroke-linecap="square" />
+                    <path d="M18 18L6 6" stroke="#323842" stroke-width="2.05714" stroke-miterlimit="10"
+                        stroke-linecap="square" />
+                </svg>
+            </button>
+        </div>
+        <div class="cartShop__module__products-container">
+            <article class="cartShop__module__card">
+                <figure class="cartShop__module__img-container"> <img src="/src/assets/img/Luxury Charms Ring.jpg"
+                        alt="" srcset=""></figure>
+                <div class="cartShop__module__infomation-container">
+                    <h3>Luxury Charm Ring</h3>
+                    <span class="item-code">Code: 78205</span>
+                    <span class="item-price">$620.73</span>
+                </div>
+                <div class="cartShop__module__side-container">
+
+                    <button class="cartShop__module__edit-button">
+                        <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M0 9.49992L0 11.9999L2.5 11.9999L9.87333 4.62659L7.37333 2.12659L0 9.49992ZM1.94667 10.6666L1.33333 10.6666L1.33333 10.0533L7.37333 4.01325L7.98667 4.62659L1.94667 10.6666ZM11.8067 1.75325L10.2467 0.193254C10.185 0.131451 10.1117 0.0824196 10.0311 0.0489653C9.95043 0.015511 9.86398 -0.00170898 9.77667 -0.00170898C9.68935 -0.00170898 9.6029 0.015511 9.52225 0.0489653C9.4416 0.0824196 9.36834 0.131451 9.30667 0.193254L8.08667 1.41325L10.5867 3.91325L11.8067 2.69325C11.8685 2.63158 11.9175 2.55832 11.951 2.47767C11.9844 2.39702 12.0016 2.31057 12.0016 2.22325C12.0016 2.13594 11.9844 2.04949 11.951 1.96884C11.9175 1.88819 11.8685 1.81493 11.8067 1.75325Z"
+                                fill="#9095A0" />
+                        </svg>
+                    </button>
+                    <span>x1</span>
+
+                </div>
+
+            </article>
+
+            <hr>
+
+            <li class="cartShop__module__card">
+                <figure class="cartShop__module__img-container"> <img src="/src/assets/img/Luxury Charms Ring.jpg"
+                        alt="" srcset=""></figure>
+                <div class="cartShop__module__infomation-container">
+                    <h3>Luxury Charm Ring</h3>
+                    <span class="item-code">Code: 78205</span>
+                    <span class="item-price">$620.73</span>
+                </div>
+                <div class="cartShop__module__side-container">
+
+                    <button class="cartShop__module__edit-button">
+                        <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M0 9.49992L0 11.9999L2.5 11.9999L9.87333 4.62659L7.37333 2.12659L0 9.49992ZM1.94667 10.6666L1.33333 10.6666L1.33333 10.0533L7.37333 4.01325L7.98667 4.62659L1.94667 10.6666ZM11.8067 1.75325L10.2467 0.193254C10.185 0.131451 10.1117 0.0824196 10.0311 0.0489653C9.95043 0.015511 9.86398 -0.00170898 9.77667 -0.00170898C9.68935 -0.00170898 9.6029 0.015511 9.52225 0.0489653C9.4416 0.0824196 9.36834 0.131451 9.30667 0.193254L8.08667 1.41325L10.5867 3.91325L11.8067 2.69325C11.8685 2.63158 11.9175 2.55832 11.951 2.47767C11.9844 2.39702 12.0016 2.31057 12.0016 2.22325C12.0016 2.13594 11.9844 2.04949 11.951 1.96884C11.9175 1.88819 11.8685 1.81493 11.8067 1.75325Z"
+                                fill="#9095A0" />
+                        </svg>
+                    </button>
+                    <span>x1</span>
+
+                </div>
+
+            </li>
+        </div>
+        <hr>
+
+        <footer class="cartShop__module__footer">
+
+            <div class="cartShop__module__total-container">
+                <span>Total</span>
+                <span>$621.75</span>
+            </div>
+            <a href="/src/pages/checkout/checkout_payment_method.html" class="cartShop__module__button-buy-now">Continue
+                to checkout</a>
+
+        </footer>
+
+
+    </section>
+</body>
+
+</html>
