@@ -24,8 +24,8 @@ function ejecutarFiltros(categoriaAFiltrar, menuFiltro, listaProductos, contened
     console.log(`Hice click en el filtro ${categoriaAFiltrar}`);
     // mostrarFiltroActivo(contenedorFiltros.children, element);
     activarBoton(menuFiltro, categoriaAFiltrar);
-    const videosFiltrados = filtrarVideosCategoria(listaProductos, categoriaAFiltrar);
-    pintarCards(videosFiltrados, contenedorProductos)
+    const productosFiltrados = filtrarVideosCategoria(listaProductos, categoriaAFiltrar);
+    pintarCards(productosFiltrados, contenedorProductos)
 }
 
 function mostrarFiltroActivo(botonesFiltrado, filtroAActivar) {
@@ -74,7 +74,7 @@ function pintarCards(listaProductos, contenedorProductos) {
             titulo.textContent = product.name; 
 
             const precio = document.createElement('span');
-            precio.textContent = `$ ${(product.price / 100).toFixed(2)}`
+            precio.textContent = `$ ${(product.price).toLocaleString()}`
 
 
             const section = document.createElement("section");
@@ -85,6 +85,9 @@ function pintarCards(listaProductos, contenedorProductos) {
             enlace.appendChild(figure);
             enlace.appendChild(div);
             card.appendChild(enlace);
+
+
+            contenedorProductos.appendChild(card);
         });
     } else {
         contenedorProductos.textContent = "no hay productos disponibles"
@@ -92,7 +95,7 @@ function pintarCards(listaProductos, contenedorProductos) {
 }
 
 function filtrarVideosCategoria(listaProductos, nombreCategoria) {
-    return (nombreCategoria === "allItems") ? listaProductos : listaProductos.filter(product => product.type === nombreCategoria);
+    return (nombreCategoria === "todos-products") ? listaProductos : listaProductos.filter(product => product.type === nombreCategoria);
 }
 
 

@@ -6,7 +6,7 @@ export const productData = [
         id: 0,
         name: "Luxury Charms Ring",
         bar_Code: "123456",
-        price: 620000,
+        price: 1000,
         type: "Anillo",
         productImages: [
             {

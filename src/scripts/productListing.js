@@ -6,9 +6,17 @@ import { agregarBotonesDeFiltrado, pintarCards, ejecutarFiltros, busquedaVideoPo
 
 // Contenedores 
 const filterButtons = document.getElementById("filterButtons");
-const contenedorProductos = document.getElementById("contenedorProductos");
+const contenedorProductos = document.querySelector(".main__cards");
 
 const categorias = [...new Set(productData.map(product => product.type))]; 
+
+
+
+const botonTodos = document.getElementById("todos-products");
+console.log(botonTodos);
+botonTodos.addEventListener('click', (evento)=> {
+    ejecutarFiltros(evento.target.id, filterButtons.children,productData,contenedorProductos)
+});
 
 
 
