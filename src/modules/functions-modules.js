@@ -30,8 +30,10 @@ function ejecutarFiltros(categoriaAFiltrar, menuFiltro, listaProductos, contened
 
 function mostrarFiltroActivo(botonesFiltrado, filtroAActivar) {
     for (const boton of botonesFiltrado) {
+        boton.classList.add('button__options');
         boton.classList.remove("button__active");
         if (boton.id === filtroAActivar) {
+            boton.classList.remove('button__options');
             boton.classList.add("button__active");
         }
     }
@@ -40,9 +42,11 @@ function mostrarFiltroActivo(botonesFiltrado, filtroAActivar) {
 function activarBoton(listaBotones, botonAActivar) {
     for (const item of listaBotones) {
         const boton = item.querySelector('button');
-        boton.classList.remove("active");
+        boton.classList.add('button__options');
+        boton.classList.remove("button__active");
         if (boton.id === botonAActivar) {
-            boton.classList.add("active");
+            boton.classList.remove('button__options');
+            boton.classList.add("button__active");
         }
     }
 }
@@ -54,43 +58,36 @@ function pintarCards(listaProductos, contenedorProductos) {
 
         listaProductos.forEach((product) => {
             const card = document.createElement("article");
-            const figure = document.createElement("figure");
-            const section = document.createElement("section");
-            const play = document.createElement('button')
-
-            figure.innerHTML = `
-        <img src=${product.poster} alt=${product.namevideo}>
-        <figcaption>13:55</figcaption>
-      `;
-
-            section.innerHTML = `
-        <figure>
-          <img src=${product.avatar} alt=${product.username}>
-        </figure>
-        <div>
-          <h2>${product.namevideo}</h2>
-          <p>${product.username}</p>
-          <p>${product.vistas} vistas - ${product.fecha}</p>
-        </div>
-      `;
-
-            play.innerHTML = `
-      <svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px" fill="#666666"><path d="m383-310 267-170-267-170v340Zm97 230q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-156t86-127Q252-817 325-848.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82-31.5 155T763-197.5q-54 54.5-127 86T480-80Zm0-60q142 0 241-99.5T820-480q0-142-99-241t-241-99q-141 0-240.5 99T140-480q0 141 99.5 240.5T480-140Zm0-340Z"/></svg>
-      `;
-
-            play.addEventListener('click', () => {
-                window.location.href = "/src/pages/detalleVideo.html";
-            })
-
             card.classList.add('card__container');
 
-            card.appendChild(figure);
-            card.appendChild(section);
-            figure.appendChild(play)
-            contenedorProductos.appendChild(tarjeta);
+            const enlace =  document.createElement('a');
+            enlace.classList.add('card__container-link');
+
+            const figure = document.createElement("figure");
+            const imagen = document.createElement('img');
+            imagen.src = product.productImages[0].imagen1;
+            imagen.alt = product.name;
+
+
+            const div = document.createElement('div');
+            const titulo = document.createElement('h2');
+            titulo.textContent = product.name; 
+
+            const precio = document.createElement('span');
+            precio.textContent = `$ ${(product.price / 100).toFixed(2)}`
+
+
+            const section = document.createElement("section");
+            
+            figure.appendChild(imagen);
+            div.appendChild(titulo);
+            div.appendChild(precio);
+            enlace.appendChild(figure);
+            enlace.appendChild(div);
+            card.appendChild(enlace);
         });
     } else {
-        contenedorProductos.textContent = "no se encontraron video"
+        contenedorProductos.textContent = "no hay productos disponibles"
     }
 }
 

@@ -1715,7 +1715,7 @@ p {
 
 }
 
-.card__container div p {
+.card__container div span {
   font-family: var(--estilo-de-fuente-Principal);
   font-size: var(--tamaño-de-fuente-small);
   font-weight: var(--peso-de-fuente-principal-400);

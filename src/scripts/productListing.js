@@ -6,11 +6,11 @@ import { agregarBotonesDeFiltrado, pintarCards, ejecutarFiltros, busquedaVideoPo
 
 // Contenedores 
 const filterButtons = document.getElementById("filterButtons");
-const contenedorProductos = document.querySelector("contenedorProductos");
+const contenedorProductos = document.getElementById("contenedorProductos");
 
 const categorias = [...new Set(productData.map(product => product.type))]; 
 
 
 
-agregarBotonesDeFiltrado(categorias, filterButtons, productData)
+agregarBotonesDeFiltrado(categorias, filterButtons, productData, contenedorProductos)
 pintarCards(productData, contenedorProductos);
