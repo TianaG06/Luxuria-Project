@@ -1671,6 +1671,7 @@ p {
 .card__container {
   border-radius: 8px; /* border-xl */
   transition: var(--Trasicion-MidSlow);
+  max-width: 276px;
   aspect-ratio: 276/404;
 }
 
