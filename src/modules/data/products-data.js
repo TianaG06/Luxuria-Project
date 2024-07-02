@@ -48,10 +48,10 @@ export const productData = [
         type: "Collar",
         productImages: [
             {
-            imagen1: "/src/assets/img/products-details/image1.webp",
-            imagen2: "/src/assets/img/products-details/image1.webp",
-            imagen3: "/src/assets/img/products-details/image1.webp",
-            imagen4: "/src/assets/img/products-details/image1.webp",
+            imagen1: "/src/assets/img/products/Luxury_Gems_Necklaces.webp",
+            imagen2: "/src/assets/img/products/Luxury_Gems_Necklaces.webp",
+            imagen3: "/src/assets/img/products/Luxury_Gems_Necklaces.webp",
+            imagen4: "/src/assets/img/products/Luxury_Gems_Necklaces.webp",
             }
         ],
 
@@ -79,10 +79,10 @@ export const productData = [
         type: "Anillo",
         productImages: [
             {
-            imagen1: "/src/assets/img/products-details/image1.webp",
-            imagen2: "/src/assets/img/products-details/image1.webp",
-            imagen3: "/src/assets/img/products-details/image1.webp",
-            imagen4: "/src/assets/img/products-details/image1.webp",
+            imagen1: "/src/assets/img/products/Aurora_Ring.webp",
+            imagen2: "/src/assets/img/products/Aurora_Ring.webp",
+            imagen3: "/src/assets/img/products/Aurora_Ring.webp",
+            imagen4: "/src/assets/img/products/Aurora_Ring.webp",
             }
         ],
 
@@ -110,10 +110,10 @@ export const productData = [
         type: "Collar",
         productImages: [
             {
-            imagen1: "/src/assets/img/products-details/Reflections_Necklace.webp",
-            imagen2: "/src/assets/img/products-details/Reflections_Necklace.webp",
-            imagen3: "/src/assets/img/products-details/Reflections_Necklace.webp",
-            imagen4: "/src/assets/img/products-details/Reflections_Necklace.webp",
+            imagen1: "/src/assets/img/products/Reflections_Necklace.webp",
+            imagen2: "/src/assets/img/products/Reflections_Necklace.webp",
+            imagen3: "/src/assets/img/products/Reflections_Necklace.webp",
+            imagen4: "/src/assets/img/products/Reflections_Necklace.webp",
             }
         ],
 
@@ -141,10 +141,10 @@ export const productData = [
         type: "Anillo",
         productImages: [
             {
-            imagen1: "/src/assets/img/products-details/Dreamy_Infinity_Ring.webp",
-            imagen2: "/src/assets/img/products-details/Dreamy_Infinity_Ring.webp",
-            imagen3: "/src/assets/img/products-details/Dreamy_Infinity_Ring.webp",
-            imagen4: "/src/assets/img/products-details/Dreamy_Infinity_Ring.webp",
+            imagen1: "/src/assets/img/products/Dreamy_Infinity_Ring.webp",
+            imagen2: "/src/assets/img/products/Dreamy_Infinity_Ring.webp",
+            imagen3: "/src/assets/img/products/Dreamy_Infinity_Ring.webp",
+            imagen4: "/src/assets/img/products/Dreamy_Infinity_Ring.webp",
             }
         ],
 
@@ -172,10 +172,10 @@ export const productData = [
         type: "Anillo",
         productImages: [
             {
-            imagen1: "/src/assets/img/products-details/Opulent_Jewels_Ring.webp",
-            imagen2: "/src/assets/img/products-details/Opulent_Jewels_Ring.webp",
-            imagen3: "/src/assets/img/products-details/Opulent_Jewels_Ring.webp",
-            imagen4: "/src/assets/img/products-details/Opulent_Jewels_Ring.webp",
+            imagen1: "/src/assets/img/products/Opulent_Jewels_Ring.webp",
+            imagen2: "/src/assets/img/products/Opulent_Jewels_Ring.webp",
+            imagen3: "/src/assets/img/products/Opulent_Jewels_Ring.webp",
+            imagen4: "/src/assets/img/products/Opulent_Jewels_Ring.webp",
             }
         ],
 
@@ -203,10 +203,10 @@ export const productData = [
         type: "Aretes",
         productImages: [
             {
-            imagen1: "/src/assets/img/products-details/Serene_Solitaire_Earrings.webp",
-            imagen2: "/src/assets/img/products-details/Serene_Solitaire_Earrings.webp",
-            imagen3: "/src/assets/img/products-details/Serene_Solitaire_Earrings.webp",
-            imagen4: "/src/assets/img/products-details/Serene_Solitaire_Earrings.webp",
+            imagen1: "/src/assets/img/products/Serene_Solitaire_Earrings.webp",
+            imagen2: "/src/assets/img/products/Serene_Solitaire_Earrings.webp",
+            imagen3: "/src/assets/img/products/Serene_Solitaire_Earrings.webp",
+            imagen4: "/src/assets/img/products/Serene_Solitaire_Earrings.webp",
             }
         ],
 
@@ -234,10 +234,10 @@ export const productData = [
         type: "Aretes",
         productImages: [
             {
-            imagen1: "/src/assets/img/products-details/Timeless_Halo_Earrings.webp",
-            imagen2: "/src/assets/img/products-details/Timeless_Halo_Earrings.webp",
-            imagen3: "/src/assets/img/products-details/Timeless_Halo_Earrings.webp",
-            imagen4: "/src/assets/img/products-details/Timeless_Halo_Earrings.webp",
+            imagen1: "/src/assets/img/products/Timeless_Halo_Earrings.webp",
+            imagen2: "/src/assets/img/products/Timeless_Halo_Earrings.webp",
+            imagen3: "/src/assets/img/products/Timeless_Halo_Earrings.webp",
+            imagen4: "/src/assets/img/products/Timeless_Halo_Earrings.webp",
             }
         ],
 
@@ -265,10 +265,10 @@ export const productData = [
         type: "Aretes",
         productImages: [
             {
-            imagen1: "/src/assets/img/products-details/Exquisite_Earrings.webp",
-            imagen2: "/src/assets/img/products-details/Exquisite_Earrings.webp",
-            imagen3: "/src/assets/img/products-details/Exquisite_Earrings.webp",
-            imagen4: "/src/assets/img/products-details/Exquisite_Earrings.webp",
+            imagen1: "/src/assets/img/products/Exquisite_Earrings_azules.webp",
+            imagen2: "/src/assets/img/products/Exquisite_Earrings_azules.webp",
+            imagen3: "/src/assets/img/products/Exquisite_Earrings_azules.webp",
+            imagen4: "/src/assets/img/products/Exquisite_Earrings_azules.webp",
             }
         ],
 
@@ -296,10 +296,10 @@ export const productData = [
         type: "Anillo",
         productImages: [
             {
-            imagen1: "/src/assets/img/products-details/Timeless_Elegance_Ring.webp",
-            imagen2: "/src/assets/img/products-details/Timeless_Elegance_Ring.webp",
-            imagen3: "/src/assets/img/products-details/Timeless_Elegance_Ring.webp",
-            imagen4: "/src/assets/img/products-details/Timeless_Elegance_Ring.webp",
+            imagen1: "/src/assets/img/products/Timeless_Elegance_Ring.webp",
+            imagen2: "/src/assets/img/products/Timeless_Elegance_Ring.webp",
+            imagen3: "/src/assets/img/products/Timeless_Elegance_Ring.webp",
+            imagen4: "/src/assets/img/products/Timeless_Elegance_Ring.webp",
             }
         ],
 
@@ -327,10 +327,10 @@ export const productData = [
         type: "Anillo",
         productImages: [
             {
-            imagen1: "/src/assets/img/products-details/Blissful_Bloom_Ring.webp",
-            imagen2: "/src/assets/img/products-details/Blissful_Bloom_Ring.webp",
-            imagen3: "/src/assets/img/products-details/Blissful_Bloom_Ring.webp",
-            imagen4: "/src/assets/img/products-details/Blissful_Bloom_Ring.webp",
+            imagen1: "/src/assets/img/products/Blissful_Bloom_Ring.webp",
+            imagen2: "/src/assets/img/products/Blissful_Bloom_Ring.webp",
+            imagen3: "/src/assets/img/products/Blissful_Bloom_Ring.webp",
+            imagen4: "/src/assets/img/products/Blissful_Bloom_Ring.webp",
             }
         ],
 
@@ -358,10 +358,10 @@ export const productData = [
         type: "Anillo",
         productImages: [
             {
-            imagen1: "/src/assets/img/products-details/Sparkling_Ring.webp",
-            imagen2: "/src/assets/img/products-details/Sparkling_Ring.webp",
-            imagen3: "/src/assets/img/products-details/Sparkling_Ring.webp",
-            imagen4: "/src/assets/img/products-details/Sparkling_Ring.webp",
+            imagen1: "/src/assets/img/products/Sparkling_Ring.webp",
+            imagen2: "/src/assets/img/products/Sparkling_Ring.webp",
+            imagen3: "/src/assets/img/products/Sparkling_Ring.webp",
+            imagen4: "/src/assets/img/products/Sparkling_Ring.webp",
             }
         ],
 
@@ -389,10 +389,10 @@ export const productData = [
         type: "Anillo",
         productImages: [
             {
-            imagen1: "/src/assets/img/products-details/Glimmering_Ring.webp",
-            imagen2: "/src/assets/img/products-details/Glimmering_Ring.webp",
-            imagen3: "/src/assets/img/products-details/Glimmering_Ring.webp",
-            imagen4: "/src/assets/img/products-details/Glimmering_Ring.webp",
+            imagen1: "/src/assets/img/products/Glimmering_Ring.webp",
+            imagen2: "/src/assets/img/products/Glimmering_Ring.webp",
+            imagen3: "/src/assets/img/products/Glimmering_Ring.webp",
+            imagen4: "/src/assets/img/products/Glimmering_Ring.webp",
             }
         ],
 
