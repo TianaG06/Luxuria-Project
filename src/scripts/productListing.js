@@ -2,6 +2,13 @@ import { productData } from "/src/modules/data/products-data.js";
 const carShop = [];
 const productsArr = productData;
 
+// Filtros
+const filterButtons = document.getElementById("filterButtons")
+const listaDeCategorias = productData.map((producto) => producto.type)
+console.log(listaDeCategorias);
+
+
+
 // filtrado por tipo
 
 const productsFilterByType = (products, productType) => {

@@ -125,13 +125,15 @@
 
     <section id="filtros-products" class="main__categorieproducts">
       
-        <div class="categorieproducts__buttons">
-            <button id="todos-products" class="button__active">All</button>
-            <button id="rings-products" class="button__options">Rings</button>
-            <button id="bracelets-products" class="button__options">Bracelets</button>
-            <button id="necklaces-products" class="button__options">Necklaces</button>
-            <button id="earrings-products" class="button__options">Earrings</button>
-        </div>
+      <nav id="filterButtons" class="categorieproducts__nav">
+        <ul class="categorieproducts__buttons">
+            <li><button id="todos-products" class="button__active">All</button></li>
+            <li><button id="rings-products" class="button__options">Rings</button></li>
+            <li><button id="bracelets-products" class="button__options">Bracelets</button></li>
+            <li><button id="necklaces-products" class="button__options">Necklaces</button></li>
+            <li><button id="earrings-products" class="button__options">Earrings</button></li>
+        </ul>
+      </nav>
 
         <select id="sortbyoptions" class="button__sortbyoption" name="sort by options">
           <option class="sort__by__price">Sort by price</option>

@@ -8,7 +8,14 @@ export const productData = [
         bar_Code: "123456",
         price: 620000,
         type: "Anillo",
-        product_Img: "/src/assets/img/products-details/image1.webp",
+        productImages: [
+            {
+            imagen1: "/src/assets/img/products-details/image1.webp",
+            imagen2: "/src/assets/img/products-details/image1.webp",
+            imagen3: "/src/assets/img/products-details/image1.webp",
+            imagen4: "/src/assets/img/products-details/image1.webp",
+            }
+        ],
         description: "Anillo Luxury de  plata con gema de zafiros",
         inStock: [
             { talla: 48, color: "white", cantidad: 5, count: 1},

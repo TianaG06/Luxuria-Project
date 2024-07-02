@@ -1590,6 +1590,8 @@ p {
 .categorieproducts__buttons{
   display: flex;
   gap: 2%;
+  list-style: none;
+  text-decoration: none;
 
 }
 
