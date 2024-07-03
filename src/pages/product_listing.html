@@ -101,7 +101,7 @@
 
 <!--Barra de busqueda Tatiana-->
 
-  <main id="product_listing" class="main__wrap">
+  <main id="product-listing" class="main__wrap">
     <section class="main__productlisting">
     <div class="productlisting__headline-wrap">
         <h1 class="productlisting__title">
@@ -114,7 +114,7 @@
                 <path d="M10.2859 17.1428C14.0729 17.1428 17.143 14.0727 17.143 10.2856C17.143 6.49851 14.0729 3.42847 10.2859 3.42847C6.49876 3.42847 3.42871 6.49851 3.42871 10.2856C3.42871 14.0727 6.49876 17.1428 10.2859 17.1428Z" stroke="#323842" stroke-width="2.05714" stroke-miterlimit="10" stroke-linecap="square"/>
                 <path d="M6.85693 10.2857C6.85693 9.37644 7.21816 8.50436 7.86114 7.86138C8.50412 7.2184 9.37619 6.85718 10.2855 6.85718" stroke="#323842" stroke-width="2.05714" stroke-miterlimit="10"/>
                 </svg>
-                <input type="search" id="buscar" name="buscar" placeholder="Find jewelry you like">
+                <input type="search" id="search-products" name="search products" placeholder="Find jewelry you like">
         </button>
     </div>
     </div>
@@ -123,17 +123,19 @@
 
 <!--Botones de selección de productos Tatiana-->
 
-    <section class="main__categorieproducts">
+    <section id="filtros-products" class="main__categorieproducts">
       
-        <div class="categorieproducts__buttons">
-            <button class="button__active">All</button>
-            <button class="button__options">Rings</button>
-            <button class="button__options">Bracelets</button>
-            <button class="button__options">Necklaces</button>
-            <button class="button__options">Earrings</button>
-        </div>
+      <nav  class="categorieproducts__nav">
+        <ul id="filterButtons" class="categorieproducts__buttons">
+            <li><button id="todos-products" class="button__active">All</button></li>
+            <!-- <li><button id="rings-products" class="button__options">Rings</button></li>
+            <li><button id="bracelets-products" class="button__options">Bracelets</button></li>
+            <li><button id="necklaces-products" class="button__options">Necklaces</button></li>
+            <li><button id="earrings-products" class="button__options">Earrings</button></li> -->
+        </ul>
+      </nav>
 
-        <select class="button__sortbyoption" name="Sort by options">
+        <select id="sortbyoptions" class="button__sortbyoption" name="sort by options">
           <option class="sort__by__price">Sort by price</option>
         <option class="sort__by__name">Sort by name</option>
       </select>
@@ -145,8 +147,8 @@
 
 <!--Contenedores de imagenes Tatiana-->
 
-<section class="main__cards">
-    <article class="card__container">
+<section id="contenedorProductos" class="main__cards">
+    <!-- <article class="card__container">
       <a href="/src/pages/product_details.html" class="card__container-link">
 
         <figure>
@@ -154,12 +156,12 @@
         </figure>
         <div>
           <h2>Luxury Gems Necklace</h2>
-          <p>$168.76</p>
+          <span>$168.76</span>
         </div>
       </a>
-      </article>
+      </article> -->
 
-      <article class="card__container">
+      <!-- <article class="card__container">
         <a href="/src/pages/product_details.html" class="card__container-link">
 
           <figure>
@@ -343,7 +345,7 @@
           </div>
 
         </a>
-      </article>
+      </article> -->
 </section>
 
 
