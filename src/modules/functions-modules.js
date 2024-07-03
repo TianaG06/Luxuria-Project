@@ -21,7 +21,6 @@ function agregarBotonesDeFiltrado(
 }
 
 function ejecutarFiltros(categoriaAFiltrar, menuFiltro, listaProductos, contenedorProductos) {
-    console.log(`Hice click en el filtro ${categoriaAFiltrar}`);
     activarBoton(menuFiltro, categoriaAFiltrar);
     const productosFiltrados = filtrarVideosCategoria(listaProductos, categoriaAFiltrar);
     pintarCards(productosFiltrados, contenedorProductos);
@@ -51,7 +50,7 @@ function pintarCards(listaProductos, contenedorProductos) {
             card.classList.add('card__container');
 
             const enlace = document.createElement('a');
-            enlace.href = `/src/pages/product_details.html?=${product.id}`
+            enlace.href = `/src/pages/product_details.html?id=${product.id}`
             enlace.classList.add('card__container-link');
 
             const figure = document.createElement("figure");

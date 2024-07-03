@@ -3,7 +3,7 @@
 export const productData = [
 
     {
-        id: 999,
+        id: 0,
         name: "Luxury Charms Ring",
         bar_Code: "123456",
         price: 1000,
@@ -16,7 +16,7 @@ export const productData = [
             imagen4: "/src/assets/img/products-details/image1.webp",
             }
         ],
-        description: "Anillo Luxury de  plata con gema de zafiros",
+        description: "Anillo Luxury de plata con gema de zafiros",
         inStock: [
             { talla: 48, color: "white", cantidad: 5, count: 1},
             { talla: 50, color: "orange", cantidad: 2, count: 1},
