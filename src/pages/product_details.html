@@ -97,7 +97,7 @@
 
 
 
-        <section class="product-details__section">
+        <section id="product-details-container" class="product-details__section">
             <nav class="product-details__nav">
 
                 <ul class="product-details__list">
@@ -112,9 +112,6 @@
             </nav>
 
             <article class="product-details__section-wrap">
-
-
-
                 <section class="product-details__img-Galery">
 
                     <aside class="img-galery__aside-conteiner">
@@ -141,18 +138,16 @@
 
 
                 <div class="product-details__details-box">
-                    <h2 class="product-title__details-box">Luxury Charms Ring</h2>
-                    <small class="product-code__details-box">Code: 78205</small>
-                    <span class="product-price__details-box">$620.73</span>
+                    <h2 id="productName" class="product-title__details-box">Luxury Charms Ring</h2>
+                    <small id="productCode" class="product-code__details-box">Code: 78205</small>
+                    <span id="productPrice class="product-price__details-box">$620.73</span>
 
                     <div class="colors-option__details-box">
                         <h3 class="text__colors-option">Color - <span id="text__colors-option">Rose gold</span></h3>
-                        <menu class="buttons-container__colors-option">
-
-                            <button class="color-option-button silver "></button>
-                            <button class="color-option-button rose colorSelected"></button>
-
-                        </menu>
+                        <ul class="buttons-container__colors-option">
+                            <li><button class="color-option-button silver "></button></li>
+                            <li><button class="color-option-button rose colorSelected"></button></li>
+                        </u>
                     </div>
 
                     <div class="size-options__details-box">
@@ -400,6 +395,8 @@
             </div>
         </div>
     </footer>
+
+    <script type="module" src="/src/scripts/productDetails.js"></script>
 </body>
 
 </html>

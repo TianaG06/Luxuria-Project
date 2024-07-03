@@ -16,7 +16,6 @@ const entradaDeBusqueda = document.getElementById("entradaDeBusqueda");
 
 
 const botonTodos = document.getElementById("todos-products");
-console.log(botonTodos);
 botonTodos.addEventListener('click', (evento) => {
     ejecutarFiltros(evento.target.id, filterButtons.children, productData, contenedorProductos);
 });

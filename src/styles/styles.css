@@ -1196,6 +1196,7 @@ p {
 
 .buttons-container__colors-option {
   display: flex;
+  list-style: none;
 }
 
 .color-option-button {
