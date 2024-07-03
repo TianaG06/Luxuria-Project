@@ -29,24 +29,27 @@
     <div class="globalheader__wrap">
       <a class="globalheader__logo" href="/index.html"><span class="globalheader__logo__text">Darling.</span></a>
       <div class="globalheader__nav-container">
-       
+
         <nav class="globalnav ">
           <ul class="globalnav__list">
             <li class="globalnav__item">
               <a href="/index.html" class="globalnav__link"><span class="globalnav__link__text">Home</span></a>
             </li>
             <li class="globalnav__item">
-              <a href="/src/pages/product_listing.html" class="globalnav__link"><span class="globalnav__link__text">Shop</span></a>
+              <a href="/src/pages/product_listing.html" class="globalnav__link"><span
+                  class="globalnav__link__text">Shop</span></a>
             </li>
             <li class="globalnav__item">
-              <a href="/src/pages/collection_listing.html" class="globalnav__link"><span class="globalnav__link__text">Collections</span></a>
+              <a href="/src/pages/collection_listing.html" class="globalnav__link"><span
+                  class="globalnav__link__text">Collections</span></a>
             </li>
             <li class="globalnav__item">
               <a href="/src/pages/about_us.html" class="globalnav__link">
                 <span class="globalnav__link__text">About</span></a>
             </li>
             <li class="globalnav__item">
-              <a href="/src/pages/contact_us.html" class="globalnav__link"><span class="globalnav__link__text">Contact</span></a>
+              <a href="/src/pages/contact_us.html" class="globalnav__link"><span
+                  class="globalnav__link__text">Contact</span></a>
             </li>
           </ul>
         </nav>
@@ -83,61 +86,60 @@
         </div>
       </div>
       <button class="globalheader__botonMobile">
-        <svg
-        xmlns="http://www.w3.org/2000/svg"
-        height="40px"
-        viewBox="0 -960 960 960"
-        width="40px"
-        fill="#f5d38eff"
-      >
-        <path
-          d="M120-240v-66.67h720V-240H120Zm0-206.67v-66.66h720v66.66H120Zm0-206.66V-720h720v66.67H120Z"
-        />
-      </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#f5d38eff">
+          <path d="M120-240v-66.67h720V-240H120Zm0-206.67v-66.66h720v66.66H120Zm0-206.66V-720h720v66.67H120Z" />
+        </svg>
 
       </button>
     </div>
   </header>
 
-<!--Barra de busqueda Tatiana-->
+  <!--Barra de busqueda Tatiana-->
 
   <main id="product-listing" class="main__wrap">
     <section class="main__productlisting">
-    <div class="productlisting__headline-wrap">
+      <div class="productlisting__headline-wrap">
         <h1 class="productlisting__title">
-        Our Products
+          Our Products
         </h1>
-    <div class="search__bar">
-        <button>
+        <form id="formularioDeBusqueda" class="search__bar">
+          <button>
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M20.5716 20.5714L17.1431 17.1428" stroke="#323842" stroke-width="2.05714" stroke-miterlimit="10" stroke-linecap="square"/>
-                <path d="M10.2859 17.1428C14.0729 17.1428 17.143 14.0727 17.143 10.2856C17.143 6.49851 14.0729 3.42847 10.2859 3.42847C6.49876 3.42847 3.42871 6.49851 3.42871 10.2856C3.42871 14.0727 6.49876 17.1428 10.2859 17.1428Z" stroke="#323842" stroke-width="2.05714" stroke-miterlimit="10" stroke-linecap="square"/>
-                <path d="M6.85693 10.2857C6.85693 9.37644 7.21816 8.50436 7.86114 7.86138C8.50412 7.2184 9.37619 6.85718 10.2855 6.85718" stroke="#323842" stroke-width="2.05714" stroke-miterlimit="10"/>
-                </svg>
-                <input type="search" id="search-products" name="search products" placeholder="Find jewelry you like">
-        </button>
-    </div>
-    </div>
+              <path d="M20.5716 20.5714L17.1431 17.1428" stroke="#323842" stroke-width="2.05714" stroke-miterlimit="10"
+                stroke-linecap="square" />
+              <path
+                d="M10.2859 17.1428C14.0729 17.1428 17.143 14.0727 17.143 10.2856C17.143 6.49851 14.0729 3.42847 10.2859 3.42847C6.49876 3.42847 3.42871 6.49851 3.42871 10.2856C3.42871 14.0727 6.49876 17.1428 10.2859 17.1428Z"
+                stroke="#323842" stroke-width="2.05714" stroke-miterlimit="10" stroke-linecap="square" />
+              <path
+                d="M6.85693 10.2857C6.85693 9.37644 7.21816 8.50436 7.86114 7.86138C8.50412 7.2184 9.37619 6.85718 10.2855 6.85718"
+                stroke="#323842" stroke-width="2.05714" stroke-miterlimit="10" />
+            </svg>
+          </button>
+          <input type="search" id="entradaDeBusqueda" name="search products" placeholder="Find jewelry you like">
+          </>
+      </div>
     </section>
-    
 
-<!--Botones de selección de productos Tatiana-->
+
+    <!--Botones de selección de productos Tatiana-->
 
     <section id="filtros-products" class="main__categorieproducts">
-      
-      <nav  class="categorieproducts__nav">
+
+      <nav class="categorieproducts__nav">
         <ul id="filterButtons" class="categorieproducts__buttons">
-            <li><button id="todos-products" class="button__active">All</button></li>
-            <!-- <li><button id="rings-products" class="button__options">Rings</button></li>
+          <li><button id="todos-products" class="button__active">All</button></li>
+          <!-- <li><button id="rings-products" class="button__options">Rings</button></li>
             <li><button id="bracelets-products" class="button__options">Bracelets</button></li>
             <li><button id="necklaces-products" class="button__options">Necklaces</button></li>
             <li><button id="earrings-products" class="button__options">Earrings</button></li> -->
         </ul>
       </nav>
 
-        <select id="sortbyoptions" class="button__sortbyoption" name="sort by options">
-          <option class="sort__by__price">Sort by price</option>
-        <option class="sort__by__name">Sort by name</option>
+      <select id="sortByOptions" class="button__sortbyoption" name="sort by (options)">
+        <option selected disabled style="display:none;" id="sortDefault">Sort by price</option>
+        <option id="all">Sort by price</option>
+        <option id="ascending">Precio: Menor a Mayor</option>
+        <option id="descending">Precio: Mayor a Menor</option>
       </select>
 
     </section>
@@ -145,10 +147,10 @@
 
 
 
-<!--Contenedores de imagenes Tatiana-->
+    <!--Contenedores de imagenes Tatiana-->
 
-<section id="contenedorProductos" class="main__cards">
-    <!-- <article class="card__container">
+    <section id="contenedorProductos" class="main__cards">
+      <!-- <article class="card__container">
       <a href="/src/pages/product_details.html" class="card__container-link">
 
         <figure>
@@ -346,123 +348,124 @@
 
         </a>
       </article> -->
-</section>
+    </section>
 
 
-<!--Botones de cambio de página Tatiana-->
-<section class="buttons__pagination">
-<div class="pagination">
-  <a href="#">&lt;</a>
-  <a href="#">1</a>
-  <a href="#" class="active">2</a>
-  <a href="#">3</a>
-  <span>...</span>
-  <a href="#">10</a>
-  <a href="#">&gt;</a>
-</div>
-</section>
-
-
-<!--Iconos de abajo Tatiana-->
-
-<section class="icon-section">
-  <div class="icon-box">
-    <img src="/src/assets/icons/Delivery time 1.svg" alt="Delivery" />
-    <h3>Delivery</h3>
-    <p>
-      Ea esse elit anim commodo laborum pariatur nisi. Voluptate elit d
-    </p>
-  </div>
-  <div class="icon-box">
-    <img src="/src/assets/icons/Love message 1.svg" alt="Customer care" />
-    <h3>Customer care</h3>
-    <p>
-      Ea esse elit anim commodo laborum pariatur nisi. Voluptate elit d
-    </p>
-  </div>
-  <div class="icon-box">
-    <img src="/src/assets/icons/Lock landscape 1.svg" alt="Payment security" />
-    <h3>Payment security</h3>
-    <p>
-      Ea esse elit anim commodo laborum pariatur nisi. Voluptate elit d
-    </p>
-  </div>
-</section>
-</main>
-
-
-<!--Footer hecho por Holguer-->
-
-<footer class="footer">
-  <div class="footer__wrap-box1">
-    <a class="footer__logo" href=""><span class="footer__logo__text">Darling.</span></a>
-    <div class="footer__nav-footer">
-      <div class="footer__nav-footer-colum">
-        <ul class="nav-footer__list">
-          <li class="nav-footer__item">
-            <a href="" class="nav-footer__link">Shop</a>
-          </li>
-          <li class="nav-footer__item">
-            <a href="" class="nav-footer__link">Collections</a>
-          </li>
-          <li class="nav-footer__item">
-            <a href="" class="nav-footer__link">About</a>
-          </li>
-        </ul>
+    <!--Botones de cambio de página Tatiana-->
+    <section class="buttons__pagination">
+      <div class="pagination">
+        <a href="#">&lt;</a>
+        <a href="#">1</a>
+        <a href="#" class="active">2</a>
+        <a href="#">3</a>
+        <span>...</span>
+        <a href="#">10</a>
+        <a href="#">&gt;</a>
       </div>
-      <div class="footer__nav-footer-colum">
-        <ul class="nav-footer__list">
-          <li class="nav-footer__item">
-            <a href="" class="nav-footer__link">Contact</a>
-          </li>
-          <li class="nav-footer__item">
-            <a href="" class="nav-footer__link">Privacy</a>
-          </li>
-          <li class="nav-footer__item">
-            <a href="" class="nav-footer__link">Terms</a>
-          </li>
-        </ul>
+    </section>
+
+
+    <!--Iconos de abajo Tatiana-->
+
+    <section class="icon-section">
+      <div class="icon-box">
+        <img src="/src/assets/icons/Delivery time 1.svg" alt="Delivery" />
+        <h3>Delivery</h3>
+        <p>
+          Ea esse elit anim commodo laborum pariatur nisi. Voluptate elit d
+        </p>
+      </div>
+      <div class="icon-box">
+        <img src="/src/assets/icons/Love message 1.svg" alt="Customer care" />
+        <h3>Customer care</h3>
+        <p>
+          Ea esse elit anim commodo laborum pariatur nisi. Voluptate elit d
+        </p>
+      </div>
+      <div class="icon-box">
+        <img src="/src/assets/icons/Lock landscape 1.svg" alt="Payment security" />
+        <h3>Payment security</h3>
+        <p>
+          Ea esse elit anim commodo laborum pariatur nisi. Voluptate elit d
+        </p>
+      </div>
+    </section>
+  </main>
+
+
+  <!--Footer hecho por Holguer-->
+
+  <footer class="footer">
+    <div class="footer__wrap-box1">
+      <a class="footer__logo" href=""><span class="footer__logo__text">Darling.</span></a>
+      <div class="footer__nav-footer">
+        <div class="footer__nav-footer-colum">
+          <ul class="nav-footer__list">
+            <li class="nav-footer__item">
+              <a href="" class="nav-footer__link">Shop</a>
+            </li>
+            <li class="nav-footer__item">
+              <a href="" class="nav-footer__link">Collections</a>
+            </li>
+            <li class="nav-footer__item">
+              <a href="" class="nav-footer__link">About</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__nav-footer-colum">
+          <ul class="nav-footer__list">
+            <li class="nav-footer__item">
+              <a href="" class="nav-footer__link">Contact</a>
+            </li>
+            <li class="nav-footer__item">
+              <a href="" class="nav-footer__link">Privacy</a>
+            </li>
+            <li class="nav-footer__item">
+              <a href="" class="nav-footer__link">Terms</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__sub-noticias-wrap">
+        <h3 class="sub-noticias__title">Subscribe to our newsletter</h3>
+        <p class="sub-noticias__descripcion">
+          For product announcements and exclusive insights
+        </p>
+        <form action="" class="sub-noticias__form-subscripcion">
+          <figure class="form-subscripcion__icon"></figure>
+          <input type="email" placeholder="Input your email" class="form-subscripcion__input" />
+          <button type="submit" class="form-subscripcion__boton boton-especial">
+            Subscribe
+          </button>
+        </form>
       </div>
     </div>
-    <div class="footer__sub-noticias-wrap">
-      <h3 class="sub-noticias__title">Subscribe to our newsletter</h3>
-      <p class="sub-noticias__descripcion">
-        For product announcements and exclusive insights
-      </p>
-      <form action="" class="sub-noticias__form-subscripcion">
-        <figure class="form-subscripcion__icon"></figure>
-        <input type="email" placeholder="Input your email" class="form-subscripcion__input" />
-        <button type="submit" class="form-subscripcion__boton boton-especial">
-          Subscribe
-        </button>
-      </form>
+    <div class="footer__wrap-box2">
+      <span class="footer__copyright-title">© 2022 Brand, Inc.</span>
+      <div class="footer__socialicons-wrap">
+        <a href="http://" target="" rel="noopener noreferrer" class="socialicons__link">
+          <figure class="socialicons__icon icon-twitter"></figure>
+        </a>
+        <a href="http://" target="" rel="noopener noreferrer" class="socialicons__link">
+          <figure class="socialicons__icon icon-facebook"></figure>
+        </a>
+        <a href="http://" target="" rel="noopener noreferrer" class="socialicons__link">
+          <figure class="socialicons__icon icon-linkedin"></figure>
+        </a>
+        <a href="http://" target="" rel="noopener noreferrer" class="socialicons__link">
+          <figure class="socialicons__icon icon-youtube"></figure>
+        </a>
+      </div>
     </div>
-  </div>
-  <div class="footer__wrap-box2">
-    <span class="footer__copyright-title">© 2022 Brand, Inc.</span>
-    <div class="footer__socialicons-wrap">
-      <a href="http://" target="" rel="noopener noreferrer" class="socialicons__link">
-        <figure class="socialicons__icon icon-twitter"></figure>
-      </a>
-      <a href="http://" target="" rel="noopener noreferrer" class="socialicons__link">
-        <figure class="socialicons__icon icon-facebook"></figure>
-      </a>
-      <a href="http://" target="" rel="noopener noreferrer" class="socialicons__link">
-        <figure class="socialicons__icon icon-linkedin"></figure>
-      </a>
-      <a href="http://" target="" rel="noopener noreferrer" class="socialicons__link">
-        <figure class="socialicons__icon icon-youtube"></figure>
-      </a>
-    </div>
-  </div>
-</footer>
+  </footer>
 
 
 
 
 
 
-<script type="module" src="/src/scripts/productListing.js"></script>
+  <script type="module" src="/src/scripts/productListing.js"></script>
 
 </body>
+
 </html>

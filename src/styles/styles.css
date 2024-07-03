@@ -1551,10 +1551,8 @@ p {
 }
 
 .search__bar button {
-  width: 100%;
   display: flex;
   background: transparent;
-  cursor: pointer;
   border: none;
 }
 

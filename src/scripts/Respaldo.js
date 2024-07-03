@@ -25,7 +25,7 @@ console.log(productsFound);
 
 // Filtrado por precio
 
-const productsFilterByPrice = (products, order) => {
+function productsFilterByPrice (products, order) {
     const orderedProducts = [...products];
     switch (order) {
         case "acendente":
