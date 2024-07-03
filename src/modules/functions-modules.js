@@ -22,22 +22,12 @@ function agregarBotonesDeFiltrado(
 
 function ejecutarFiltros(categoriaAFiltrar, menuFiltro, listaProductos, contenedorProductos) {
     console.log(`Hice click en el filtro ${categoriaAFiltrar}`);
-    // mostrarFiltroActivo(contenedorFiltros.children, element);
     activarBoton(menuFiltro, categoriaAFiltrar);
     const productosFiltrados = filtrarVideosCategoria(listaProductos, categoriaAFiltrar);
-    pintarCards(productosFiltrados, contenedorProductos)
+    pintarCards(productosFiltrados, contenedorProductos);
+    
 }
 
-function mostrarFiltroActivo(botonesFiltrado, filtroAActivar) {
-    for (const boton of botonesFiltrado) {
-        boton.classList.add('button__options');
-        boton.classList.remove("button__active");
-        if (boton.id === filtroAActivar) {
-            boton.classList.remove('button__options');
-            boton.classList.add("button__active");
-        }
-    }
-}
 
 function activarBoton(listaBotones, botonAActivar) {
     for (const item of listaBotones) {
@@ -60,7 +50,8 @@ function pintarCards(listaProductos, contenedorProductos) {
             const card = document.createElement("article");
             card.classList.add('card__container');
 
-            const enlace =  document.createElement('a');
+            const enlace = document.createElement('a');
+            enlace.href = `/src/pages/product_details.html?=${product.id}`
             enlace.classList.add('card__container-link');
 
             const figure = document.createElement("figure");
@@ -68,17 +59,16 @@ function pintarCards(listaProductos, contenedorProductos) {
             imagen.src = product.productImages[0].imagen1;
             imagen.alt = product.name;
 
-
             const div = document.createElement('div');
             const titulo = document.createElement('h2');
-            titulo.textContent = product.name; 
+            titulo.textContent = product.name;
 
             const precio = document.createElement('span');
-            precio.textContent = `$ ${(product.price).toLocaleString()}`
+            precio.textContent = `$ ${(product.price).toLocaleString(2).replace(/\B(?=(\d{3})+(?!\d))/g, ",")}`
 
 
             const section = document.createElement("section");
-            
+
             figure.appendChild(imagen);
             div.appendChild(titulo);
             div.appendChild(precio);
@@ -104,9 +94,28 @@ function filtrarVideosCategoria(listaProductos, nombreCategoria) {
 
 
 function busquedaVideoPorNombre(listaProductos, nombreAbuscar) {
+    return listaProductos.filter((product) => product.name.toLowerCase().includes(nombreAbuscar.toLowerCase()));
 
-    return listaProductos.filter((product) => product.name.toLowerCase().includes(nombreAbuscar.toLowerCase()))
 }
 
 
-export { agregarBotonesDeFiltrado, pintarCards, ejecutarFiltros, busquedaVideoPorNombre }
+// filtrado por precio
+
+function filtrosAvanzados(products, order) {
+    const orderedProducts = [...products];
+    switch (order) {
+        case "ascending":
+            orderedProducts.sort((a, b) => a.price - b.price);
+            break;
+        case "descending":
+            orderedProducts.sort((a, b) => b.price - a.price);
+            break
+        default:
+            break;
+
+    }
+    return orderedProducts
+};
+
+
+export { agregarBotonesDeFiltrado, pintarCards, ejecutarFiltros, busquedaVideoPorNombre ,filtrosAvanzados}
