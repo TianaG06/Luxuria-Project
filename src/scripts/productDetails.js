@@ -1,5 +1,6 @@
 import { productData } from "../modules/data/products-data.js";
 
+
 const urlParams = new URLSearchParams(window.location.search);
 const productId = parseInt(urlParams.get('id'));
 const product = productData.find(product => product.id === productId);
