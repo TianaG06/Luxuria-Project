@@ -232,35 +232,68 @@
   .button__active{
     padding: 1rem 5rem;
   }
+  .button__sortbyoption{
+    margin-left: 29%;
+  }
 }
 
 @media (min-width: 1280px) {
+  .main__cards{
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .card__container:nth-child(10) {
+    grid-column: 1/4;
+    grid-row: 3/5;
+    aspect-ratio: 576/734;
+    width: 66%;
+    height: 100%;
+  }
+
   .card__container:nth-child(9) {
-    grid-column: 1/3;
+    grid-column: 3/4;
     grid-row: 3/5;
   }
-  .card__container:nth-child(9) div h2 {
+
+  .card__container:nth-child(13) {
+    grid-column: 3/4;
+    grid-row: 4/4;
+  }
+
+  .card__container:nth-child(10) div h2 {
     font-size: 2rem;
+  }
+
+  .button__sortbyoption {
+    margin-left: 45%;
+    
   }
 }
 
 
-@media (min-width: 1326px) {
+@media (min-width: 1920px) {
+  .main__categorieproducts{
+    width: 100%;
+  }
+  .button__sortbyoption{
+    left: 14%;
+  }
+}
+/* @media (min-width: 1326px) {
   .button__sortbyoption {
     padding-right: 34px;
     left: 35%;
   }
-}
+} */
 
 
 /*Max-width de Products Listing Tatiana*/
-
+/* 
 @media (max-width: 1280px) {
-  .card__container:nth-child(9) {
+  .card__container:nth-child(10) {
     grid-column: 1/4;
     grid-row: 3/5;
   }
-  .card__container:nth-child(9) div h2 {
+  .card__container:nth-child(10) div h2 {
     font-size: 2rem;
   }
 
@@ -275,11 +308,15 @@
     margin-left: 32%;
     width: 12%;
   }
-}
+} */
 
 
-@media (max-width: 1024px) {
-  .card__container:nth-child(9) {
+@media (max-width: 1023px) {
+
+  .main__cards{
+    margin-right: 7%;
+  }
+  .card__container:nth-child(10) {
     grid-column: 1/4;
     grid-row: 3/5;
   }
@@ -291,13 +328,13 @@
     height: 60%;
   }
   .button__sortbyoption {
-    margin-left: 15%;
-    width: 15%;
+    margin-left: 27%;
+    width: 18%;
   }
 }
 
 @media (max-width: 912px) {
-  .card__container:nth-child(9) {
+  .card__container:nth-child(10) {
     grid-column: 1/3;
     grid-row: 3/5;
   }
@@ -308,15 +345,15 @@
   .categorieproducts__buttons  {
     height: 60%;
   }
-  .button__sortbyoption {
+  /* .button__sortbyoption {
     margin-left: 4%;
     width: 17%;
-  }
+  } */
 }
 
 
 @media (max-width: 853px) {
-  .card__container:nth-child(9) {
+  .card__container:nth-child(10) {
     grid-column: 1/3;
     grid-row: 3/5;
   }
