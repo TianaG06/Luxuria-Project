@@ -22,7 +22,7 @@
         }
 
         /* desde aquí se copia */
-        .cartShop__module {
+        /* .cartShop__module {
             width: 440px;
             height: 100vh;
             background-color: var(--color-blanco);
@@ -92,7 +92,7 @@
         }
 
         /* -----------------------card ------------ */
-        .cartShop__module__card {
+        /* .cartShop__module__card {
             width: 100%;
             height: 94px;
             display: flex;
@@ -213,7 +213,46 @@
 
         .cartShop__module__button-buy-now:hover {
             background-color: var(--color-primario-claro);
-        }
+        } */
+
+
+/* estilos del modal */
+/* 
+body.modal-open {
+overflow: hidden;
+position: relative;
+}
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+    z-index: 10;
+}
+
+.cartShop__module {
+    width: 440px;
+    height: 100vh;
+    background-color: var(--color-blanco);
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    right: 0;
+    padding: 36px;
+    z-index: 20;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+}
+
+.cartShop__module.open {
+    transform: translateX(0);
+} */
+
+
     </style>
 </head>
 
@@ -294,6 +333,7 @@
 
 
     </section>
+    <script type="module" src="/src/scripts/build.js"></script>
 </body>
 
 </html>
