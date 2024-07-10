@@ -1,25 +1,28 @@
 import { productData } from "/src/modules/data/products-data.js";
-import { agregarBotonesDeFiltrado, pintarCards, ejecutarFiltros, busquedaVideoPorNombre, filtrosAvanzados } from "/src/modules/functions-modules.js"
+import { agregarBotonesDeFiltrado, pintarCards, ejecutarFiltros, busquedaVideoPorNombre, filtrosAvanzados } from "/src/modules/functions-modules.js";
 
 
-// Filtros
+// const URL_JSON = 
+// const productData =
 
-// Contenedores 
+
+// Contenedores ===============================================================================================
+
 const filterButtons = document.getElementById("filterButtons");
 const contenedorProductos = document.querySelector(".main__cards");
-const categorias = [...new Set(productData.map(product => product.type))];
-const formularioDeBusqueda = document.getElementById("formularioDeBusqueda");
 const sortByOptionsSelect = document.getElementById("sortByOptions");
+const formularioDeBusqueda = document.getElementById("formularioDeBusqueda");
 const entradaDeBusqueda = document.getElementById("entradaDeBusqueda");
 
 
 
+const categorias = [...new Set(productData.map(product => product.type))];
 
 const botonTodos = document.getElementById("todos-products");
+
 botonTodos.addEventListener('click', (evento) => {
     ejecutarFiltros(evento.target.id, filterButtons.children, productData, contenedorProductos);
 });
-
 
 
 agregarBotonesDeFiltrado(categorias, filterButtons, productData, contenedorProductos)
@@ -40,7 +43,7 @@ formularioDeBusqueda.addEventListener("submit", (evento) => {
     });
 
 
-    // Si no hay término de búsqueda, mostramos todos los productos nuevamente
+// Si no hay término de búsqueda, mostramos todos los productos nuevamente
 
     entradaDeBusqueda.addEventListener('input', () => {
         const terminoBusqueda = entradaDeBusqueda.value.trim();
@@ -49,7 +52,7 @@ formularioDeBusqueda.addEventListener("submit", (evento) => {
     }
     })
 
-// ================ filtrado por precio ========================
+// ================ filtrado por precio ============================================
 
 
 sortByOptionsSelect.addEventListener("change", (evento) => {
@@ -79,4 +82,4 @@ document.addEventListener("DOMContentLoaded", () => {
     sortByOptionsSelect.dispatchEvent(new Event('change'));
 });
 
-// ===================================================
+// ============================================================================================

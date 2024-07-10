@@ -1,1 +1,21 @@
 /.vscode
+
+# IDEs y editores
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# Node.js
+node_modules/
+.env
+
+
+# Sistema operativo
+.DS_Store
+Thumbs.db
+
+# JSON Server
+db.json

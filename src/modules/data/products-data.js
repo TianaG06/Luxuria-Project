@@ -18,7 +18,7 @@ export const productData = [
         ],
         description: "Anillo Luxury de plata con gema de zafiros",
         inStock: [
-            { talla: 48, color: "white", cantidad: 5, count: 1},
+            { talla: 48, color: "white", cantidad: 5 },
             { talla: 50, color: "orange", cantidad: 2, count: 1},
             { talla: 52, color: "morado", cantidad: 1, count: 1},
             { talla: 54, color: "orange", cantidad: 5, count: 1},

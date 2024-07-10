@@ -1,0 +1,15 @@
+{
+  "name": "luxuria-project",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "json-server --watch src/data/productData.json --port 3000"
+  },
+  "keywords": [],
+  "author": "Holguer pinzon - Tatiana dabila - daniela araque",
+  "license": "ISC",
+  "description": "Dependecias de ecomerce luxuria ",
+  "devDependencies": {
+    "json-server": "^1.0.0-beta.1"
+  }
+}
