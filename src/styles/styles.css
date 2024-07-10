@@ -1536,6 +1536,7 @@ p {
   -o-border-radius: 8px;
 }
 
+
 /*Product listing Tatiana*/
 
 .main__productlisting {
@@ -2012,4 +2013,369 @@ input[type="text"] {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+
+/* Estilos checkout_payment_method */
+
+.wrap_box {
+  display: flex;
+  width: 80%;
+  margin: auto;
+  justify-content: space-between;
+  height: auto;
+}
+
+.order-summary {
+width: 75%;
+height: 505px;
+}
+
+.order-summary,
+.payment-method {
+margin-top: 46px;
+border-radius: 5px;
+box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
+}
+
+.summary-price {
+font-size: 14px;
+line-height: 22px;
+font-weight: 700;
+color: #171a1fff;
+font-family: var(--estilo-de-fuente-Principal);
+}
+
+.summary-item {
+display: flex;
+align-items: center;
+margin: 0px 0 19px 24px;
+}
+
+.summary-item img {
+width: 120px;
+height: 120px;
+border-radius: 4px;
+margin-right: 72px;
+}
+
+.summary-title {
+font-size: 24px;
+line-height: 36px;
+font-weight: 700;
+color: #171a1fff;
+font-family: var(--estilo-de-fuente-Titulos);
+padding: 24px 0 8px 20px;
+}
+
+.summary-details {
+display: flex;
+justify-content: space-between;
+align-items: center;
+width: 50%;
+}
+
+.summary-details h2 {
+font-size: 14px;
+line-height: 22px;
+font-weight: 700;
+color: #171a1fff;
+font-family: var(--estilo-de-fuente-Principal);
+}
+
+.summary-text p {
+font-size: 12px;
+line-height: 20px;
+font-weight: 400;
+color: #565e6cff;
+}
+
+.delete {
+margin-left: auto;
+background: none;
+border: none;
+cursor: pointer;
+}
+
+.delete img {
+width: 24px;
+height: 24px;
+fill: #565e6cff;
+}
+
+/* Contenedor de Payment Method */
+.payment-method {
+width: 348px;
+height: 620px;
+}
+
+.payment-section {
+margin-left: 24px;
+}
+
+.payment-title {
+font-size: 24px;
+line-height: 36px;
+font-weight: 700;
+color: #171a1fff;
+font-family: var(--estilo-de-fuente-Titulos);
+padding: 24px 0 8px 0px;
+}
+.payment-method a {
+font-size: 12px;
+line-height: 20px;
+font-weight: 400;
+color: #379ae6ff;
+text-decoration: none;
+padding-bottom: 8px;
+}
+
+.card-method {
+display: flex;
+justify-content: space-between;
+align-items: center;
+height: 60px;
+border-radius: 4px;
+border-width: 1px;
+border-color: #0d554aff;
+border-style: solid;
+margin: 8px 24px 32px 0;
+}
+
+.card-info {
+display: flex;
+align-items: center;
+width: 100%;
+}
+
+.card-info :nth-child(2) {
+font-size: 13px;
+line-height: 18px;
+font-weight: 700;
+color: var(--color-primario-claro);
+font-family: var(--estilo-de-fuente-Principal);
+}
+
+.card-info :nth-child(3) {
+font-size: 13px;
+line-height: 18px;
+font-weight: 700;
+margin-left: auto;
+margin-right: 19px;
+color: var(--color-primario-claro);
+font-family: var(--estilo-de-fuente-Principal);
+}
+
+.card-method img {
+width: 35px;
+margin: 12px 8px 12px 12px;
+}
+
+.voucher h2 {
+font-size: 20px;
+line-height: 28px;
+font-weight: 700;
+color: #171a1fff;
+font-family: var(--estilo-de-fuente-Titulos);
+margin-bottom: 8px;
+}
+
+.voucher input {
+width: 221px;
+height: 36px;
+border: 1px solid #9095a0ff;
+border-radius: 4px;
+margin-right: 6px;
+margin-bottom: 8px;
+}
+
+.voucher input[type="text"] {
+padding-left: 10px;
+font-size: 14px;
+line-height: 22px;
+font-weight: 400;
+}
+
+.voucher button {
+width: 73px;
+height: 36px;
+border: none;
+border-radius: 4px;
+background: #f2c66dff;
+font-size: 14px;
+line-height: 22px;
+font-weight: 400;
+font-family: var(--estilo-de-fuente-Principal);
+color: #6b4a09ff;
+}
+
+.voucher p {
+font-size: 12px;
+font-family: var(--estilo-de-fuente-Principal);
+line-height: 20px;
+font-weight: 400;
+color: #8f640c;
+background: #fef9ee;
+padding: 5px 10px;
+border-radius: 14px;
+display: inline-block;
+margin-bottom: 32px;
+}
+
+.payment-summary {
+margin-bottom: 13px;
+}
+
+.payment-summary h2 {
+font-size: 20px;
+line-height: 28px;
+font-weight: 700;
+color: #171a1fff;
+margin-bottom: 9px;
+}
+
+.container-payment {
+display: flex;
+justify-content: space-between;
+margin-right: 27px;
+}
+
+.payment-summary-subTitle {
+font-size: 13px;
+font-family: var(--estilo-de-fuente-Principal);
+line-height: 20px;
+font-weight: 400;
+color: #171a1fff;
+margin-bottom: 8px;
+}
+
+.payment-summary-price {
+font-size: 14px;
+font-family: var(--estilo-de-fuente-Principal);
+line-height: 22px;
+font-weight: 700;
+color: #171a1fff;
+margin-bottom: 6px;
+}
+
+.border {
+border-bottom: 1px solid #f3f4f6;
+margin-right: 24px;
+}
+
+.payment-total {
+display: flex;
+justify-content: space-between;
+margin-right: 27px;
+}
+
+.payment-total :nth-child(1) {
+font-size: 13px;
+font-family: var(--estilo-de-fuente-Principal);
+line-height: 20px;
+font-weight: 400;
+color: #171a1fff;
+margin-top: 17px;
+}
+
+.payment-total :nth-child(2) {
+font-size: 18px;
+line-height: 28px;
+font-weight: 700;
+color: #e8502eff;
+margin-top: 13px;
+}
+
+.payment-button {
+margin-top: 24px;
+margin-bottom: 24px;
+}
+
+.payment-button button {
+width: 300px;
+height: 44px;
+background-color: var(--color-primario-claro);
+border: none;
+border-radius: 22px;
+font-size: 16px;
+line-height: 26px;
+font-weight: 400;
+color: #ffffffff;
+cursor: pointer;
+transition: var(--Trasicion-MidSlow);
+}
+
+.payment-button button:hover {
+background-color: var(--color-primario-claro);
+}
+/* ---Aqui termina el Main--- */
+
+/* SECTION PRODUCTS */
+/* Contenedor de Products title */
+.products-title {
+display: flex;
+width: 80%;
+margin: auto;
+padding: 48px 15px 24px 0px;
+justify-content: space-between;
+align-items: flex-end;
+}
+
+.products-title h1 {
+font-size: 40px;
+line-height: 56px;
+font-weight: 600;
+font-family: var(--estilo-de-fuente-Titulos);
+color: var(--color-primario-claro);
+}
+
+.products-title p {
+font-size: 16px;
+font-family: var();
+line-height: 26px;
+font-weight: 400;
+color: #565e6cff;
+}
+
+/* Contenedor de Products */
+.products {
+display: flex;
+width: 80%;
+margin: auto;
+justify-content: center;
+padding-bottom: 96px;
+}
+
+.item {
+display: flex;
+flex-direction: column;
+height: 410px;
+width: 276px;
+margin: 0 15px;
+border-radius: 8px 8px 0 0;
+box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.1);
+}
+
+.item img {
+height: 320px;
+border-radius: 8px 8px 0 0;
+width: 100%;
+}
+
+.item h3 {
+font-size: 24px;
+font-family: var(--estilo-de-fuente-Titulos);
+line-height: 36px;
+font-weight: 700;
+color: #171a1fff;
+padding: 12px 0px 0px 12px;
+}
+
+.item p {
+font-size: 16px;
+line-height: 26px;
+font-weight: 400;
+color: #171a1fff;
+padding-left: 12px;
+font-family: var(--estilo-de-fuente-Principal);
 }
