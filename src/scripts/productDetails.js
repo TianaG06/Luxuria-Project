@@ -1,20 +1,25 @@
 import { productData } from "../modules/data/products-data.js";
 
 
+
 const urlParams = new URLSearchParams(window.location.search);
 const productId = parseInt(urlParams.get('id'));
 const product = productData.find(product => product.id === productId);
 
+console.log(product);
+
 const contenedorDeDetalles = document.getElementById('product-details-container');
 const productname = document.getElementById(productName);
 
-const contenedorDeBotonesColors =  document.getElementById('contenedorDeBotonesColors');
 
+
+const contenedorDeBotonesColors =  document.getElementById('contenedorDeBotonesColors');
 const coloresDisponibles = [...new Set(product.inStock.map(product => product.color))];
+
 const tallasDisponibles = [...new Set(product.inStock.map(product => product.tallas))];
 
 
-function agregarColoresDisponibles (coloresDisponibles,contenedorDeBotonesColors) {
+function agregarColoresDisponibles (coloresDisponibles,contenedorDeBotonesColors,objetoSeleccionado) {
     coloresDisponibles.forEach(element => {
         const item = document.createElement('li');
         const boton = document.createElement("button");
@@ -31,7 +36,7 @@ function agregarColoresDisponibles (coloresDisponibles,contenedorDeBotonesColors
         item.appendChild(boton);
         contenedorDeBotonesColors.appendChild(item);
     });
-}
+};
 
 
 function activarBotonColores(listaBotones, botonAActivar) {
@@ -42,7 +47,7 @@ function activarBotonColores(listaBotones, botonAActivar) {
             boton.classList.add("colorSelected");
         }
     }
-}
+};
 
 
 function generarProductDetails(product, contenedorDeDetalles) {

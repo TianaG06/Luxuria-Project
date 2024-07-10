@@ -20,48 +20,6 @@
                 { "talla": 50, "color": "orange", "cantidad": 2, "count": 1 },
                 { "talla": 52, "color": "morado", "cantidad": 1, "count": 1 }
             ]
-        },
-        {
-            "id": 1,
-            "name": "Luxury Gems Necklace",
-            "bar_Code": "A001",
-            "price": 168.76,
-            "type": "Collar",
-            "productImages": [
-                {
-                    "imagen1": "/src/assets/img/products/luxury-gems-necklace/Luxury_Gems_Necklaces.webp",
-                    "imagen2": "/src/assets/img/products/luxury-gems-necklace/Luxury_Gems_Necklaces.webp",
-                    "imagen3": "/src/assets/img/products/luxury-gems-necklace/Luxury_Gems_Necklaces.webp",
-                    "imagen4": "/src/assets/img/products/luxury-gems-necklace/Luxury_Gems_Necklaces.webp"
-                }
-            ],
-            "description": "Collar Luxury de plata con gema de diamante",
-            "inStock": [
-                {
-                    "talla": "XS",
-                    "color": "plateado",
-                    "cantidad": 7,
-                    "count": 1
-                },
-                {
-                    "talla": "S",
-                    "color": "dorado",
-                    "cantidad": 2,
-                    "count": 1
-                },
-                {
-                    "talla": "M",
-                    "color": "morado",
-                    "cantidad": 6,
-                    "count": 1
-                },
-                {
-                    "talla": "L",
-                    "color": "azul",
-                    "cantidad": 5,
-                    "count": 1
-                }
-            ]
         }
     ]
 }
