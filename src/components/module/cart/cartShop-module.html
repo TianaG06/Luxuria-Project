@@ -22,7 +22,7 @@
         }
 
         /* desde aquí se copia */
-        .cartShop__module {
+        /* .cartShop__module {
             width: 440px;
             height: 100vh;
             background-color: var(--color-blanco);
@@ -92,7 +92,7 @@
         }
 
         /* -----------------------card ------------ */
-        .cartShop__module__card {
+        /* .cartShop__module__card {
             width: 100%;
             height: 94px;
             display: flex;
@@ -213,15 +213,55 @@
 
         .cartShop__module__button-buy-now:hover {
             background-color: var(--color-primario-claro);
-        }
+        } */
+
+
+/* estilos del modal */
+/* 
+body.modal-open {
+overflow: hidden;
+position: relative;
+}
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+    z-index: 10;
+}
+
+.cartShop__module {
+    width: 440px;
+    height: 100vh;
+    background-color: var(--color-blanco);
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    right: 0;
+    padding: 36px;
+    z-index: 20;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+}
+
+.cartShop__module.open {
+    transform: translateX(0);
+} */
+
+
     </style>
 </head>
 
 <body>
-    <section class="cartShop__module">
+    <!-- <section class="cartShop__module" id="cartShopModule"></section> -->
+    <!-- <section class="cartShop__module" id="cartShopModule">
         <div class="cartShop__module__header">
             <h1>Your cart</h1>
-            <button class="button-close" type="button">
+            <button class="button-close" type="button" id="buttonCloseCartShop">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M18 6L6 18" stroke="#323842" stroke-width="2.05714" stroke-miterlimit="10"
                         stroke-linecap="square" />
@@ -279,9 +319,8 @@
 
             </li>
         </div>
-        <hr>
-
-        <footer class="cartShop__module__footer">
+        <hr>  
+        <div class="cartShop__module__footer">
 
             <div class="cartShop__module__total-container">
                 <span>Total</span>
@@ -290,10 +329,9 @@
             <a href="/src/pages/checkout/checkout_payment_method.html" class="cartShop__module__button-buy-now">Continue
                 to checkout</a>
 
-        </footer>
-
-
-    </section>
+        </div>
+    </section> -->
+    <script type="module" src="/src/scripts/build.js"></script>
 </body>
 
 </html>
