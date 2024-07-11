@@ -2383,16 +2383,38 @@ font-family: var(--estilo-de-fuente-Principal);
 
 
 /* cartshop module */
-
 .cartShop__module {
-  width: 440px;
-  height: 100vh;
-  background-color: var(--color-blanco);
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.849);
+  width:100%;
+  /* width: 440px; */
+  /* height: 100vh; */
+  align-items: flex-end;
   display: flex;
   flex-direction: column;
   position: fixed;
-  right: 0;
+  /* right: 0; */
+  z-index: 1;
+  pointer-events: none;
+  transition: opacity .6s;
+  transition-duration: 1000ms;
+}
+
+.cartShop__module--show {
+  opacity: 1;
+  transition: opacity .6s;
+  transition-duration: 1000ms;
+  pointer-events: unset;
+}
+
+
+.cartShop__moduleContenedor{
+  width: 440px;
+  height: 100vh;
   padding: 36px;
+  position: sticky;
+  z-index: 1;
+  background-color: var(--color-blanco);
 }
 
 .cartShop__module__header {
