@@ -1086,6 +1086,7 @@ p {
   height: 82px;
   border-radius: 4px;
   overflow: hidden;
+  cursor: pointer;
 }
 
 .img-galery__aside-conteiner .img-container img {
@@ -1115,8 +1116,10 @@ p {
 }
 
 .main-img__container img {
-  object-fit: cover;
   width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
 }
 
 .checkbox-favorito {
@@ -1189,6 +1192,7 @@ p {
   line-height: 26px;
   padding-bottom: 5px;
   color: var(--color-de-fuente-neutral-650);
+  user-select: none;
 }
 
 .buttons-container__colors-option {

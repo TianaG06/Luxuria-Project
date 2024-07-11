@@ -8,10 +8,8 @@
             "type": "Anillo",
             "productImages": [
                 {
-                    "imagen1": "/src/assets/img/products-details/image1.webp",
-                    "imagen2": "/src/assets/img/products-details/image1.webp",
-                    "imagen3": "/src/assets/img/products-details/image1.webp",
-                    "imagen4": "/src/assets/img/products-details/image1.webp"
+                    "imagen1": "/src/assets/img/products/Luxury-charms-ring/luxury-charms-ring-img-1.webp",
+                    "imagen2": "/src/assets/img/products/Luxury-charms-ring/luxury-charms-ring-img-2.webp"
                 }
             ],
             "description": "Anillo Luxury de plata con gema de zafiros",
