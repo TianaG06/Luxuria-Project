@@ -411,6 +411,256 @@ export const productData = [
             return total ;
         },
     },
+
+    {
+        id: 13,
+        name: "Elegance Earrings",
+        bar_Code: "C004",
+        price: 620.73,
+        type: "Aretes",
+        productImages: [
+            {
+            imagen1: "/src/assets/img/products/Elegance-Earrings/Elegance Earrings.jpg",
+            imagen2: "/src/assets/img/products/Elegance-Earrings/Elegance Earrings.jpg",
+            imagen3: "/src/assets/img/products/Elegance-Earrings/Elegance Earrings.jpg",
+            imagen4: "/src/assets/img/products/Elegance-Earrings/Elegance Earrings.jpg",
+            }
+        ],
+
+        description: "Aretes elegance de oro",
+        inStock: [
+            { talla: 1, color: "plateado", cantidad: 4, count: 1 },
+            { talla: 2, color: "dorado", cantidad: 7, count: 1 },
+            { talla: 3, color: "morado", cantidad: 7, count: 1 },
+            { talla: 4, color: "azul", cantidad: 2, count: 1 },
+        ],
+        stockTotal: function () {
+            let total = 0;
+            for (let item of this.inStock) {
+                total += item.cantidad;
+            };
+            return total ;
+        },
+    },
+
+    {
+        id: 14,
+        name: "Serene Solitaire Ring",
+        bar_Code: "B009",
+        price: 125.28,
+        type: "Anillo",
+        productImages: [
+            {
+            imagen1: "/src/assets/img/products/serene-solitaire-ring/Serene Solitaire Ring.jpg",
+            imagen2: "/src/assets/img/products/serene-solitaire-ring/Serene Solitaire Ring.jpg",
+            imagen3: "/src/assets/img/products/serene-solitaire-ring/Serene Solitaire Ring.jpg",
+            imagen4: "/src/assets/img/products/serene-solitaire-ring/Serene Solitaire Ring.jpg",
+            }
+        ],
+
+        description: "Anillo de oro con diamante incrustado",
+        inStock: [
+            { talla: 48, color: "plateado", cantidad: 9, count: 1 },
+            { talla: 50, color: "dorado", cantidad: 3, count: 1 },
+            { talla: 52, color: "morado", cantidad: 1, count: 1 },
+            { talla: 54, color: "azul", cantidad: 3, count: 1 },
+        ],
+        stockTotal: function () {
+            let total = 0;
+            for (let item of this.inStock) {
+                total += item.cantidad;
+            };
+            return total ;
+        },
+    },
+
+    {
+        id: 15,
+        name: "Timeless Brooch",
+        bar_Code: "B010",
+        price: 620.73,
+        type: "Anillo",
+        productImages: [
+            {
+            imagen1: "/src/assets/img/products/Timeless-Brooch/Timeless Brooch.jpg",
+            imagen2: "/src/assets/img/products/Timeless-Brooch/Timeless Brooch.jpg",
+            imagen3: "/src/assets/img/products/Timeless-Brooch/Timeless Brooch.jpg",
+            imagen4: "/src/assets/img/products/Timeless-Brooch/Timeless Brooch.jpg",
+            }
+        ],
+
+        description: "Anillo de oro en forma de abeja",
+        inStock: [
+            { talla: 48, color: "plateado", cantidad: 9, count: 1 },
+            { talla: 50, color: "dorado", cantidad: 3, count: 1 },
+            { talla: 52, color: "morado", cantidad: 1, count: 1 },
+            { talla: 54, color: "azul", cantidad: 3, count: 1 },
+        ],
+        stockTotal: function () {
+            let total = 0;
+            for (let item of this.inStock) {
+                total += item.cantidad;
+            };
+            return total ;
+        },
+    },
+
+    {
+        id: 16,
+        name: "Timeless Necklace",
+        bar_Code: "A003",
+        price: 168.76,
+        type: "Collar",
+        productImages: [
+            {
+            imagen1: "/src/assets/img/products/Timeless-Necklace/Timeless Necklace.jpg",
+            imagen2: "/src/assets/img/products/Timeless-Necklace/Timeless Necklace.jpg",
+            imagen3: "/src/assets/img/products/Timeless-Necklace/Timeless Necklace.jpg",
+            imagen4: "/src/assets/img/products/Timeless-Necklace/Timeless Necklace.jpg",
+            }
+        ],
+
+        description: "Collar de oro con diges en circulo",
+        inStock: [
+            { talla: "XS", color: "plateado", cantidad: 5, count: 1 },
+            { talla: "S", color: "dorado", cantidad: 2, count: 1 },
+            { talla: "M", color: "morado", cantidad: 9, count: 1 },
+            { talla: "L", color: "azul", cantidad: 7, count: 1 },
+        ],
+        stockTotal: function () {
+            let total = 0;
+            for (let item of this.inStock) {
+                total += item.cantidad;
+            };
+            return total ;
+        },
+    },
+
+    {
+        id: 17,
+        name: "Timeless Brooch",
+        bar_Code: "B011",
+        price: 620.73,
+        type: "Anillo",
+        productImages: [
+            {
+            imagen1: "/src/assets/img/products/Timeless-Brooch/Timeless Brooch.jpg",
+            imagen2: "/src/assets/img/products/Timeless-Brooch/Timeless Brooch.jpg",
+            imagen3: "/src/assets/img/products/Timeless-Brooch/Timeless Brooch.jpg",
+            imagen4: "/src/assets/img/products/Timeless-Brooch/Timeless Brooch.jpg",
+            }
+        ],
+
+        description: "Anillo de oro con flor de diamantes",
+        inStock: [
+            { talla: 48, color: "plateado", cantidad: 2, count: 1 },
+            { talla: 50, color: "dorado", cantidad: 10, count: 1 },
+            { talla: 52, color: "morado", cantidad: 2, count: 1 },
+            { talla: 54, color: "azul", cantidad: 7, count: 1 },
+        ],
+        stockTotal: function () {
+            let total = 0;
+            for (let item of this.inStock) {
+                total += item.cantidad;
+            };
+            return total ;
+        },
+    },
+
+    {
+        id: 18,
+        name: "Sparkling  Necklace ",
+        bar_Code: "A004",
+        price: 168.76,
+        type: "Collar",
+        productImages: [
+            {
+            imagen1: "/src/assets/img/products/Sparkling-Necklace/Sparkling  Necklace.jpg",
+            imagen2: "/src/assets/img/products/Sparkling-Necklace/Sparkling  Necklace.jpg",
+            imagen3: "/src/assets/img/products/Sparkling-Necklace/Sparkling  Necklace.jpg",
+            imagen4: "/src/assets/img/products/Sparkling-Necklace/Sparkling  Necklace.jpg",
+            }
+        ],
+
+        description: "Collar brilantes de oro",
+        inStock: [
+            { talla: "XS", color: "plateado", cantidad: 3, count: 1 },
+            { talla: "S", color: "dorado", cantidad: 9, count: 1 },
+            { talla: "M", color: "morado", cantidad: 11, count: 1 },
+            { talla: "L", color: "azul", cantidad: 3, count: 1 },
+        ],
+        stockTotal: function () {
+            let total = 0;
+            for (let item of this.inStock) {
+                total += item.cantidad;
+            };
+            return total ;
+        },
+    },
+
+    {
+        id: 19,
+        name: "Elegance Earrings",
+        bar_Code: "C005",
+        price: 620.73,
+        type: "Aretes",
+        productImages: [
+            {
+            imagen1: "/src/assets/img/products/Elegance-Earrings/Elegance Earrings.jpg",
+            imagen2: "/src/assets/img/products/Elegance-Earrings/Elegance Earrings.jpg",
+            imagen3: "/src/assets/img/products/Elegance-Earrings/Elegance Earrings.jpg",
+            imagen4: "/src/assets/img/products/Elegance-Earrings/Elegance Earrings.jpg",
+            }
+        ],
+
+        description: "Aretes brillantes de oro con perla",
+        inStock: [
+            { talla: 1, color: "plateado", cantidad: 5, count: 1 },
+            { talla: 2, color: "dorado", cantidad: 2, count: 1 },
+            { talla: 3, color: "morado", cantidad: 9, count: 1 },
+            { talla: 4, color: "azul", cantidad: 8, count: 1 },
+        ],
+        stockTotal: function () {
+            let total = 0;
+            for (let item of this.inStock) {
+                total += item.cantidad;
+            };
+            return total ;
+        },
+    },
+
+    {
+        id: 20,
+        name: "Delights Earrings",
+        bar_Code: "C006",
+        price: 620.73,
+        type: "Aretes",
+        productImages: [
+            {
+            imagen1: "/src/assets/img/products/Delights-Earrings/Delights Earrings.jpg",
+            imagen2: "/src/assets/img/products/Delights-Earrings/Delights Earrings.jpg",
+            imagen3: "/src/assets/img/products/Delights-Earrings/Delights Earrings.jpg",
+            imagen4: "/src/assets/img/products/Delights-Earrings/Delights Earrings.jpg",
+            }
+        ],
+
+        description: "Aretes de oro en forma de delfín",
+        inStock: [
+            { talla: 1, color: "plateado", cantidad: 5, count: 1 },
+            { talla: 2, color: "dorado", cantidad: 2, count: 1 },
+            { talla: 3, color: "morado", cantidad: 9, count: 1 },
+            { talla: 4, color: "azul", cantidad: 8, count: 1 },
+        ],
+        stockTotal: function () {
+            let total = 0;
+            for (let item of this.inStock) {
+                total += item.cantidad;
+            };
+            return total ;
+        },
+    },
+
+    
 ]
 
 
