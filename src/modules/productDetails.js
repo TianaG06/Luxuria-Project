@@ -1,6 +1,10 @@
 // IMPORTS
 import { getProducts } from "/src/config/apiController.js";
 
+// VARIABLES
+const cartShop = []
+localStorage.setItem('cartShop', JSON.stringify(cartShop));
+
 // DATA
 const productData = await getProducts();
 const productId = sessionStorage.getItem('productId');
