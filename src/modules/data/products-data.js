@@ -55,7 +55,7 @@ export const productData = [
             }
         ],
 
-        description: "Collar Luxury de plata con gema de diamante",
+        description: "",
         inStock: [
             { talla: "XS", color: "plateado", cantidad: 7, count: 1 },
             { talla: "S", color: "dorado", cantidad: 2, count: 1 },
