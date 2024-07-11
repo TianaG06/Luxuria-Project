@@ -132,6 +132,7 @@ function agregarTallasDisponibles (tallasDisponibles, contenedorDeTallas) {
         botonTallas.textContent = talla;
        
         botonTallas.addEventListener('click', () => {
+            titleNumber.textContent = talla;
             document.querySelectorAll('.button-small-sizes').forEach(container => {
                 container.classList.remove('active-gold')
             });
