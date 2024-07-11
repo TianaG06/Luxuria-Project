@@ -3,6 +3,7 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
+    
   }
   
   .container-form {
@@ -15,11 +16,11 @@
   
   .container-form h1 {
     font-size: 24px;
-    color: #333;
+    color: #0d554a;
   }
   
   .container-form p {
-    color: #666;
+    color: #0d554a;
   }
   
   label {
@@ -29,6 +30,7 @@
     font-weight: bold;
   }
   
+  input[type="nombre"],
   input[type="text"],
   input[type="email"],
   input[type="password"] {
@@ -40,6 +42,7 @@
     box-sizing: border-box;
   }
   
+  input[type="nombre"],
   input[type="text"]:focus,
   input[type="email"]:focus,
   input[type="password"]:focus {
