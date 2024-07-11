@@ -1312,8 +1312,8 @@ p {
 .sizes__size-options {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
   align-content: flex-start;
+  gap: 5px;
 }
 .button-small-sizes {
   display: flex;

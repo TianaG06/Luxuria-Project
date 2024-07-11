@@ -95,7 +95,8 @@ function agregarColoresDisponibles(coloresDisponibles, contenedor, producto) {
 
             console.log(`hola aqui ${element}`);
             title.textContent = `Color ${element}`;
-            // ejecutarFiltros(element, contenedorDeBotonesColors.children, product)
+
+            console.log(contenedorDeBotonesColors.children);
             activarBotonColores(contenedorDeBotonesColors.children, element);
 
         });
@@ -113,6 +114,31 @@ function activarBotonColores(listaBotones, botonAActivar) {
             boton.classList.add("colorSelected");
         }
     }
+};
+
+
+function agregarTallasDisponibles (tallasDisponibles, contenedorDeTallas) {
+    const titleNumber = document.getElementById('size-text__size-options');
+
+    const contenedorDeBotonesTallas = document.createElement('div');
+    contenedorDeBotonesTallas.classList.add('sizes__size-options');
+
+    contenedorDeTallas.appendChild(contenedorDeBotonesTallas);
+
+    tallasDisponibles.forEach(talla => {
+        const botonTallas = document.createElement("button");
+        botonTallas.id = talla ;
+        botonTallas.classList.add('button-small-sizes');
+        botonTallas.textContent = talla;
+       
+        botonTallas.addEventListener('click', () => {
+            document.querySelectorAll('.button-small-sizes').forEach(container => {
+                container.classList.remove('active-gold')
+            });
+            botonTallas.classList.add('active-gold');
+        });
+        contenedorDeBotonesTallas.appendChild(botonTallas);
+    })
 };
 
 
@@ -134,10 +160,6 @@ function generarProductDetails(product, contenedorDeDetalles) {
         const productPrice = document.getElementById('productPrice');
         productPrice.textContent = `$ ${(product.price).toLocaleString(2).replace(/\B(?=(\d{3})+(?!\d))/g, ",")}`;
 
-
-
-
-
     }
 }
 
@@ -156,15 +178,17 @@ const product = productData.find(product => product.id === productId);
 
 const contenedorDeDetalles = document.getElementById('product-details-container');
 
-// Colores
+// COLORES
 const colorsOptionsContainer = document.getElementById("colors-option");
 const contenedorDeBotonesColors = document.getElementById('contenedorDeBotonesColors');
 const coloresDisponibles = [...new Set(product.inStock.map(product => product.color))];
 
-// Tallas
-const tallasDisponibles = [...new Set(product.inStock.map(product => product.tallas))];
+// TALLAS
+const tallasDisponibles = [...new Set(product.inStock.map(product => product.talla))];
+const tallasOptionsContainer = document.getElementById("tallas-options");
+agregarTallasDisponibles(tallasDisponibles,tallasOptionsContainer,product);
 
-// Galeria
+// GALERIA
 const photosDisponibles = { ...product.productImages[0] };
 const contenedorGaleria = document.getElementById('contenedorGaleria');
 
@@ -177,5 +201,7 @@ if (!coloresDisponibles) {
 } else {
     agregarColoresDisponibles(coloresDisponibles, colorsOptionsContainer, product);
 }
+
+
 
 generarProductDetails(product, contenedorDeDetalles);
