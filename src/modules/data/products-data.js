@@ -31,7 +31,13 @@ export const productData = [
             { talla: 68, color: "azul", cantidad: 5, count: 1 },
             { talla: 70, color: "azul", cantidad: 5, count: 1 },
         ],
-        
+        stockTotal: function () {
+            let total = 0;
+            for (let item of this.inStock) {
+                total += item.cantidad;
+            };
+            return total ;
+        },
     },
 
     {
@@ -653,8 +659,7 @@ export const productData = [
             return total ;
         },
     },
-
-    
+  
 ]
 
 
