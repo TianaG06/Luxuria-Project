@@ -50,7 +50,13 @@ function pintarCards(listaProductos, contenedorProductos) {
             card.classList.add('card__container');
 
             const enlace = document.createElement('a');
-            enlace.href = `/src/pages/product_details.html?id=${product.id}`
+            
+            enlace.addEventListener("click", (e) => {   
+                e.preventDefault();
+                sessionStorage.setItem('productId', product.id);
+                window.location.href = "/src/pages/product_details.html";
+            });
+
             enlace.classList.add('card__container-link');
 
             const figure = document.createElement("figure");

@@ -1253,6 +1253,7 @@ p {
 
 .white {
   background-color: white;
+  border: 1px var(--color-gris-80) solid;
 }
 
 .blanco {
@@ -1674,7 +1675,7 @@ p {
 .main__cards {
   padding: 3.7rem;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(25.4rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(25.4rem,100%), 1fr));
 
   gap: 1.5rem;
   margin-left: 7%;

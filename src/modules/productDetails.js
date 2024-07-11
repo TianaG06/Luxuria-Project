@@ -1,12 +1,10 @@
-import { productData } from "../modules/data/products-data.js";
+// IMPORTS
+import { getProducts } from "/src/config/apiController.js";
 
-
-
-const urlParams = new URLSearchParams(window.location.search);
-const productId = parseInt(urlParams.get('id'));
+// DATA
+const productData = await getProducts();
+const productId = sessionStorage.getItem('productId');
 const product = productData.find(product => product.id === productId);
-
-console.log(product);
 
 const contenedorDeDetalles = document.getElementById('product-details-container');
 const productname = document.getElementById(productName);
@@ -19,7 +17,7 @@ const coloresDisponibles = [...new Set(product.inStock.map(product => product.co
 const tallasDisponibles = [...new Set(product.inStock.map(product => product.tallas))];
 
 
-function agregarColoresDisponibles (coloresDisponibles,contenedorDeBotonesColors,objetoSeleccionado) {
+function agregarColoresDisponibles (coloresDisponibles,contenedorDeBotonesColors,producto) {
     coloresDisponibles.forEach(element => {
         const item = document.createElement('li');
         const boton = document.createElement("button");
@@ -75,5 +73,5 @@ function generarProductDetails(product, contenedorDeDetalles) {
 
 
 
-agregarColoresDisponibles(coloresDisponibles,contenedorDeBotonesColors);
+agregarColoresDisponibles(coloresDisponibles,contenedorDeBotonesColors,productId);
 generarProductDetails(product, contenedorDeDetalles);

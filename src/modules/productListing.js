@@ -1,6 +1,5 @@
 // IMPORTS
 import { getProducts } from "/src/config/apiController.js";
-import 
 
 import {
     agregarBotonesDeFiltrado,
